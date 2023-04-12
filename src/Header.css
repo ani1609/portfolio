@@ -25,6 +25,10 @@ header
     font-size: 16px;
     color: #64FFDA;
     word-spacing: 5px;
+    animation-name: fadeInHeader;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-delay: 200ms;
 }
 
 .name
@@ -34,6 +38,10 @@ header
     font-size: 60px;
     font-family: 'Noto Sans SC', sans-serif;
     color: #CCD6F6;
+    animation-name: fadeInHeader;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-delay: 400ms;
 }
 
 .what-i-do
@@ -43,6 +51,10 @@ header
     font-size: 60px;
     font-family: 'Noto Sans SC', sans-serif;
     color: #8892B0;
+    animation-name: fadeInHeader;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-delay: 600ms;
 }
 
 .header-description
@@ -54,6 +66,10 @@ header
     width: 50%;
     color: #8892B0;
     font-family: 'Source Sans Pro', sans-serif;
+    animation-name: fadeInHeader;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-delay: 800ms;
 }
 
 .sample-button
@@ -70,6 +86,10 @@ header
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     font-size: 13px;
     margin-top: 55px;
+    animation-name: fadeInHeader;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-delay: 1000ms;
     transition: 0.3s ease-in-out;
 }
 
@@ -78,4 +98,19 @@ header
     background-color: #1C303F;
 }
 
+
+@keyframes fadeInHeader
+ {
+    from 
+    {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to 
+    {
+
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 

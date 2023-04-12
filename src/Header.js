@@ -1,11 +1,22 @@
+import { useState, useEffect } from 'react';
 import './Header.css';
 
 function Header() 
 {
-  
+    const [shouldRender, setShouldRender] = useState(false);
+    
+    useEffect(() => 
+    {
+        const timer = setTimeout(() => {
+            setShouldRender(true);
+        }, 1300);
+
+        return () => clearTimeout(timer);
+    }, []);
+
   return (
     <div>
-      <header>
+      {shouldRender&&<header>
         <h4 className='greeting'>Hi, my name is </h4>
         <h1 className='name'>Ankit Kr. Chowdhury.</h1>
         <h1 className='what-i-do'>I build things for the web.</h1>
@@ -17,7 +28,7 @@ function Header()
         <a href='' className='sample-button'>Dummy Button</a>
         
         
-      </header>
+      </header>}
     </div>
   );
 }

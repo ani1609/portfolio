@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+header
+{
+    position: relative;
+    height: 100vh;
+    margin: auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    color: red;
+    z-index: 2;
+
+
+}
+
+.greeting
+{
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #64FFDA;
+    word-spacing: 5px;
+}
+
+.name
+{
+    line-height: 88px;
+    margin: 10px 0px 0px 0px;
+    font-size: 60px;
+    font-family: 'Noto Sans SC', sans-serif;
+    color: #CCD6F6;
+}
+
+.what-i-do
+{
+    line-height: 88px;
+    margin: 0px;
+    font-size: 60px;
+    font-family: 'Noto Sans SC', sans-serif;
+    color: #8892B0;
+}
+
+.header-description
+{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    line-height: 25px;
+    font-size: 17.5px;
+    width: 50%;
+    color: #8892B0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sample-button
+{
+    /* z-index: 5; */
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 3.5px;
+    width: 20%;
+    text-align: center;
+    color: #64FFDA;
+    text-decoration: none;
+    border: 1px solid #64FFDA;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 13px;
+    margin-top: 55px;
+    transition: 0.3s ease-in-out;
+}
+
+.sample-button:hover
+{
+    background-color: #1C303F;
+}
+
+

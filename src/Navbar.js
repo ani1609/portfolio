@@ -17,9 +17,20 @@ function Navbar()
     }
     window.addEventListener('scroll',showShadow);
 
+    const [shouldRender, setShouldRender] = useState(false);
+    
+    useEffect(() => 
+    {
+        const timer = setTimeout(() => {
+            setShouldRender(true);
+        }, 100);
+
+        return () => clearTimeout(timer);
+    }, []);
+
   return (
     <div>
-      <nav className={navbar? 'navbar-container navbar-shadow':'navbar-container'}>
+      {shouldRender && <nav className={navbar? 'navbar-container navbar-shadow':'navbar-container'}>
         <a href='http://localhost:3000/' className='logo-container'>
           <div></div>
         </a>
@@ -33,7 +44,7 @@ function Navbar()
 
             <a href='' className='resume-button'>Resume</a>
         </div>
-      </nav>
+      </nav>}
     </div>
   );
 }

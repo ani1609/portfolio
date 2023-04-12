@@ -1,0 +1,88 @@
+
+.navbar-container
+{
+    background-color: #0E192D;
+    z-index: 10;
+    position: fixed;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 80px;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.navbar-shadow
+{
+    box-shadow: 0px 10px 30px -10px rgba(2, 12, 27, 0.7);
+    transition: 0.3s ease-in;
+}
+
+.logo-container
+{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+}
+
+.navigation-links
+{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.ordered-list
+{
+    padding: 0;
+    display: flex;
+    gap: 55px;
+    list-style-type: decimal-leading-zero;
+}
+
+.ordered-list li::marker
+{
+    font-size: 12.5px;
+    color: #64FFDA;
+}
+
+.ordered-list li
+{
+    cursor: pointer;
+    font-family: "SF Mono", monospace;
+}
+
+.ordered-list li:hover a
+{
+    color: #64FFDA;
+}
+
+.ordered-list li a
+{
+    color: #ccd6f6;
+    font-size: 12.5px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    
+}
+
+.resume-button
+{
+    text-decoration: none;
+    font-size: 13px;
+    color: #64FFDA;
+    padding: 11px 17px 11px 17px;
+    background-color: transparent;
+    border: 1px solid #64FFDA;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    border-radius: 3.5px;
+    transition: 0.3s ease-in-out;
+}
+
+.resume-button:hover
+{
+    background-color: #1C303F;
+}

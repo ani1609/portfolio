@@ -1,9 +1,9 @@
 import './App.css';
-
+import Navbar from './Navbar';
 function App() {
   return (
     <div>
-      Initial Commit
+      <Navbar/>
     </div>
   );
 }

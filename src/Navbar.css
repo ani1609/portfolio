@@ -26,6 +26,9 @@
     width: 60px;
     height: 60px;
     background-color: black;
+    animation-name: fadeInLogo;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
 }
 
 .navigation-links
@@ -69,6 +72,36 @@
     
 }
 
+.ordered-list li:nth-child(1)
+{
+    animation-name: fadeInNavigation;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    /* animation-delay: 00ms; */
+}
+
+.ordered-list li:nth-child(2)
+{
+    animation-name: fadeInNavigation;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-delay: 200ms;
+}
+.ordered-list li:nth-child(3)
+{
+    animation-name: fadeInNavigation;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-delay: 400ms;
+}
+.ordered-list li:nth-child(4)
+{
+    animation-name: fadeInNavigation;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-delay: 600ms;
+}
+
 .resume-button
 {
     text-decoration: none;
@@ -80,9 +113,43 @@
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     border-radius: 3.5px;
     transition: 0.3s ease-in-out;
+    animation-name: fadeInNavigation;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-delay: 800ms;
 }
 
 .resume-button:hover
 {
     background-color: #1C303F;
+}
+
+@keyframes fadeInNavigation
+{
+    from 
+    {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to 
+    {
+
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLogo
+{
+    from 
+    {
+        /* transform: translateY(-10px); */
+        opacity: 0;
+    }
+    to 
+    {
+
+        /* transform: translateY(0px); */
+        opacity: 1;
+    }
 }

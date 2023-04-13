@@ -1,0 +1,87 @@
+
+.sidebar-container
+{
+    position: fixed;
+    background-color: transparent;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.left-bar
+{
+    align-items: center;
+    width: 20px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    list-style-type: none;
+}
+
+.github, .linkedin, .twitter, .codepen, .instagram
+{
+    width: 19px;
+    height: 19px;
+    transition: 0.2s ease-in-out;
+}
+
+.github a, .linkedin a, .twitter a, .codepen a, .instagram a
+{
+    color: #8892B0;
+    transition: 0.3s ease-in-out;
+}
+
+.hover-effect
+{
+    transition: 0.2s ease-in-out;
+}
+
+.hover-effect:hover
+{
+    transform: translateY(-3px);
+}
+
+.hover-effect:hover a
+{
+    color: #64FFDA;
+}
+
+.left-line, .right-line
+{
+    width: 1px;
+    height: 90px;
+    background-color: #8892B0;
+}
+
+.right-bar
+{
+    align-items: center;
+    width: 20px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    list-style-type: none;
+}
+
+
+.email a
+{
+    font-family: "SF Mono", monospace;
+    font-size: 13px;
+    color: #8892B0;
+    writing-mode: vertical-rl;
+    transform-origin: center;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+
+}

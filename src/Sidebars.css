@@ -24,6 +24,9 @@
     flex-direction: column;
     gap: 22px;
     list-style-type: none;
+    animation-name: fadeLeftBar;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
 }
 
 .github, .linkedin, .twitter, .codepen, .instagram
@@ -71,6 +74,9 @@
     flex-direction: column;
     gap: 25px;
     list-style-type: none;
+    animation-name: fadeRightBar;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
 }
 
 
@@ -84,4 +90,36 @@
     text-decoration: none;
     transition: 0.3s ease-in-out;
 
+}
+
+@keyframes fadeLeftBar
+{
+    from
+    {
+        transform: translateX(-50px);
+                /* transform: translateY(295px); */
+        opacity: 0;
+    }
+    to
+    {
+        /* transform: translateX(0px); */
+                transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeRightBar
+{
+    from
+    {
+        transform: translateX(50px);
+                /* transform: translateY(295px); */
+        opacity: 0;
+    }
+    to
+    {
+        /* transform: translateX(0px); */
+                transform: translateX(0px);
+        opacity: 1;
+    }
 }

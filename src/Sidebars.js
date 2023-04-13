@@ -7,9 +7,20 @@ import { ReactComponent as Twitter } from './icons/twitter.svg';
 import { ReactComponent as Codepen } from './icons/codepen.svg';
 function Sidebars() 
 {
+    const [shouldRender, setShouldRender] = useState(false);
+    
+    useEffect(() => 
+    {
+        const timer = setTimeout(() => {
+            setShouldRender(true);
+        }, 2550);
+
+        return () => clearTimeout(timer);
+    }, []);
+    
   return (
     <div>
-      <div className='sidebar-container'>
+      {shouldRender && <div className='sidebar-container'>
         <ul className='left-bar'>
             <li className='github hover-effect'>
               <a href=''><Github/></a>
@@ -39,7 +50,7 @@ function Sidebars()
               
             </li>
         </ul>
-      </div>
+      </div>}
     </div>
   );
 }

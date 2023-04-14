@@ -2,18 +2,19 @@ import React, {useState, useEffect} from 'react';
 import './About.css';
 function About() 
 {
+    
     const [shouldRender, setShouldRender] = useState(false);
     
     useEffect(() => 
     {
         const timer = setTimeout(() => {
             setShouldRender(true);
-        }, 1000);
+        }, 2000);
 
         return () => clearTimeout(timer);
     }, []);
-    
-  return (
+
+    return (
     <div>
       {shouldRender&&<section className='about-container'>
         <div className='about-heading'>

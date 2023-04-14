@@ -1,0 +1,75 @@
+.projects-container
+{
+    z-index: 2;
+    position: relative;
+    height: 100vh;
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    animation-name: fadeInProjects;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.project-heading
+{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-line
+{
+    margin-top: 1px;
+    width: 29%;
+    height: 1px;
+    border-bottom: 1px solid #8892B0;
+
+}
+.project-heading h1
+{
+    font-family: 'Noto Sans SC', sans-serif;
+    color: #CCD6F6;
+    font-size: 28px;
+    margin: 30px 0px;
+}
+
+.project-container
+{
+    height:300px;
+    width: calc(33% - 20px);;
+    margin: auto;
+    display: inline-block;
+    margin: 7.5px 7.5px;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.project-container:hover
+{
+    transform: translateY(-8px);
+}
+
+.project-container:hover .project-title
+{
+    color: #64FFDA;
+}
+
+@keyframes fadeInProjects
+{
+    from
+    {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

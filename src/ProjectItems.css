@@ -1,0 +1,81 @@
+.project
+{
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    background-color: #15223E;
+
+}
+
+.icons
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.folder-icon
+{
+    color: #64FFDA;
+    width: 45px;
+    height: 45px;
+}
+
+.folder-icon:hover
+{
+    fill: #64FFDA;
+}
+
+.github-icon
+{
+    color: #CCD6F6;
+    height: 23px;
+    width: 23px;
+    transition: 0.3s ease-in-out;
+}
+
+.github-icon:hover
+{
+    color: #64FFDA;
+}
+
+.project-title
+{
+    font-family: 'Noto Sans SC', sans-serif;
+    color: #CCD6F6;
+    margin: 0px;
+    font-size: 19px;
+    transition: 0.3s ease-in-out;
+}
+
+.project-description
+{
+    margin-top: -20px;
+    margin-bottom: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #8892B0;
+    font-size: 16px;
+
+}
+
+.tools-used
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tool1, .tool2, .tool3, .tool4
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #8892B0;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+

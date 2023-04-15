@@ -11,7 +11,6 @@ class ProjectItems extends React.Component
 
         return (
             <a href={projectLink} className='project'>
-                {console.log(projectLink)}
                 <div className='icons'>
                     <div className='folder-icon'>
                         <FolderIcon/>

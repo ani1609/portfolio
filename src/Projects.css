@@ -1,16 +1,21 @@
 .projects-container
 {
+    /* display: none; */
     z-index: 2;
     position: relative;
     height: 100vh;
     margin: auto;
     width: 75%;
     text-align: center;
-    animation-name: fadeInProjects;
-    animation-duration: 1s;
-    animation-fill-mode: both;
+    
 }
 
+.projects-animation
+{
+    animation-name: fadeInProjects;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
 .project-heading
 {
     text-align: center;

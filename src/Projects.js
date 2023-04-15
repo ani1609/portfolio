@@ -6,7 +6,9 @@ class Projects extends React.Component {
     constructor() {
         super();
         this.state = {
+            shouldRenderParent: true,
             shouldRender: false,
+
             projects: [
                 {
                     projectLink: 'google.com',
@@ -74,43 +76,70 @@ class Projects extends React.Component {
                     tool4: 'JQuery',
                     id: 6
                 }
-            ],
-            shouldRender: false
+            ]
         };
     }
 
+    
+
     componentDidMount() {
-        const timer = setTimeout(() => {
+        window.addEventListener('scroll', this.handelScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handelScroll);
+    }
+
+    handelScroll = () => {
+        const height=document.documentElement.clientHeight;
+        console.log(height);
+        const projectsContainer=document.querySelector('.projects-container');
+        const projectsContainerY=projectsContainer.getBoundingClientRect().top;
+        console.log(projectsContainerY);
+        if (projectsContainerY+200<height)
+        {
             this.setState({ shouldRender: true });
-        }, 2500);
-        return () => clearTimeout(timer);
+        }
+    }
+
+    renderProjectsContainer = () => {
+        setTimeout(() => {
+            this.setState({ shouldRenderParent: true });
+        }, 1400);
     }
 
     render() {
-        const { shouldRender, projects } = this.state;
-
+        const { shouldRenderParent, shouldRender, projects } = this.state;
+    
         return (
             <div>
-                {shouldRender && <div className='projects-container'>
-                    <div className='project-heading'>
-                        <div className='project-line'></div>
-                        <h1>Other Noteworthy Projects</h1>
-                        <div className='project-line'></div>
-                    </div>
-                    {projects.map((project) => {
-                        return (
-                            <div className='project-container' key={project.id}>
+                {shouldRenderParent ? (
+                <div className='projects-container'>
+                    {shouldRender && <div className='projects-animation'>
+                        <div className='project-heading'>
+                            <div className='project-line'></div>
+                            <h1>Other Noteworthy Projects</h1>
+                            <div className='project-line'></div>
+                        </div>
+                        {projects.map((project) => {
+                            return (
+                                <div className='project-container' key={project.id}>
                                 <ProjectItems
                                     project={project}
                                     key={project.id}
                                 />
-                            </div>
-                        )
-                    })}
-                </div>}
+                                </div>
+                            )
+                        })}
+                    </div>}
+                </div>
+                ):(
+                    this.renderProjectsContainer()
+                )}
             </div>
         );
     }
+    
 }
 
 export default Projects;

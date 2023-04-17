@@ -1,40 +1,38 @@
-import React, {useState, useEffect} from 'react';
+import React, { useRef, useEffect } from 'react';
 import './About.css';
+
 function About() 
 {
-    
-    const [shouldRenderParent, setShouldRenderParent] = useState(false);
-    
+    const aboutContainerRef = useRef(null);
+
     useEffect(() => 
     {
-        const timer = setTimeout(() => {
-            setShouldRenderParent(true);
-        }, 1350);
-
-        return () => clearTimeout(timer);
-    }, []);
-    
-    const [shouldRender, setShouldRender] = useState(false);
-
-    const handelScroll=()=>
-    {
-        const height=document.documentElement.clientHeight;
-        console.log(height);
-        const aboutContainer=document.querySelector('.about-container');
-        const aboutContainerY=aboutContainer.getBoundingClientRect().top;
-        console.log(aboutContainerY);
-        if (aboutContainerY+150<height)
+        const observer = new IntersectionObserver(
+        (entries) => 
         {
-            setShouldRender(true);
-        }
-    }
+            entries.forEach((entry) => 
+            {
+                if (entry.isIntersecting) 
+                {
+                    aboutContainerRef.current.classList.add('show');
+                }
+            });
+        },
+        { threshold: 0.4 }
+        );
 
-    window.addEventListener('scroll',handelScroll);
+        observer.observe(aboutContainerRef.current);
+
+        return () => 
+        {
+            observer.disconnect();
+        };
+
+    }, []);
 
     return (
-    <div>
-      {shouldRenderParent&&<section className='about-container'>
-            {shouldRender && <div className='about-animation'>
+        <div>
+        <section ref={aboutContainerRef} className='about-container'>
                 <div className='about-heading'>
                     <h1>About Me</h1>
                     <div className='about-line'></div>
@@ -68,14 +66,12 @@ function About()
                     </div>
 
                     <div className='about-photo'>
-                        
+                    
                     </div>
                 </div>
-            </div>}
-        </section>}
-    </div>
-  );
+            </section>
+        </div>
+    );
 }
 
 export default About;
-

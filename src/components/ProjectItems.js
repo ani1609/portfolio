@@ -1,7 +1,7 @@
 import React from 'react';
-import {ReactComponent as FolderIcon} from "./icons/folder.svg";
-import {ReactComponent as GithubIcon} from "./icons/github.svg";
-import './ProjectItems.css';
+import {ReactComponent as FolderIcon} from "../icons/folder.svg";
+import {ReactComponent as GithubIcon} from "../icons/github.svg";
+import '../styles/ProjectItems.css';
 
 class ProjectItems extends React.Component
 {

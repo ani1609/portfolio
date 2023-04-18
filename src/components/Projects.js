@@ -1,5 +1,5 @@
 import React from 'react';
-import './Projects.css';
+import '../styles/Projects.css';
 import ProjectItems from './ProjectItems';
 
 class Projects extends React.Component {
@@ -88,7 +88,7 @@ class Projects extends React.Component {
         const projectsPosition = projectsElement.getBoundingClientRect().top;
       
         if (projectsPosition < windowHeight * 0.7) {
-          projectsElement.style.opacity = '1';
+            projectsElement.classList.add('show');
         }
       };
       

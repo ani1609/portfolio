@@ -11,6 +11,14 @@
 
 }
 
+.show 
+{
+    opacity: 1;
+    animation-name: fadeInProjects;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
 .project-heading
 {
     text-align: center;

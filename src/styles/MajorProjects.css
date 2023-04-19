@@ -12,6 +12,7 @@
 
 .Major_Projects_Heading
 {
+    opacity: 0;
     width: 580px;
     display: flex;
     align-items: center;
@@ -63,6 +64,7 @@
     height: 350px;
     align-items: center;
     display: flex;
+    opacity: 0;
 }
 
 .project_2
@@ -72,6 +74,7 @@
     align-items: center;
     display: flex;
     justify-content: flex-end;
+    opacity: 0;
 }
 
 .project_3
@@ -80,6 +83,14 @@
     height: 350px;
     align-items: center;
     display: flex;
+    opacity: 0;
+}
+
+.show
+{
+    animation-name: ProjectsFadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 .project1_img
@@ -217,4 +228,18 @@
 .project_details a:hover
 {
     color: #64FFDA;
+}
+
+@keyframes projectsFadeIn
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }

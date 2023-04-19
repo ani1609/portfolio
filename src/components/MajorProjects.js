@@ -4,17 +4,54 @@ import { ReactComponent as Github } from '../icons/github.svg';
 
 
 function MajorProjects() {
-    
+    const headingRef = useRef(null);
+    const project1Ref = useRef(null);
+    const project2Ref = useRef(null);
+    const project3Ref = useRef(null);
+
+    useEffect(() => 
+    {
+        const options = 
+        {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.7
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => 
+        {
+            entries.forEach(entry => 
+                {
+                    if (entry.isIntersecting) 
+                    {
+                        entry.target.classList.add('show');
+                    }
+                });
+        }, options);
+
+        if (headingRef.current) observer.observe(headingRef.current);
+        if (project1Ref.current) observer.observe(project1Ref.current);
+        if (project2Ref.current) observer.observe(project2Ref.current);
+        if (project3Ref.current) observer.observe(project3Ref.current);
+
+        return () => 
+        {
+            if (headingRef.current) observer.unobserve(headingRef.current);
+            if (project1Ref.current) observer.unobserve(project1Ref.current);
+            if (project2Ref.current) observer.unobserve(project2Ref.current);
+            if (project3Ref.current) observer.unobserve(project3Ref.current);
+        };
+    }, []);
 
     return (
         <div>
             <section className='Major_Projects'>
-                <div className='Major_Projects_Heading'>
+                <div className='Major_Projects_Heading' ref={headingRef}>
                     <h1>Some Things I've Built</h1>
                     <div className='Major_Projects_Line'></div>
                 </div>
                 <div className='Projects_Container'>
-                    <div className='project_1'>
+                    <div className='project_1' ref={project1Ref}>
                         
                         <a href='' className='project1_img'></a>
                         <div className='empty'></div>
@@ -31,7 +68,7 @@ function MajorProjects() {
                         </div>
                     </div>
 
-                    <div className='project_2'>
+                    <div className='project_2' ref={project2Ref}>
                         
                         <a href='' className='project2_img'></a>
                         <div className='project_details'>
@@ -48,7 +85,7 @@ function MajorProjects() {
                         <div className='empty'></div>
                     </div>
 
-                    <div className='project_3'>
+                    <div className='project_3' ref={project3Ref}>
                         
                         <a href='' className='project3_img'></a>
                         <div className='empty'></div>
@@ -72,4 +109,3 @@ function MajorProjects() {
 }
 
 export default MajorProjects;
-

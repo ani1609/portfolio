@@ -15,7 +15,7 @@ class ProjectItems extends React.Component
                     <div className='folder-icon'>
                         <FolderIcon/>
                     </div>
-                    <a href='' className='github-icon'>
+                    <a href={githubLink} className='github-icon'>
                         <GithubIcon/>
                     </a>
                 </div>

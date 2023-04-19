@@ -48,12 +48,12 @@
 .project-container
 {
     height:300px;
-    width: calc(33% - 20px);;
+    width: calc(33% - 20px);
     margin: auto;
     display: inline-block;
     margin: 7.5px 7.5px;
     transition: 0.3s ease-in-out;
-    border-radius: 5px;
+    border-radius: 4px;
     overflow: hidden;
 
 }

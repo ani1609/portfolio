@@ -8,17 +8,17 @@ function About()
     useEffect(() => 
     {
         const observer = new IntersectionObserver(
-        (entries) => 
-        {
-            entries.forEach((entry) => 
+            (entries) => 
             {
-                if (entry.isIntersecting) 
+                entries.forEach((entry) => 
                 {
-                    aboutContainerRef.current.classList.add('show');
-                }
-            });
-        },
-        { threshold: 0.4 }
+                    if (entry.isIntersecting) 
+                    {
+                        aboutContainerRef.current.classList.add('show');
+                    }
+                });
+            },
+            { threshold: 0.4 }
         );
 
         observer.observe(aboutContainerRef.current);

@@ -4,6 +4,7 @@ import Header from './Header';
 import Sidebars from './Sidebars';
 import About from './About';
 import Projects from './Projects';
+import MajorProjects from './MajorProjects';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header/>
       <Sidebars/>
       <About/>
+      <MajorProjects/>
       <Projects/>
     </div>
   );

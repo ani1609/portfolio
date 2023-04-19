@@ -10,7 +10,7 @@
     max-width: 600px;
     margin: auto;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     text-align: center;
     box-sizing: border-box;
     padding: 0px 25px;
@@ -49,4 +49,11 @@
     padding: 15px 25px;
     margin: auto;
     margin-top: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.Contact_Container a:hover
+{
+    background-color: #1C303F;
+
 }

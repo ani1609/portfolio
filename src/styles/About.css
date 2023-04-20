@@ -27,6 +27,7 @@
 
 .about-heading
 {
+    margin-bottom: 5px;
     display: flex;
     width: 400px;
     align-items: center;

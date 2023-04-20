@@ -12,6 +12,7 @@
 
 .Major_Projects_Heading
 {
+    margin-bottom: 20px;
     opacity: 0;
     width: 580px;
     display: flex;

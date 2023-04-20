@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/Projects.css';
-import ProjectItems from './ProjectItems';
+import '../styles/MinorProjects.css';
+import MinorProjectItems from './MinorProjectItems';
 
-class Projects extends React.Component {
+class MinorProjects extends React.Component {
     constructor() {
         super();
         this.projectsRef = React.createRef();
@@ -98,7 +98,7 @@ class Projects extends React.Component {
       
 
     render() {
-        const {projects } = this.state;
+        const {projects} = this.state;
 
         return (
             <div>
@@ -111,7 +111,7 @@ class Projects extends React.Component {
                     {projects.map((project) => {
                         return (
                             <div className='project-container' key={project.id}>
-                                <ProjectItems
+                                <MinorProjectItems
                                     project={project}
                                     key={project.id}
                                 />
@@ -124,4 +124,4 @@ class Projects extends React.Component {
     }
 }
 
-export default Projects;
+export default MinorProjects;

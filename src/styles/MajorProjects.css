@@ -89,7 +89,7 @@
 
 .show
 {
-    animation-name: ProjectsFadeIn;
+    animation-name: majorProjectsFadeIn;
     animation-duration: 1s;
     animation-fill-mode: both;
 }
@@ -231,7 +231,7 @@
     color: #64FFDA;
 }
 
-@keyframes projectsFadeIn
+@keyframes majorProjectsFadeIn
 {
     from
     {

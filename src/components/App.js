@@ -4,7 +4,7 @@ import Header from './Header';
 import Sidebars from './Sidebars';
 import About from './About';
 import MajorProjects from './MajorProjects';
-import Projects from './Projects';
+import MinorProjects from './MinorProjects';
 import Contact from './Contact';
 import Footer from './Footer';
 
@@ -16,7 +16,7 @@ function App() {
       <Sidebars/>
       <About/>
       <MajorProjects/>
-      <Projects/>
+      <MinorProjects/>
       <Contact/>
       <Footer/>
     </div>

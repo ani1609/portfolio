@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import '../styles/Header.css';
+import Alien from '../icons/alien2.png';
+
 
 function Header() 
 {
@@ -27,7 +29,9 @@ function Header()
           building accessible, human-centered products at Upstatement.
         </p>}
         {shouldRender&&<a href='google.com' className='sample-button'>Dummy Button</a>}
-        
+        {shouldRender && <div className='alien'>
+          <img src={Alien} alt="upward arrow" />
+        </div>}
         
       </header>
     </div>

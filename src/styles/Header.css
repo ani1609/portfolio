@@ -12,7 +12,6 @@ header
     flex-direction: column;
     justify-content: center;
     background-color: transparent;
-    color: red;
     z-index: 2;
 }
 
@@ -96,6 +95,24 @@ header
     background-color: #1C303F;
 }
 
+.alien
+{
+    position: absolute;
+    top: 60px;
+    right: -55px;
+    animation-name: alienSlideIn;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-delay: 1600ms;
+}
+
+
+.alien img
+{
+    
+    width: 300px;
+    height: 290px;
+}
 
 @keyframes fadeInHeader
  {
@@ -112,3 +129,30 @@ header
     }
 }
 
+
+@keyframes alienSlideIn 
+{
+    from 
+    {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to 
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+  
+@keyframes alienUpDown 
+{
+    from 
+    {
+        transform: translateY(0px);
+    }
+    to 
+    {
+        transform: translateY(80px);
+    }
+}
+  

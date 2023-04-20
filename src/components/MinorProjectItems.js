@@ -5,12 +5,40 @@ import '../styles/MinorProjectItems.css';
 
 class MinorProjectItems extends React.Component
 {
+
+    constructor()
+    {
+        super();
+        this.projectRef = React.createRef();
+    }
+
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+      }
+      
+      handleScroll = () => {
+        const projectsElement = this.projectRef.current;
+        const windowHeight = window.innerHeight;
+        const projectsPosition = projectsElement.getBoundingClientRect().top;
+      
+        if (projectsPosition < windowHeight * 0.7) {
+            projectsElement.classList.add('showMinorProject');
+        }
+      };
+      
+      componentDidUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+      }
+      
+
+
     render()
     {
         const {projectLink, githubLink, title, description, tool1, tool2, tool3, tool4} = this.props.project;
 
         return (
-            <a href={projectLink} className='project'>
+            <a ref={this.projectRef} href={projectLink} className='project'>
                 <div className='icons'>
                     <div className='folder-icon'>
                         <FolderIcon/>

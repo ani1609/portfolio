@@ -9,7 +9,14 @@
     padding: 20px 20px;
     box-sizing: border-box;
     background-color: #15223E;
+    opacity: 0;
+}
 
+.showMinorProject
+{
+    animation-name: minorProjectItemsFadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
 }
 
 .icons
@@ -79,3 +86,16 @@
     font-size: 12px;
 }
 
+@keyframes minorProjectItemsFadeIn
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

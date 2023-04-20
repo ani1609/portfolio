@@ -5,7 +5,7 @@ import MinorProjectItems from './MinorProjectItems';
 class MinorProjects extends React.Component {
     constructor() {
         super();
-        this.projectsRef = React.createRef();
+        this.headingRef = React.createRef();
         this.state = {
             projects: [
                 {
@@ -78,32 +78,37 @@ class MinorProjects extends React.Component {
         };
     }
 
-    componentDidMount() {
+    componentDidMount() 
+    {
         window.addEventListener('scroll', this.handleScroll);
-      }
+    }
       
-      handleScroll = () => {
-        const projectsElement = this.projectsRef.current;
+    handleScroll = () => 
+    {
+        const projectsHeading = this.headingRef.current;
         const windowHeight = window.innerHeight;
-        const projectsPosition = projectsElement.getBoundingClientRect().top;
+        const projectsPosition = projectsHeading.getBoundingClientRect().top;
       
-        if (projectsPosition < windowHeight * 0.7) {
-            projectsElement.classList.add('showMinorProjects');
+        if (projectsPosition < windowHeight * 0.9) 
+        {
+            projectsHeading.classList.add('showMinorProjectsHeading');
         }
-      };
+    };
       
-      componentDidUnmount() {
+    componentDidUnmount() 
+    {
         window.removeEventListener('scroll', this.handleScroll);
-      }
+    }
       
 
-    render() {
+    render() 
+    {
         const {projects} = this.state;
 
         return (
             <div>
-                <div ref={this.projectsRef} className='projects-container'>
-                    <div className='project-heading'>
+                <div className='projects-container'>
+                    <div className='project-heading' ref={this.headingRef}>
                         <div className='project-line'></div>
                         <h1>Other Noteworthy Projects</h1>
                         <div className='project-line'></div>

@@ -11,10 +11,9 @@
 
 }
 
-.show 
+.showMinorProjects
 {
-    opacity: 1;
-    animation-name: fadeInProjects;
+    animation-name: minorProjectsFadeIn;
     animation-duration: 1s;
     animation-fill-mode: both;
 }
@@ -69,11 +68,11 @@
     color: #64FFDA;
 }
 
-@keyframes fadeInProjects
+@keyframes minorProjectsFadeIn
 {
     from
     {
-        transform: translateY(60px);
+        transform: translateY(50px);
         opacity: 0;
     }
     to

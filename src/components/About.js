@@ -14,7 +14,7 @@ function About()
             {
                 if (entry.isIntersecting) 
                 {
-                    aboutContainerRef.current.classList.add('show');
+                    aboutContainerRef.current.classList.add('showAbout');
                 }
             });
         },

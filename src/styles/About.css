@@ -17,12 +17,13 @@
     z-index: 2;
 }
 
-.show {
+.showAbout
+{
     opacity: 1;
-    animation-name: fadeInAbout;
+    animation-name: aboutFadeIn;
     animation-duration: 1s;
     animation-fill-mode: both;
-  }
+}
 
 
 .about-heading
@@ -123,12 +124,12 @@
     border-radius: 3px;
 }
 
-@keyframes fadeInAbout
+@keyframes aboutFadeIn
 {
     from
     {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(50px);
     }
     to
     {

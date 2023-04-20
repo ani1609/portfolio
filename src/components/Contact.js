@@ -21,7 +21,7 @@ function Contact()
                 {
                     if (entry.isIntersecting) 
                     {
-                        entry.target.classList.add('show');
+                        entry.target.classList.add('showContact');
                     }
                 });
         }, options);

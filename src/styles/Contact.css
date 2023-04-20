@@ -20,7 +20,7 @@
     opacity: 0;
 }
 
-.show
+.showContact
 {
     animation-name: contactFadeIn;
     animation-duration: 1s;

@@ -87,7 +87,7 @@
     opacity: 0;
 }
 
-.show
+.showMajorProjects
 {
     animation-name: majorProjectsFadeIn;
     animation-duration: 1s;

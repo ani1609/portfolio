@@ -88,7 +88,7 @@ class MinorProjects extends React.Component {
         const projectsPosition = projectsElement.getBoundingClientRect().top;
       
         if (projectsPosition < windowHeight * 0.7) {
-            projectsElement.classList.add('show');
+            projectsElement.classList.add('showMinorProjects');
         }
       };
       

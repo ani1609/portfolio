@@ -24,7 +24,7 @@ function MajorProjects() {
                 {
                     if (entry.isIntersecting) 
                     {
-                        entry.target.classList.add('show');
+                        entry.target.classList.add('showMajorProjects');
                     }
                 });
         }, options);

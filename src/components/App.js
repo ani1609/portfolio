@@ -7,12 +7,14 @@ import MajorProjects from './MajorProjects';
 import MinorProjects from './MinorProjects';
 import Contact from './Contact';
 import Footer from './Footer';
+import TopButton from './TopButton';
 
 function App() {
   return (
     <div>
       <Navbar/>
       <Header/>
+      <TopButton/>
       <Sidebars/>
       <About/>
       <MajorProjects/>
@@ -24,4 +26,3 @@ function App() {
 }
 
 export default App;
-

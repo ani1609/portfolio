@@ -1,0 +1,39 @@
+button
+{
+    background-color: #15223E;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+    /* border: 1px solid #8892B0; */
+    border: 0;
+    position: fixed;
+    z-index: 3;
+    bottom: 20px;
+    right: 85px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 7px 9px;
+    box-sizing: border-box;
+    animation-name: topButtonFadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+img
+{
+    margin-top: 2px;
+    width: 27px;
+    height: 25px;
+}
+
+@keyframes topButtonFadeIn
+{
+    from
+    {
+        opacity: 0;
+         transform: translateY(40px);
+    }
+    to
+    {
+         transform: translateY(0px);
+         opacity: 1;
+    }
+}

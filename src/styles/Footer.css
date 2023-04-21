@@ -1,4 +1,4 @@
-.Footer_Container
+.footer_container
 {
     position: relative;
     z-index: 2;
@@ -8,7 +8,7 @@
     height: auto;
 }
 
-.Footer_Container a
+.footer_container a
 {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
@@ -21,7 +21,7 @@
     padding: 10px;
 }
 
-.Footer_Container a:hover
+.footer_container a:hover
 {
     color: #64FFDA;
 

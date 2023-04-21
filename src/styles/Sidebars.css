@@ -1,5 +1,4 @@
-
-.sidebar-container
+.sidebar_container
 {
     position: fixed;
     background-color: transparent;
@@ -14,7 +13,7 @@
     z-index: 1;
 }
 
-.left-bar
+.left_bar
 {
     align-items: center;
     width: 20px;
@@ -42,29 +41,29 @@
     transition: 0.3s ease-in-out;
 }
 
-.hover-effect
+.hover_effect
 {
     transition: 0.2s ease-in-out;
 }
 
-.hover-effect:hover
+.hover_effect:hover
 {
     transform: translateY(-3px);
 }
 
-.hover-effect:hover a
+.hover_effect:hover a
 {
     color: #64FFDA;
 }
 
-.left-line, .right-line
+.left_line, .right_line
 {
     width: 1px;
     height: 90px;
     background-color: #8892B0;
 }
 
-.right-bar
+.right_bar
 {
     align-items: center;
     width: 20px;

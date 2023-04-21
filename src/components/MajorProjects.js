@@ -45,12 +45,12 @@ function MajorProjects() {
 
     return (
         <div>
-            <section className='Major_Projects'>
-                <div className='Major_Projects_Heading' ref={headingRef}>
+            <section className='major_projects'>
+                <div className='major_projects_heading' ref={headingRef}>
                     <h1>Some Things I've Built</h1>
-                    <div className='Major_Projects_Line'></div>
+                    <div className='major_projects_line'></div>
                 </div>
-                <div className='Projects_Container'>
+                <div className='projects_container'>
                     <div className='project_1' ref={project1Ref}>
                         
                         <a href='' className='project1_img'></a>

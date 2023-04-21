@@ -1,4 +1,4 @@
-.Major_Projects
+.major_projects
 {
     width: 75%;
     margin: auto;
@@ -10,7 +10,7 @@
     margin-bottom: 200px;
 }
 
-.Major_Projects_Heading
+.major_projects_heading
 {
     margin-bottom: 20px;
     opacity: 0;
@@ -20,7 +20,7 @@
     justify-content: space-between;
 }
 
-.Major_Projects_Heading h1
+.major_projects_heading h1
 {
     font-family: 'Noto Sans SC', sans-serif;
     color: #CCD6F6;
@@ -28,7 +28,7 @@
     margin: 0px;
 }
 
-.Major_Projects_Heading h1::before
+.major_projects_heading h1::before
 {
     content: '02.';
     font-family: "SF Mono", monospace;
@@ -39,7 +39,7 @@
 }
 
 
-.Major_Projects_Line
+.major_projects_line
 {
     margin-top: 5px;
     width: 200px;
@@ -49,7 +49,7 @@
 }
 
 
-.Projects_Container
+.projects_container
 {
     position: relative;
     z-index: 2;

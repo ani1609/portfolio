@@ -7,7 +7,7 @@ function Footer()
 
     return (
         <div>
-            <section className='Footer_Container'>
+            <section className='footer_container'>
                 <a href='https://github.com/ani1609/resume'>Designed & Built by Ankit Kr. Chowdhury</a>
             </section>
         </div>

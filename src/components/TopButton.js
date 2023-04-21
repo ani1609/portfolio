@@ -35,7 +35,7 @@ const TopButton = () =>
     }, []);
 
     return (
-        <div>
+        <div className='Top_Button_Container'>
             {showButton  && <button onClick={handleClick}>
                 <img src={Upward} alt="upward arrow" />
             </button>}

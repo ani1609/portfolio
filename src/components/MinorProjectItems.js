@@ -40,19 +40,19 @@ class MinorProjectItems extends React.Component
         return (
             <a ref={this.projectRef} href={projectLink} className='project'>
                 <div className='icons'>
-                    <div className='folder-icon'>
+                    <div className='folder_icon'>
                         <FolderIcon/>
                     </div>
-                    <a href='' className='github-icon'>
+                    <a href='' className='github_icon'>
                         <GithubIcon/>
                     </a>
                 </div>
 
-                <h2 className='project-title'>{title}</h2>
+                <h2 className='project_title'>{title}</h2>
 
-                <p className='project-description'>{description}</p>
+                <p>{description}</p>
 
-                <div className='tools-used'>
+                <div className='tools_used'>
                     <div className='tool1'>{tool1}</div>
                     <div className='tool2'>{tool2}</div>
                     <div className='tool3'>{tool3}</div>

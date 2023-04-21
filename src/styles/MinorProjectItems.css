@@ -27,19 +27,19 @@
     align-items: center;
 }
 
-.folder-icon
+.folder_icon
 {
     color: #64FFDA;
     width: 45px;
     height: 45px;
 }
 
-.folder-icon:hover
+.folder_icon:hover
 {
     fill: #64FFDA;
 }
 
-.github-icon
+.github_icon
 {
     color: #CCD6F6;
     height: 23px;
@@ -47,12 +47,12 @@
     transition: 0.3s ease-in-out;
 }
 
-.github-icon:hover
+.github_icon:hover
 {
     color: #64FFDA;
 }
 
-.project-title
+.project h2
 {
     font-family: 'Noto Sans SC', sans-serif;
     color: #CCD6F6;
@@ -61,7 +61,7 @@
     transition: 0.3s ease-in-out;
 }
 
-.project-description
+.project p
 {
     margin-top: -20px;
     margin-bottom: 0;
@@ -71,7 +71,7 @@
 
 }
 
-.tools-used
+.tools_used
 {
     display: flex;
     justify-content: space-between;

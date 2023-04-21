@@ -1,4 +1,4 @@
-.projects-container
+.minor_projects_container
 {
     z-index: 2;
     position: relative;
@@ -11,7 +11,7 @@
 
 }
 
-.project-heading
+.project_heading
 {
     text-align: center;
     width: 100%;
@@ -30,7 +30,7 @@
     animation-fill-mode: both;
 }
 
-.project-line
+.project_line
 {
     margin-top: 1px;
     width: 29%;
@@ -38,7 +38,7 @@
     border-bottom: 1px solid #8892B0;
 
 }
-.project-heading h1
+.project_heading h1
 {
     font-family: 'Noto Sans SC', sans-serif;
     color: #CCD6F6;
@@ -46,7 +46,7 @@
     margin: 0px;
 }
 
-.project-container
+.project_container
 {
     height:300px;
     width: calc(33% - 20px);;
@@ -59,12 +59,12 @@
 
 }
 
-.project-container:hover
+.project_container:hover
 {
     transform: translateY(-8px);
 }
 
-.project-container:hover .project-title
+.project_container:hover .project_title
 {
     color: #64FFDA;
 }

@@ -22,13 +22,13 @@ function Header()
       <header>
         {shouldRender&&<h4 className='greeting'>Hi, my name is </h4>}
         {shouldRender&&<h1 className='name'>Ankit Kr. Chowdhury.</h1>}
-        {shouldRender&&<h1 className='what-i-do'>I build things for the web.</h1>}
-        {shouldRender&&<p className='header-description'>
+        {shouldRender&&<h1 className='what_i_do'>I build things for the web.</h1>}
+        {shouldRender&&<p className='header_description'>
           I'm a software engineer specializing in building (and occasionally
           designing) exceptional digital experiences. Currently, I'm focused on
           building accessible, human-centered products at Upstatement.
         </p>}
-        {shouldRender&&<a href='google.com' className='sample-button'>Dummy Button</a>}
+        {shouldRender&&<a href='google.com' className='sample_button'>Dummy Button</a>}
         {shouldRender && <div className='alien'>
           <img src={Alien} alt="upward arrow" />
         </div>}

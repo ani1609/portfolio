@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 
-.Contact_Container
+.contact_container
 {
     position: relative;
     z-index: 2;
@@ -27,7 +27,7 @@
     animation-fill-mode: both;
 }
 
-.Contact_Container h1
+.contact_container h1
 {
     font-family: 'Noto Sans SC', sans-serif;
     color: #CCD6F6;
@@ -35,7 +35,7 @@
     margin: 0;
 }
 
-.Contact_Container p
+.contact_container p
 {
     font-size: 17.5px;
     padding: 0px 25px;
@@ -45,7 +45,7 @@
 
 }
 
-.Contact_Container a
+.contact_container a
 {
     text-decoration: none;
     font-family: "SF Mono", monospace;
@@ -60,7 +60,7 @@
     transition: 0.3s ease-in-out;
 }
 
-.Contact_Container a:hover
+.contact_container a:hover
 {
     background-color: #1C303F;
 

@@ -28,6 +28,32 @@ function Navbar()
         return () => clearTimeout(timer);
     }, []);
 
+
+    const scrollToAbout = () => {
+      const aboutSection = document.querySelector('.About_Container');
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    const scrollToMajorProjects = () => {
+      const majorProjectsSection = document.querySelector('.Major_Projects');
+      majorProjectsSection.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    // const scrollToContact = () => {
+    //   const contactSection = document.querySelector('.Contact_Container');
+    //   contactSection.scrollIntoView({ behavior: 'smooth' });
+    // };
+
+
+    const scrollToContact = () => {
+      const contactSection = document.querySelector('.Contact_Container');
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    };
+
+
+    
+  
+
   return (
     <div>
       {shouldRender && <nav className={navbar? 'navbar-container navbar-shadow':'navbar-container'}>
@@ -35,11 +61,11 @@ function Navbar()
           <div></div>
         </a>
         <div className='navigation-links'>
-            <ol className='ordered-list'>
-                <li><a href=''>About</a></li>
-                <li><a href=''>Experience</a></li>
-                <li><a href=''>Work</a></li>
-                <li><a href=''>Contact</a></li>
+            <ol>
+                <li><button onClick={scrollToAbout}>About</button></li>
+                <li><button>Experience</button></li>
+                <li><button onClick={scrollToMajorProjects}>Work</button></li>
+                <li><button onClick={scrollToContact}>Contact</button></li>
             </ol>
 
             <a href='' className='resume-button'>Resume</a>

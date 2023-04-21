@@ -32,7 +32,7 @@ function About()
 
     return (
         <div>
-        <section ref={aboutContainerRef} className='about-container'>
+        <section ref={aboutContainerRef} className='About_Container'>
                 <div className='about-heading'>
                     <h1>About Me</h1>
                     <div className='about-line'></div>

@@ -107,15 +107,15 @@ class MinorProjects extends React.Component {
 
         return (
             <div>
-                <div className='projects-container'>
-                    <div className='project-heading' ref={this.headingRef}>
-                        <div className='project-line'></div>
+                <div className='minor_projects_container'>
+                    <div className='project_heading' ref={this.headingRef}>
+                        <div className='project_line'></div>
                         <h1>Other Noteworthy Projects</h1>
-                        <div className='project-line'></div>
+                        <div className='project_line'></div>
                     </div>
                     {projects.map((project) => {
                         return (
-                            <div className='project-container' key={project.id}>
+                            <div className='project_container' key={project.id}>
                                 <MinorProjectItems
                                     project={project}
                                     key={project.id}

@@ -46,6 +46,11 @@
     list-style-type: decimal-leading-zero;
 }
 
+.navigation-links ol li
+{
+    cursor: pointer;
+}
+
 .navigation-links ol li::marker
 {
     font-size: 12.5px;

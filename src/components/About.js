@@ -32,13 +32,13 @@ function About()
 
     return (
         <div>
-        <section ref={aboutContainerRef} className='About_Container'>
-                <div className='about-heading'>
+        <section ref={aboutContainerRef} className='about_container'>
+                <div className='about_heading'>
                     <h1>About Me</h1>
-                    <div className='about-line'></div>
+                    <div className='about_line'></div>
                 </div>
-                <div className='about-contents'>
-                    <div className='about-description'>
+                <div className='about_contents'>
+                    <div className='about_description'>
                         <p>
                             Hello! My name is Ankit and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
                         </p>
@@ -51,7 +51,7 @@ function About()
                         <p>
                             Here are a few technologies I've been working with recently:
                         </p>
-                        <div className='skills-list'>
+                        <div className='skills_list'>
                             <ul>
                                 <li>Javascript</li>
                                 <li>HTML</li>
@@ -65,7 +65,7 @@ function About()
                         </div>
                     </div>
 
-                    <div className='about-photo'>
+                    <div className='about_photo'>
                     
                     </div>
                 </div>

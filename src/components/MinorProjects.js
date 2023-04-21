@@ -9,7 +9,7 @@ class MinorProjects extends React.Component {
         this.state = {
             projects: [
                 {
-                    projectLink: 'google.com',
+                    projectLink: 'https://www.google.com/',
                     githubLink: '',
                     title: 'Project Title 1',
                     description: 'We are going to use it to pass props to our SVG and also to share logic later point in time. We are going to use it to pass props to our SVG going to use it to pass.',
@@ -20,7 +20,7 @@ class MinorProjects extends React.Component {
                     id: 1
                 },
                 {
-                    projectLink: 'amazon.in',
+                    projectLink: 'https://amazon.in',
                     githubLink: '',
                     title: 'Project Title 2',
                     description: 'We are going to use it to pass props to our SVG and also to share logic later point in time. We are going to use it to pass props to our SVG going to use it to pass.',

@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 
-.About_Container
+.about_container
 {
     height: 80vh;
     position: relative;
@@ -26,7 +26,7 @@
 }
 
 
-.about-heading
+.about_heading
 {
     margin-bottom: 5px;
     display: flex;
@@ -35,7 +35,7 @@
     justify-content: space-between;
 }
 
-.about-heading h1
+.about_heading h1
 {
     margin: 0px;
     font-family: 'Noto Sans SC', sans-serif;
@@ -43,7 +43,7 @@
     font-size: 28px;
 }
 
-.about-heading h1::before
+.about_heading h1::before
 {
     content: '01.';
     font-family: "SF Mono", monospace;
@@ -53,7 +53,7 @@
     font-weight: 300;
 }
 
-.about-line
+.about_line
 {
     margin-top: 5px;
     width: 200px;
@@ -61,14 +61,14 @@
     border-bottom: 1px solid #8892B0;
 }
 
-.about-contents
+.about_contents
 {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.about-description
+.about_description
 {
     width: 60%;
     display: flex;
@@ -76,7 +76,7 @@
     gap: 17px;
 }
 
-.about-description p
+.about_description p
 {
     margin: 0px;
     font-size: 17.5px;
@@ -84,7 +84,7 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.skills-list
+.skills_list
 {
     width: 40%;
     display: flex;
@@ -92,14 +92,14 @@
     gap: 10px;
 }
 
-.skills-list ul
+.skills_list ul
 {
     list-style: none;
     padding: 0px;
     margin: 0px;
     margin-top: -8px;
 }
-.skills-list ul li
+.skills_list ul li
 {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
@@ -108,7 +108,7 @@
     letter-spacing: 2px;
 }
 
-.skills-list ul li::before
+.skills_list ul li::before
 {
     font-family: 'Font Awesome 5 Free';
     content: '\f0da';
@@ -116,7 +116,7 @@
     padding-right: 8px;
 }
 
-.about-photo
+.about_photo
 {
     height: 300px;
     width: 300px;

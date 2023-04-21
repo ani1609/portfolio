@@ -29,24 +29,38 @@ function Navbar()
     }, []);
 
 
-    const scrollToAbout = () => {
-      const aboutSection = document.querySelector('.About_Container');
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
-    };
+    const scrollToAbout = () => 
+    {
+      const aboutSection = document.querySelector('.about_container');
+      const offsetTop = aboutSection.offsetTop;
+      const offsetHeight = aboutSection.offsetHeight;
+      const scrollToPosition = offsetTop - 100;
+      window.scrollTo({
+        top: scrollToPosition,
+        behavior: 'smooth'
+      });
+    }
 
-    const scrollToMajorProjects = () => {
-      const majorProjectsSection = document.querySelector('.Major_Projects');
-      majorProjectsSection.scrollIntoView({ behavior: 'smooth' });
-    };
+    const scrollToMajorProjects = () => 
+    {
+      const majorProjectsSection = document.querySelector('.major_projects');
+      const offsetTop = majorProjectsSection.offsetTop;
+      // const offsetHeight = majorProjectsSection.offsetHeight;
+      const scrollToPosition = offsetTop - 100;
+      window.scrollTo({
+        top: scrollToPosition,
+        behavior: 'smooth'
+      });
+    }
 
-    // const scrollToContact = () => {
-    //   const contactSection = document.querySelector('.Contact_Container');
-    //   contactSection.scrollIntoView({ behavior: 'smooth' });
+    // const scrollToExperience = () => {
+    //   const experienceSection = document.querySelector('.experience_container');
+    //   experienceSection.scrollIntoView({ behavior: 'smooth' });
     // };
 
 
     const scrollToContact = () => {
-      const contactSection = document.querySelector('.Contact_Container');
+      const contactSection = document.querySelector('.contact_container');
       contactSection.scrollIntoView({ behavior: 'smooth' });
     };
 
@@ -62,10 +76,10 @@ function Navbar()
         </a>
         <div className='navigation-links'>
             <ol>
-                <li><button onClick={scrollToAbout}>About</button></li>
+                <li onClick={scrollToAbout}><button>About</button></li>
                 <li><button>Experience</button></li>
-                <li><button onClick={scrollToMajorProjects}>Work</button></li>
-                <li><button onClick={scrollToContact}>Contact</button></li>
+                <li onClick={scrollToMajorProjects}><button>Work</button></li>
+                <li onClick={scrollToContact}><button>Contact</button></li>
             </ol>
 
             <a href='' className='resume-button'>Resume</a>

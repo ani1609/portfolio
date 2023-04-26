@@ -25,19 +25,19 @@ function Sidebars()
       {shouldRender && <div className='sidebar_container'>
         <ul className='left_bar'>
             <li className='github hover_effect'>
-              <a href=''><Github/></a>
+              <a href='' target='_blank'><Github/></a>
             </li>
             <li className='linkedin hover_effect'>
-              <a href=''><Linkedin/></a>
+              <a href='' target='_blank'><Linkedin/></a>
             </li>
             <li className='twitter hover_effect'>
-              <a href=''><Twitter/></a>
+              <a href='' target='_blank'><Twitter/></a>
             </li>
             <li className='codepen hover_effect'>
-              <a href=''><Codepen/></a>
+              <a href='' target='_blank'><Codepen/></a>
             </li>
             <li className='instagram hover_effect'>
-              <a href=''><Instagram/></a>
+              <a href='' target='_blank'><Instagram/></a>
             </li>
             <li className='left_line'>
 
@@ -46,7 +46,7 @@ function Sidebars()
 
         <ul className='right_bar'>
             <li className='email hover_effect'>
-              <a href='' className='hover'>rakesh856100@gmail.com</a>
+              <a href='mailto:rakesh856100@gmail.com'>rakesh856100@gmail.com</a>
             </li>
             <li className='right_line'>
               

@@ -29,9 +29,9 @@ function Header()
           building accessible, human-centered products at Upstatement.
         </p>}
         {shouldRender&&<a href='google.com' className='sample_button'>Dummy Button</a>}
-        {shouldRender && <div className='alien'>
+        {/* {shouldRender && <div className='alien'>
           <img src={Alien} alt="upward arrow" />
-        </div>}
+        </div>} */}
         
       </header>
     </div>

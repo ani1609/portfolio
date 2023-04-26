@@ -53,7 +53,7 @@ function MajorProjects() {
                 <div className='projects_container'>
                     <div className='project_1' ref={project1Ref}>
                         
-                        <a href='' className='project1_img'></a>
+                        <a href='' className='project1_img' target='_blank'></a>
                         <div className='empty'></div>
                         <div className='project_details'>
                             <h2><a href=''>Project 1 Title</a></h2>
@@ -70,7 +70,7 @@ function MajorProjects() {
 
                     <div className='project_2' ref={project2Ref}>
                         
-                        <a href='' className='project2_img'></a>
+                        <a href='' className='project2_img' target='_blank'></a>
                         <div className='project_details'>
                             <h2><a href=''>Project 2 Title</a></h2>
                             <p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
@@ -87,7 +87,7 @@ function MajorProjects() {
 
                     <div className='project_3' ref={project3Ref}>
                         
-                        <a href='' className='project3_img'></a>
+                        <a href='' className='project3_img' target='_blank'></a>
                         <div className='empty'></div>
                         <div className='project_details'>
                             <h2><a href=''>Project 3 Title</a></h2>

@@ -38,7 +38,7 @@ class MinorProjectItems extends React.Component
         const {projectLink, githubLink, title, description, tool1, tool2, tool3, tool4} = this.props.project;
 
         return (
-            <a ref={this.projectRef} href={projectLink} className='project'>
+            <a ref={this.projectRef} href={projectLink} className='project' target='_blank'>
                 <div className='icons'>
                     <div className='folder_icon'>
                         <FolderIcon/>

@@ -56,7 +56,7 @@ function MajorProjects() {
                         <a href='' className='project1_img' target='_blank'></a>
                         <div className='empty'></div>
                         <div className='project_details'>
-                            <h2><a href=''>Project 1 Title</a></h2>
+                            <h2><a href='' target='_blank'>Project 1 Title</a></h2>
                             <p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
                             <ul>
                                 <li>HTML</li>
@@ -64,7 +64,7 @@ function MajorProjects() {
                                 <li>Javascript</li>
                                 <li>MongoDB</li>
                             </ul>
-                            <a href=''><Github/></a>
+                            <a href='' target='_blank'><Github/></a>
                         </div>
                     </div>
 
@@ -72,7 +72,7 @@ function MajorProjects() {
                         
                         <a href='' className='project2_img' target='_blank'></a>
                         <div className='project_details'>
-                            <h2><a href=''>Project 2 Title</a></h2>
+                            <h2><a href='' target='_blank'>Project 2 Title</a></h2>
                             <p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
                             <ul>
                                 <li>HTML</li>
@@ -80,7 +80,7 @@ function MajorProjects() {
                                 <li>Javascript</li>
                                 <li>MongoDB</li>
                             </ul>
-                            <a href=''><Github/></a>
+                            <a href='' target='_blank'><Github/></a>
                         </div>
                         <div className='empty'></div>
                     </div>
@@ -90,7 +90,7 @@ function MajorProjects() {
                         <a href='' className='project3_img' target='_blank'></a>
                         <div className='empty'></div>
                         <div className='project_details'>
-                            <h2><a href=''>Project 3 Title</a></h2>
+                            <h2><a href='' target='_blank'>Project 3 Title</a></h2>
                             <p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
                             <ul>
                                 <li>HTML</li>
@@ -98,7 +98,7 @@ function MajorProjects() {
                                 <li>Javascript</li>
                                 <li>MongoDB</li>
                             </ul>
-                            <a href=''><Github/></a>
+                            <a href='' target='_blank'><Github/></a>
                         </div>
                     </div>
                 </div>

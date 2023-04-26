@@ -43,7 +43,7 @@ class MinorProjectItems extends React.Component
                     <div className='folder_icon'>
                         <FolderIcon/>
                     </div>
-                    <a href='' className='github_icon'>
+                    <a href={githubLink} className='github_icon' target='_blank'>
                         <GithubIcon/>
                     </a>
                 </div>

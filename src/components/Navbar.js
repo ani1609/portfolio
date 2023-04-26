@@ -82,7 +82,7 @@ function Navbar()
                 <li onClick={scrollToContact}><button>Contact</button></li>
             </ol>
 
-            <a href='' className='resume-button'>Resume</a>
+            <a href='' className='resume-button' target='_blank'>Resume</a>
         </div>
       </nav>}
     </div>

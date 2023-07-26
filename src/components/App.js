@@ -11,7 +11,7 @@ import TopButton from './TopButton';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <Navbar/>
       <Header/>
       <TopButton/>

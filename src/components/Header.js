@@ -17,8 +17,7 @@ function Header()
     }, []);
 
   return (
-    <div>
-      {/* <div className='empty'></div> */}
+
       <header>
         {shouldRender&&<h4 className='greeting'>Hi, my name is </h4>}
         {shouldRender&&<h1 className='name'>Ankit Kr. Chowdhury.</h1>}
@@ -34,7 +33,6 @@ function Header()
         </div>} */}
         
       </header>
-    </div>
   );
 }
 

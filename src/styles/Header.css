@@ -13,6 +13,7 @@ header
     justify-content: center;
     background-color: transparent;
     z-index: 2;
+    box-sizing: border-box;
 }
 
 .greeting
@@ -20,7 +21,7 @@ header
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    color: #64FFDA;
+    color: var(--primary);
     word-spacing: 5px;
     animation-name: fadeInHeader;
     animation-duration: 0.5s;
@@ -34,7 +35,7 @@ header
     margin: 10px 0px 0px 0px;
     font-size: 60px;
     font-family: 'Noto Sans SC', sans-serif;
-    color: #CCD6F6;
+    color: var(--heading);
     animation-name: fadeInHeader;
     animation-duration: 0.5s;
     animation-fill-mode: both;
@@ -47,7 +48,7 @@ header
     margin: 0px;
     font-size: 60px;
     font-family: 'Noto Sans SC', sans-serif;
-    color: #8892B0;
+    color: var(--para);
     animation-name: fadeInHeader;
     animation-duration: 0.5s;
     animation-fill-mode: both;
@@ -61,7 +62,7 @@ header
     line-height: 25px;
     font-size: 17.5px;
     width: 50%;
-    color: #8892B0;
+    color: var(--para);
     font-family: 'Source Sans Pro', sans-serif;
     animation-name: fadeInHeader;
     animation-duration: 0.5s;
@@ -92,7 +93,7 @@ header
 
 .sample_button:hover
 {
-    background-color: #1C303F;
+    background-color: var(--hover);
 }
 
 .alien

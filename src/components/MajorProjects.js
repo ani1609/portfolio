@@ -21,12 +21,12 @@ function MajorProjects() {
         const observer = new IntersectionObserver((entries, observer) => 
         {
             entries.forEach(entry => 
+            {
+                if (entry.isIntersecting) 
                 {
-                    if (entry.isIntersecting) 
-                    {
-                        entry.target.classList.add('showMajorProjects');
-                    }
-                });
+                    entry.target.classList.add('showMajorProjects');
+                }
+            });
         }, options);
 
         if (headingRef.current) observer.observe(headingRef.current);

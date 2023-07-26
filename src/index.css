@@ -1,8 +1,11 @@
-body {
+body 
+{
+  background-color: #0E192D;
+  --primary: #64FFDA;
+  --heading: #CCD6F6;
+  --para: #8892B0;
+  --hover: #1C303F;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

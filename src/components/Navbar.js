@@ -74,7 +74,7 @@ function Navbar()
         <a href='http://localhost:3000/' className='logo-container'>
           <div></div>
         </a>
-        <div className='navigation-links'>
+        <div className='nav_tabs'>
             <ol>
                 <li onClick={scrollToAbout}><button>About</button></li>
                 <li><button>Experience</button></li>
@@ -82,7 +82,7 @@ function Navbar()
                 <li onClick={scrollToContact}><button>Contact</button></li>
             </ol>
 
-            <a href='' className='resume-button' target='_blank'>Resume</a>
+            <a href='' target='_blank'>Resume</a>
         </div>
       </nav>}
     </div>

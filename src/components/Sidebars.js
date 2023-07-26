@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import '../index.css';
 import '../styles/Sidebars.css';
 import { ReactComponent as Github } from '../icons/github.svg';
 import { ReactComponent as Linkedin } from '../icons/linkedin.svg';

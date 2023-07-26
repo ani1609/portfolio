@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import '../index.css';
 import '../styles/MajorProjects.css';
 import { ReactComponent as Github } from '../icons/github.svg';
 

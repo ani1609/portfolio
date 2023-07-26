@@ -1,6 +1,7 @@
 import React from 'react';
 import {ReactComponent as FolderIcon} from "../icons/folder.svg";
 import {ReactComponent as GithubIcon} from "../icons/github.svg";
+import '../index.css';
 import '../styles/MinorProjectItems.css';
 
 class MinorProjectItems extends React.Component

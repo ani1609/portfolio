@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css';
 import '../styles/MinorProjects.css';
 import MinorProjectItems from './MinorProjectItems';
 

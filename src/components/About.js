@@ -68,7 +68,7 @@ function About()
                     </div>
 
                     <div className='about_photo'>
-                        <img src={MyPhoto}/>
+                        {/* <img src={MyPhoto}/> */}
                     </div>
                 </div>
             </section>

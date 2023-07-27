@@ -1,15 +1,45 @@
 import React, { useRef, useEffect } from 'react';
 import '../index.css';
 import '../styles/MajorProjects.css';
-import { ReactComponent as Github } from '../icons/github.svg';
+import MajorProjectsItems from './MajorProjectsItems';
+import p1 from '../images/explorWay.png';
+import p2 from '../images/prathamik.png';
+import p3 from '../images/venline.png';
 
 
-function MajorProjects() 
+function MajorProjects()
 {
-    const headingRef = useRef(null);
-    const project1Ref = useRef(null);
-    const project2Ref = useRef(null);
-    const project3Ref = useRef(null);
+    const MajorProjects=[
+        {
+            id:1,
+            title:"ExplorWay",
+            description:"Your dream vacations come true at ExplorWay. Explore breathtaking destinations, send enquiries, and let our experienced team create personalized itineraries for an unforgettable journey.",
+            image: p1,
+            link:"",
+            techStack:["ReactJS","NodeJS","MongoDB","Express", "Firebase"],
+            github:"https://github.com/ani1609/Traveloholic", 
+        },
+        {
+            id:2,
+            title:"Prathamik",
+            description:"Unleash the power of education with our innovative website! Experience live video lessons, a versatile online IDE for coding, an AI chatbot for instant help, and Google OCR vision for text comprehension from images. Explore boundless learning opportunities today!",
+            image: p2,
+            link:"https://prathamik.xyz",
+            techStack:["ChatGPT API", "VideoSDK", "Google OCR Vision", "Firebse", "MongoDB"],
+            github:"https://github.com/ani1609/Prathamik", 
+        },
+        {
+            id:3,
+            title:"Venline",
+            description:"Discover an innovative ecommerce marketplace, connecting vendors and customers. Explore farm-fresh fruits and vegetables, supporting local growers and promoting sustainability.",
+            image: p3,
+            link:"https://venline.co",
+            techStack:["Ejs", "NodeJS", "MongoDB", "Express"],
+            github:"https://github.com/ani1609/Venline", 
+        }
+    ]
+
+    const MajorProjectHeadingRef = useRef(null);
 
     useEffect(() => 
     {
@@ -17,67 +47,37 @@ function MajorProjects()
         {
             root: null,
             rootMargin: '0px',
-            threshold: 0.7
+            threshold: 0.9
         };
-
-        const observer = new IntersectionObserver((entries, observer) => 
+    
+        const observer = new IntersectionObserver(([entry], observer) => 
         {
-            entries.forEach(entry => 
-            {
-                if (entry.isIntersecting) 
-                {
-                    entry.target.classList.add('showMajorProjects');
-                }
-            });
+            if (entry.isIntersecting) {
+                entry.target.classList.add('showMajorProjects');
+            }
         }, options);
-
-        if (headingRef.current) observer.observe(headingRef.current);
-        if (project1Ref.current) observer.observe(project1Ref.current);
-        if (project2Ref.current) observer.observe(project2Ref.current);
-        if (project3Ref.current) observer.observe(project3Ref.current);
-
+    
+        if (MajorProjectHeadingRef.current) observer.observe(MajorProjectHeadingRef.current);
+    
         return () => 
         {
-            if (headingRef.current) observer.unobserve(headingRef.current);
-            if (project1Ref.current) observer.unobserve(project1Ref.current);
-            if (project2Ref.current) observer.unobserve(project2Ref.current);
-            if (project3Ref.current) observer.unobserve(project3Ref.current);
+            if (MajorProjectHeadingRef.current) observer.unobserve(MajorProjectHeadingRef.current);
         };
-    }, []);
+    }, []);    
 
-    return (
-        <div>
-            <section className='major_projects_container'>
-                <h1 ref={headingRef}>Some Things I've Built</h1>
-                <div className='major_project_odd' ref={project1Ref}>
-                    <a href='' target='_blank'></a>
-                    <div className='project_details_odd'>
-                        <h2>Venline</h2>
-                        <p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>MongoDB</li>
-                        </ul>
-                        <a href='' target='_blank'><Github/></a>
-                    </div>
-                </div>
-                <div className='major_project_even' ref={project2Ref}>
-                    <a href='' target='_blank'></a>
-                    <div className='project_details_even'>
-                        <h2>Prathamik</h2>
-                        <p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>MongoDB</li>
-                        </ul>
-                        <a href='' target='_blank'><Github/></a>
-                    </div>
-                </div>
-            </section>
+
+    return(
+        <div className='major_projects_parent'>
+            <h1 ref={MajorProjectHeadingRef}>Some Things I've Built</h1>
+            {MajorProjects.map((MajorProject)=>{
+                return(
+                    <MajorProjectsItems 
+                        MajorProject={MajorProject}
+                        key={MajorProject.id}
+                    />
+                );
+            })}
+
         </div>
     );
 }

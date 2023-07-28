@@ -1,5 +1,4 @@
-
-.navbar-container
+.navbar_container
 {
     background-color: #0E192D;
     z-index: 10;
@@ -13,12 +12,51 @@
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    transition: 0.3s ease-in;
 }
 
-.navbar-shadow
+.navbar_shadow
 {
     box-shadow: 0px 10px 30px -10px rgba(2, 12, 27, 0.7);
     transition: 0.3s ease-in;
+}
+
+.navbar_remove
+{
+    animation-name: removeNavbar;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
+
+@keyframes removeNavbar
+{
+    from 
+    {
+        transform: translateY(0px);
+    }
+    to 
+    {
+        transform: translateY(-70px);
+    }
+}
+
+.navbar_bring
+{
+    animation-name: bringNavbar;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
+
+@keyframes bringNavbar
+{
+    from 
+    {
+        transform: translateY(-70px);
+    }
+    to 
+    {
+        transform: translateY(0px);
+    }
 }
 
 .logo-container
@@ -84,7 +122,7 @@
     animation-name: fadeInNavigation;
     animation-duration: 0.5s;
     animation-fill-mode: both;
-    /* animation-delay: 00ms; */
+    animation-delay: 200ms;
 }
 
 .nav_tabs ol li:nth-child(2)
@@ -92,21 +130,21 @@
     animation-name: fadeInNavigation;
     animation-duration: 0.5s;
     animation-fill-mode: both;
-    animation-delay: 200ms;
+    animation-delay: 400ms;
 }
 .nav_tabs ol li:nth-child(3)
 {
     animation-name: fadeInNavigation;
     animation-duration: 0.5s;
     animation-fill-mode: both;
-    animation-delay: 400ms;
+    animation-delay: 600ms;
 }
 .nav_tabs ol li:nth-child(4)
 {
     animation-name: fadeInNavigation;
     animation-duration: 0.5s;
     animation-fill-mode: both;
-    animation-delay: 600ms;
+    animation-delay: 800ms;
 }
 
 .nav_tabs a 
@@ -124,12 +162,12 @@
     animation-name: fadeInNavigation;
     animation-duration: 0.5s;
     animation-fill-mode: both;
-    animation-delay: 800ms;
+    animation-delay: 1000ms;
 }
 
 .nav_tabs a:hover
 {
-    background-color: #1C303F;
+    background-color: var(--hover);
 }
 
 @keyframes fadeInNavigation

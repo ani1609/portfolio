@@ -10,16 +10,17 @@
     right: 85px;
     border-radius: 50%;
     cursor: pointer;
-    padding: 7px 9.5px;
+    padding: 7.5px 11px;
     box-sizing: border-box;
     animation-name: topButtonFadeIn;
     animation-duration: 1s;
     animation-fill-mode: both;
+    opacity: 0;
 }
 
 img
 {
-    margin-top: 3px;
+    margin-top: 5px;
     width: 27px;
     height: 25px;
 }

@@ -5,38 +5,44 @@ import MyPhoto from "../images/me1.png";
 
 function About() 
 {
-    const aboutContainerRef = useRef(null);
+    const aboutHeadingRef = useRef(null);
+    const aboutContentsRef = useRef(null);
 
     useEffect(() => 
     {
-        const observer = new IntersectionObserver(
-        (entries) => 
+        const options = 
         {
-            entries.forEach((entry) => 
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.7
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => 
+        {
+            entries.forEach(entry => 
             {
                 if (entry.isIntersecting) 
                 {
-                    aboutContainerRef.current.classList.add('showAbout');
+                    entry.target.classList.add('showAbout');
                 }
             });
-        },
-        { threshold: 0.4 }
-        );
+        }, options);
 
-        observer.observe(aboutContainerRef.current);
+        if (aboutHeadingRef.current) observer.observe(aboutHeadingRef.current);
+        if (aboutContentsRef.current) observer.observe(aboutContentsRef.current);
 
         return () => 
         {
-            observer.disconnect();
+            if (aboutHeadingRef.current) observer.unobserve(aboutHeadingRef.current);
+            if (aboutContentsRef.current) observer.unobserve(aboutContentsRef.current);
         };
-
     }, []);
 
     return (
         <div>
-        <section ref={aboutContainerRef} className='about_container'>
-                <h1>About Me</h1>
-                <div className='about_contents'>
+        <section className='about_container'>
+                <h1 ref={aboutHeadingRef}>About Me</h1>
+                <div className='about_contents' ref={aboutContentsRef}>
                     <div className='about_description'>
                         <p>
                             Hey there, I'm Ankit, a 3rd-year B.Tech student in Computer Science and Engineering (CSE). Web development is my ultimate passion, and I thrive in creating captivating websites with seamless user experiences.

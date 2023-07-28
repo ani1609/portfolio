@@ -21,7 +21,8 @@
     margin: 0px;
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    justify-content: flex-end;
+    gap: 23px;
     list-style-type: none;
     animation-name: fadeLeftBar;
     animation-duration: 0.5s;
@@ -37,7 +38,7 @@
 
 .github a, .linkedin a, .twitter a, .codepen a, .instagram a
 {
-    color: #8892B0;
+    color: var(--para);
     transition: 0.3s ease-in-out;
 }
 
@@ -53,14 +54,14 @@
 
 .hover_effect:hover a
 {
-    color: #64FFDA;
+    color: var(--primary);
 }
 
 .left_line, .right_line
 {
     width: 1px;
     height: 90px;
-    background-color: #8892B0;
+    background-color: var(--para);
 }
 
 .right_bar
@@ -70,6 +71,7 @@
     padding: 0px;
     margin: 0px;
     display: flex;
+    justify-content: flex-end;
     flex-direction: column;
     gap: 25px;
     list-style-type: none;
@@ -83,7 +85,7 @@
 {
     font-family: "SF Mono", monospace;
     font-size: 13px;
-    color: #8892B0;
+    color: var(--para);
     writing-mode: vertical-rl;
     transform-origin: center;
     text-decoration: none;

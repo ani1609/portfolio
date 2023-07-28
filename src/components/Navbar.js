@@ -4,89 +4,85 @@ import '../styles/Navbar.css';
 
 function Navbar() 
 {
-    const [navbarShadow, setNavbarShadow]=useState(false);
+  const [shouldRender, setShouldRender] = useState(false);
+  const [navbarShadow, setNavbarShadow]=useState(false);
+  const [navbarRemove, setNavbarRemove]=useState(false);
+  const [prevScrollY, setPrevScrollY] = useState(0);
 
-    const [navbarRemove, setNavbarRemove]=useState(false);
-    const [scrollDirection, setScrollDirection] = useState('none');
-    const [prevScrollY, setPrevScrollY] = useState(0);
-
-    const handleScroll = () => 
+  const handleScroll = () => 
+  {
+    if (window.scrollY>5)
     {
-      if (window.scrollY>5)
-      {
-        setNavbarShadow(true);
-      }
-      else
-      {
-        setNavbarShadow(false);
-      }
-    
-
-      if (window.scrollY > prevScrollY && window.scrollY > 100) 
-      {
-        setNavbarRemove(true);
-      }
-      else if (window.scrollY < prevScrollY) 
-      {
-        setNavbarRemove(false);
-      }
-      setPrevScrollY(window.scrollY);
-    };
-
-    useEffect(() => 
-    {
-      window.addEventListener('scroll', handleScroll);
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    },[prevScrollY]);
-
-    const [shouldRender, setShouldRender] = useState(false);
-    
-    useEffect(() => 
-    {
-        const timer = setTimeout(() => {
-            setShouldRender(true);
-        }, 100);
-
-        return () => clearTimeout(timer);
-    }, []);
-
-
-    const scrollToAbout = () => 
-    {
-      const aboutSection = document.querySelector('.about_container');
-      const offsetTop = aboutSection.offsetTop;
-      const offsetHeight = aboutSection.offsetHeight;
-      const scrollToPosition = offsetTop - 100;
-      window.scrollTo({
-        top: scrollToPosition,
-        behavior: 'smooth'
-      });
+      setNavbarShadow(true);
     }
-
-    const scrollToMajorProjects = () => 
+    else
     {
-      const majorProjectsSection = document.querySelector('.major_projects_parent');
-      const offsetTop = majorProjectsSection.offsetTop;
-      // const offsetHeight = majorProjectsSection.offsetHeight;
-      const scrollToPosition = offsetTop - 100;
-      window.scrollTo({
-        top: scrollToPosition,
-        behavior: 'smooth'
-      });
+      setNavbarShadow(false);
     }
+  
 
-    // const scrollToExperience = () => {
-    //   const experienceSection = document.querySelector('.experience_container');
-    //   experienceSection.scrollIntoView({ behavior: 'smooth' });
-    // };
+    if (window.scrollY > prevScrollY && window.scrollY > 100) 
+    {
+      setNavbarRemove(true);
+    }
+    else if (window.scrollY < prevScrollY) 
+    {
+      setNavbarRemove(false);
+    }
+    setPrevScrollY(window.scrollY);
+  };
 
-
-    const scrollToContact = () => {
-      const contactSection = document.querySelector('.contact_container');
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+  useEffect(() => 
+  {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
     };
+  },[prevScrollY]);
+
+  
+  useEffect(() => 
+  {
+      const timer = setTimeout(() => {
+          setShouldRender(true);
+      }, 100);
+
+      return () => clearTimeout(timer);
+  }, []);
+
+
+  const scrollToAbout = () => 
+  {
+    const aboutSection = document.querySelector('.about_container');
+    const offsetTop = aboutSection.offsetTop;
+    const scrollToPosition = offsetTop - 20;
+    window.scrollTo({
+      top: scrollToPosition,
+      behavior: 'smooth'
+    });
+  }
+
+  const scrollToMajorProjects = () => 
+  {
+    const majorProjectsSection = document.querySelector('.major_projects_parent');
+    const offsetTop = majorProjectsSection.offsetTop;
+    const scrollToPosition = offsetTop - 20;
+    window.scrollTo({
+      top: scrollToPosition,
+      behavior: 'smooth'
+    });
+  }
+
+  // const scrollToExperience = () => {
+  //   const experienceSection = document.querySelector('.experience_container');
+  //   experienceSection.scrollIntoView({ behavior: 'smooth' });
+  // };
+
+
+  const scrollToContact = () => {
+    const contactSection = document.querySelector('.contact_container');
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  };
 
 
     

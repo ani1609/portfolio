@@ -4,19 +4,42 @@ import '../styles/Navbar.css';
 
 function Navbar() 
 {
-    const [navbar, setNavbar]=useState(false);
-    const showShadow =() => 
+    const [navbarShadow, setNavbarShadow]=useState(false);
+
+    const [navbarRemove, setNavbarRemove]=useState(false);
+    const [scrollDirection, setScrollDirection] = useState('none');
+    const [prevScrollY, setPrevScrollY] = useState(0);
+
+    const handleScroll = () => 
     {
       if (window.scrollY>5)
       {
-        setNavbar(true);
+        setNavbarShadow(true);
       }
       else
       {
-        setNavbar(false);
+        setNavbarShadow(false);
       }
-    }
-    window.addEventListener('scroll',showShadow);
+    
+
+      if (window.scrollY > prevScrollY && window.scrollY > 100) 
+      {
+        setNavbarRemove(true);
+      }
+      else if (window.scrollY < prevScrollY) 
+      {
+        setNavbarRemove(false);
+      }
+      setPrevScrollY(window.scrollY);
+    };
+
+    useEffect(() => 
+    {
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    },[prevScrollY]);
 
     const [shouldRender, setShouldRender] = useState(false);
     
@@ -71,7 +94,10 @@ function Navbar()
 
   return (
     <div>
-      {shouldRender && <nav className={navbar? 'navbar-container navbar-shadow':'navbar-container'}>
+      {shouldRender && 
+      <nav 
+        className={navbarRemove? 'navbar_container navbar_remove' : navbarShadow? 'navbar_container navbar_shadow navbar_bring' : 'navbar_container navbar_bring'}
+      >
         <a href='http://localhost:3000/' className='logo-container'>
           <div></div>
         </a>

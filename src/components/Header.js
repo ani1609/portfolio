@@ -12,7 +12,7 @@ function Header()
     {
         const timer = setTimeout(() => {
             setShouldRender(true);
-        }, 1230);
+        }, 1450);
 
         return () => clearTimeout(timer);
     }, []);

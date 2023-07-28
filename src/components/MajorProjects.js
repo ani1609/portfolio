@@ -53,7 +53,7 @@ function MajorProjects()
         const observer = new IntersectionObserver(([entry], observer) => 
         {
             if (entry.isIntersecting) {
-                entry.target.classList.add('showMajorProjects');
+                entry.target.classList.add('showMajorProjectsHeading');
             }
         }, options);
     

@@ -42,7 +42,6 @@ function MajorProjectsItems(props)
 
     return (
         <div>
-            <section className='major_projects_container'>
             {MajorProject.id % 2 !== 0 ? (
                 <div className='major_project_odd' ref={majorProjectOddRef}>
                     <a href={MajorProject.link} target='_blank'>
@@ -75,9 +74,8 @@ function MajorProjectsItems(props)
                         </ul>
                         <a href={MajorProject.github} target='_blank'><Github/></a>
                     </div>
-                </div>}
-                
-            </section>
+                </div>
+            }
         </div>
     );
 }

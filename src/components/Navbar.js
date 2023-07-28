@@ -44,7 +44,7 @@ function Navbar()
 
     const scrollToMajorProjects = () => 
     {
-      const majorProjectsSection = document.querySelector('.major_projects');
+      const majorProjectsSection = document.querySelector('.major_projects_parent');
       const offsetTop = majorProjectsSection.offsetTop;
       // const offsetHeight = majorProjectsSection.offsetHeight;
       const scrollToPosition = offsetTop - 100;

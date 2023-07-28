@@ -21,44 +21,6 @@
     transition: 0.3s ease-in;
 }
 
-.navbar_remove
-{
-    animation-name: removeNavbar;
-    animation-duration: 0.8s;
-    animation-fill-mode: both;
-}
-
-@keyframes removeNavbar
-{
-    from 
-    {
-        transform: translateY(0px);
-    }
-    to 
-    {
-        transform: translateY(-70px);
-    }
-}
-
-.navbar_bring
-{
-    animation-name: bringNavbar;
-    animation-duration: 0.8s;
-    animation-fill-mode: both;
-}
-
-@keyframes bringNavbar
-{
-    from 
-    {
-        transform: translateY(-70px);
-    }
-    to 
-    {
-        transform: translateY(0px);
-    }
-}
-
 .logo-container
 {
     width: 50px;
@@ -122,7 +84,7 @@
     animation-name: fadeInNavigation;
     animation-duration: 0.5s;
     animation-fill-mode: both;
-    animation-delay: 200ms;
+    /* animation-delay: 200ms; */
 }
 
 .nav_tabs ol li:nth-child(2)
@@ -130,21 +92,21 @@
     animation-name: fadeInNavigation;
     animation-duration: 0.5s;
     animation-fill-mode: both;
-    animation-delay: 400ms;
+    animation-delay: 200ms;
 }
 .nav_tabs ol li:nth-child(3)
 {
     animation-name: fadeInNavigation;
     animation-duration: 0.5s;
     animation-fill-mode: both;
-    animation-delay: 600ms;
+    animation-delay: 400ms;
 }
 .nav_tabs ol li:nth-child(4)
 {
     animation-name: fadeInNavigation;
     animation-duration: 0.5s;
     animation-fill-mode: both;
-    animation-delay: 800ms;
+    animation-delay: 600ms;
 }
 
 .nav_tabs a 
@@ -162,7 +124,7 @@
     animation-name: fadeInNavigation;
     animation-duration: 0.5s;
     animation-fill-mode: both;
-    animation-delay: 1000ms;
+    animation-delay: 800ms;
 }
 
 .nav_tabs a:hover

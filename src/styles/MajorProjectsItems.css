@@ -1,12 +1,4 @@
 
-.major_projects_container
-{
-    width: 100%;
-    margin: auto;
-    position: relative;
-    z-index: 2;
-}
-
 .showMajorProjects
 {
     animation-name: majorProjectsFadeIn;
@@ -21,6 +13,8 @@
     align-items: center;
     display: flex;
     opacity: 0;
+    position: relative;
+    z-index: 2;
 }
 
 .major_project_odd

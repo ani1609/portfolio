@@ -1,75 +1,40 @@
-.minor_projects_container
+.minor_projects_parent
 {
     z-index: 2;
     position: relative;
-    height: 100vh;
     margin: auto;
+    margin-top: 150px;
     width: 75%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 70px;
     /* opacity: 0; */
     transition: opacity 0.5s ease-in-out;
 
 }
 
-.project_heading
+.minor_projects_parent h1
 {
-    text-align: center;
-    width: 100%;
+    margin: 0px;
+    font-family: 'Noto Sans SC', sans-serif;
+    color: var(--heading);
+    font-size: 28px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
-    margin-bottom: 45px;
-    opacity: 0;
+    justify-content: center;
+    gap: 15px;
+    opacity: 1;
 }
 
 .showMinorProjectsHeading
 {
-    animation-name: minorProjectsFadeIn;
+    animation-name: minorProjectsHeadingFadeIn;
     animation-duration: 1s;
     animation-fill-mode: both;
 }
 
-.project_line
-{
-    margin-top: 1px;
-    width: 29%;
-    height: 1px;
-    border-bottom: 1px solid #8892B0;
-
-}
-.project_heading h1
-{
-    font-family: 'Noto Sans SC', sans-serif;
-    color: #CCD6F6;
-    font-size: 28px;
-    margin: 0px;
-}
-
-.project_container
-{
-    height:300px;
-    width: calc(33% - 20px);;
-    margin: auto;
-    display: inline-block;
-    margin: 7.5px 7.5px;
-    transition: 0.3s ease-in-out;
-    border-radius: 5px;
-    overflow: hidden;
-
-}
-
-.project_container:hover
-{
-    transform: translateY(-8px);
-}
-
-.project_container:hover .project_title
-{
-    color: #64FFDA;
-}
-
-@keyframes minorProjectsFadeIn
+@keyframes minorProjectsHeadingFadeIn
 {
     from
     {
@@ -81,4 +46,44 @@
         transform: translateY(0px);
         opacity: 1;
     }
+}
+
+.minor_projects_parent h1::before
+{
+    content: "";
+    height: 1px;
+    width: 31%;
+    background-color: var(--light-navy);
+    margin-top: 5px;
+}
+
+.minor_projects_parent h1::after
+{
+    content: "";
+    height: 1px;
+    width: 31%;
+    background-color: var(--light-navy);
+    margin-top: 5px;
+}
+
+.project_line
+{
+    margin-top: 1px;
+    width: 29%;
+    height: 1px;
+    border-bottom: 1px solid #8892B0;
+
+}
+
+.minor_projects_container
+{
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    row-gap: 30px;
+    column-gap: 30px; 
+    z-index: 2;
+    position: relative;
 }

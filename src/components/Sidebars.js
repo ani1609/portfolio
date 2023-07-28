@@ -16,7 +16,7 @@ function Sidebars()
     {
         const timer = setTimeout(() => {
             setShouldRender(true);
-        }, 2200);
+        }, 2500);
 
         return () => clearTimeout(timer);
     }, []);

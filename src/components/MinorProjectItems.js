@@ -4,64 +4,32 @@ import {ReactComponent as GithubIcon} from "../icons/github.svg";
 import '../index.css';
 import '../styles/MinorProjectItems.css';
 
-class MinorProjectItems extends React.Component
+function MinorProjectItems(props)
 {
+    const {minorProject} = props;
 
-    constructor()
-    {
-        super();
-        this.projectRef = React.createRef();
-    }
-
-
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
-      }
-      
-      handleScroll = () => {
-        const projectsElement = this.projectRef.current;
-        const windowHeight = window.innerHeight;
-        const projectsPosition = projectsElement.getBoundingClientRect().top;
-      
-        if (projectsPosition < windowHeight * 0.7) {
-            projectsElement.classList.add('showMinorProject');
-        }
-      };
-      
-      componentDidUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-      }
-      
-
-
-    render()
-    {
-        const {projectLink, githubLink, title, description, tool1, tool2, tool3, tool4} = this.props.project;
-
-        return (
-            <a ref={this.projectRef} href={projectLink} className='project' target='_blank'>
-                <div className='icons'>
-                    <div className='folder_icon'>
-                        <FolderIcon/>
-                    </div>
-                    <a href={githubLink} className='github_icon' target='_blank'>
-                        <GithubIcon/>
-                    </a>
+    return (
+        <a href={minorProject.link} className='minor_project' target='_blank'>
+            <div className='icons'>
+                <div className='folder_icon'>
+                    <FolderIcon/>
                 </div>
+                <a href={minorProject.githubLink} className='github_icon' target='_blank'>
+                    <GithubIcon/>
+                </a>
+            </div>
 
-                <h2 className='project_title'>{title}</h2>
+            <h2>{minorProject.title}</h2>
 
-                <p>{description}</p>
+            <p>{minorProject.description}</p>
 
-                <div className='tools_used'>
-                    <div className='tool1'>{tool1}</div>
-                    <div className='tool2'>{tool2}</div>
-                    <div className='tool3'>{tool3}</div>
-                    <div className='tool4'>{tool4}</div>
-                </div>
-            </a>
-        );
-    }
+            <ul>
+                {minorProject.techStack.map((tech, index) => (
+                    <li key={index}>{tech}</li>
+                ))}
+            </ul>
+        </a>
+    );
 }
 
 export default MinorProjectItems;

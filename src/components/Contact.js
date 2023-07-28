@@ -7,33 +7,30 @@ function Contact()
 {
 
     const contactRef = useRef(null);
+
     useEffect(() => 
     {
         const options = 
         {
             root: null,
             rootMargin: '0px',
-            threshold: 0.5
+            threshold: 0.9
         };
-
-        const observer = new IntersectionObserver((entries, observer) => 
+    
+        const observer = new IntersectionObserver(([entry], observer) => 
         {
-            entries.forEach(entry => 
-                {
-                    if (entry.isIntersecting) 
-                    {
-                        entry.target.classList.add('showContact');
-                    }
-                });
+            if (entry.isIntersecting) {
+                entry.target.classList.add('showMajorProjectsHeading');
+            }
         }, options);
-
+    
         if (contactRef.current) observer.observe(contactRef.current);
-
+    
         return () => 
         {
             if (contactRef.current) observer.unobserve(contactRef.current);
         };
-    }, []);
+    }, []);   
 
     return (
         <div>

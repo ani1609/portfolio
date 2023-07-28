@@ -10,7 +10,7 @@
     right: 85px;
     border-radius: 50%;
     cursor: pointer;
-    padding: 7.5px 11px;
+    padding: 6.5px 10px;
     box-sizing: border-box;
     animation-name: topButtonFadeIn;
     animation-duration: 1s;
@@ -21,8 +21,8 @@
 img
 {
     margin-top: 5px;
-    width: 27px;
-    height: 25px;
+    width: 22px;
+    height: 20px;
 }
 
 @keyframes topButtonFadeIn

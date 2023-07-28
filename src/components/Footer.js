@@ -7,11 +7,9 @@ function Footer()
 {
 
     return (
-        <div>
-            <section className='footer_container'>
-                <a href='https://github.com/ani1609/resume' target='_blank' >Designed & Built by Ankit Kr. Chowdhury</a>
-            </section>
-        </div>
+        <section className='footer_container'>
+            <a href='https://github.com/ani1609/resume' target='_blank' >Designed & Built by Ankit Kr. Chowdhury</a>
+        </section>
     );
 }
 

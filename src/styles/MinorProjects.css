@@ -10,6 +10,7 @@
     justify-content: flex-start;
     gap: 70px;
     transition: opacity 0.5s ease-in-out;
+    box-sizing: border-box;
 
 }
 
@@ -85,4 +86,34 @@
     column-gap: 20px; 
     z-index: 2;
     position: relative;
+}
+
+
+
+/* ------responsiveness------ */
+
+@media only screen and (max-width: 1080px)
+{
+    .minor_projects_parent
+    {
+        width: 100%;
+        padding: 0px 100px;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .minor_projects_parent
+    {
+        width: 100%;
+        padding: 0px 50px;
+    }
+}
+
+@media only screen and (max-width: 480px)
+{
+    .minor_projects_parent
+    {
+        padding: 0px 25px;
+    }
 }

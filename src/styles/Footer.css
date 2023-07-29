@@ -6,6 +6,7 @@
     text-align: center;
     padding: 20px 0px;
     height: auto;
+    box-sizing: border-box;
 }
 
 .footer_container a
@@ -25,4 +26,15 @@
 {
     color: var(--primary);
 
+}
+
+
+/* -------responsiveness------- */
+
+@media screen and (max-width: 1080px)
+{
+    .footer_container
+    {
+        /* width: ; */
+    }
 }

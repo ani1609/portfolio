@@ -1,6 +1,8 @@
 .sidebar_container
 {
     position: fixed;
+    bottom: 0;
+    left: 0;
     background-color: transparent;
     margin: auto;
     width: 100%;
@@ -125,3 +127,22 @@
     }
 }
 
+
+/* ------responsiveness------ */
+
+@media only screen and (max-width: 1080px)
+{
+    .sidebar_container
+    {
+        width: 100%;
+        padding: 0px 30px;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .sidebar_container
+    {
+        display: none;
+    }
+}

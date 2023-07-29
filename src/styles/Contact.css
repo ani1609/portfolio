@@ -80,3 +80,15 @@
         transform: translateY(0px);
     }
 }
+
+
+/* -------- repsonsiveness -------- */
+
+@media screen and (max-width: 1080px)
+{
+    .contact_container
+    {
+        /* width: 100%; */
+        /* padding: 0px 100px; */
+    }
+}

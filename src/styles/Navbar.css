@@ -3,6 +3,8 @@
     background-color: #0E192D;
     z-index: 10;
     position: fixed;
+    top: 0;
+    left: 0;
     padding-left: 50px;
     padding-right: 50px;
     height: 70px;
@@ -169,13 +171,12 @@
 
 /* --------responsiveness-------- */
 
-/* ---1080px--- */
-
 @media only screen and (max-width: 1080px)
 {
     .navbar_container
     {
-        padding: 0px 40px;
+        width: 100%;
+        padding: 0px 30px;
     }
 }
 
@@ -185,6 +186,7 @@
 
 @media only screen and (max-width: 768px)
 {
+
     .navbar_container
     {
         padding: 0px 25px;

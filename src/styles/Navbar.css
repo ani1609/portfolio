@@ -202,6 +202,8 @@
         animation-fill-mode: both;
         animation-delay: 400ms;
         opacity: 0;
+        position: relative;
+        z-index: 5;
     }
 
     @keyframes hamIconFadeIn
@@ -221,6 +223,7 @@
 
     .ham_tabs
     {
+        z-index: 4;
         height: 100vh;
         width: min(75vw, 400px);
         position: fixed;
@@ -307,5 +310,34 @@
         color: var(--primary);
         font-size: 31px;
         cursor: pointer;
+    }
+
+    .blur
+    {
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        animation-name: blurFadeIn;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+        /* pointer-events: none; */
+    }
+
+    @keyframes blurFadeIn
+    {
+        from 
+        {
+            backdrop-filter: blur(0px);
+            opacity: 0;
+        }
+        to 
+        {
+    
+            backdrop-filter: blur(3px);
+            opacity: 1;
+        }
     }
 }

@@ -202,7 +202,7 @@ header
     .header_description
     {
         width: 470px;
-        font-size: 15.5px;
+        font-size: 15px;
     }
 }
 
@@ -212,11 +212,6 @@ header
     {
         line-height: 75.5px;
         font-size: 52px;
-    }
-    .header_description
-    {
-        /* width: 470px;
-        font-size: 15.5px; */
     }
 }
 
@@ -230,7 +225,6 @@ header
     .header_description
     {
         width: 450px;
-        font-size: 15.5px;
     }
     .greeting
     {
@@ -296,7 +290,7 @@ header
     .name, .what_i_do
     {
         line-height: 7.5vw;
-        font-size: clamp(22px, 6vw, 40px);
+        font-size: clamp(21px, 6vw, 40px);
     }
     .what_i_do
     {
@@ -305,6 +299,7 @@ header
     .header_description
     {
         width: 400px;
+        font-size: 15px;
     }
     .greeting
     {
@@ -314,10 +309,18 @@ header
 
 @media only screen and (max-width: 540px)
 {
+    .name, .what_i_do
+    {
+        font-size: clamp(20px, 6vw, 27px);
+    }
+}
+
+
+@media only screen and (max-width: 480px)
+{
     header
     {
         box-sizing: border-box;
-        /* padding-bottom: 150px; */
         width: 90%;
     }
     .name
@@ -342,65 +345,3 @@ header
     }
 }
 
-
-
-/* 
-@media only screen and (max-width: 940px)
-{
-    .name, .what_i_do
-    {
-        font-size: 52px;
-    }
-    .header_description
-    {
-        width: 450px;
-        font-size: 15.4px;
-    }
-}
-
-@media only screen and (max-width: 865px)
-{
-    .name, .what_i_do
-    {
-        font-size: 48px;
-    }
-}
-
-
-@media only screen and (max-width: 818px)
-{
-    .name, .what_i_do
-    {
-        font-size: 48px;
-    }
-}
-
-@media only screen and (max-width: 768px)
-{
-    .name, .what_i_do
-    {
-        font-size: clamp(20px, 6vw, 45px);
-    }
-    .header_description
-    {
-        margin-top: 15px;
-        font-size: 15px;
-    }
-    header
-    {
-        width: 85%;
-    }
-}
-
-@media only screen and (max-width: 540px)
-{
-    .header_description
-    {
-        width: 100%;
-        font-size: 14.5px;
-    }
-    header
-    {
-        width: 90%;
-    }
-} */

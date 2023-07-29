@@ -2,8 +2,7 @@ import React, {useState, useEffect, useRef} from 'react';
 import '../index.css';
 import '../styles/Navbar.css';
 import HamLine from '../images/ham.png';
-import { HiMenu, HiBars3} from 'react-icons/hi';
-import { HiBars3BottomRight} from 'react-icons/hi';
+import Logo from '../images/logo.jpg';
 
 
 function Navbar() 
@@ -139,7 +138,7 @@ function Navbar()
         className={navbarShadow ? 'navbar_container navbar_shadow' : 'navbar_container'}
       >
         <a href='http://localhost:3000/' className='logo-container'>
-          <div></div>
+
         </a>
         <div className='nav_tabs'>
             <ol>

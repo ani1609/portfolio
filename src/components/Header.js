@@ -24,7 +24,7 @@ function Header()
         {shouldRender&&<h1 className='name'>Ankit Kr. Chowdhury.</h1>}
         {shouldRender&&<h1 className='what_i_do'>I build things for the web.</h1>}
         {shouldRender&&<p className='header_description'>
-        Enthusiastic student web developer with a keen interest in learning and applying front-end and back-end technologies. Dedicated to honing skills and creating innovative web solutions that captivate users and solve real-world challenges.
+          Enthusiastic student web developer with a keen interest in learning and applying front-end and back-end technologies. Dedicated to honing skills creating web solutions that captivate users solve real-world challenges.
         </p>}
         {shouldRender&&<a href='google.com' className='sample_button'>Dummy Button</a>}
         {/* {shouldRender && <div className='alien'>

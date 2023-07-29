@@ -28,7 +28,7 @@ header
 
 .name
 {
-    line-height: 88px;
+    line-height: 87px;
     margin: 10px 0px 0px 0px;
     font-size: 60px;
     font-family: 'Noto Sans SC', sans-serif;
@@ -37,11 +37,13 @@ header
     animation-duration: 0.5s;
     animation-fill-mode: both;
     animation-delay: 400ms;
+    letter-spacing: 1px;
+    word-spacing: 5px;
 }
 
 .what_i_do
 {
-    line-height: 88px;
+    line-height: 87px;
     margin: 0px;
     font-size: 60px;
     font-family: 'Noto Sans SC', sans-serif;
@@ -50,6 +52,8 @@ header
     animation-duration: 0.5s;
     animation-fill-mode: both;
     animation-delay: 600ms;
+    word-spacing: 5px;
+    letter-spacing: 1px;
 }
 
 .header_description
@@ -57,8 +61,10 @@ header
     margin-top: 20px;
     margin-bottom: 0px;
     line-height: 25px;
+    letter-spacing: 0.6px;
+    word-spacing: 0.8px;
     font-size: 16px;
-    width: 50%;
+    width: 550px;
     color: var(--para);
     font-family: 'Source Sans Pro', sans-serif;
     animation-name: fadeInHeader;
@@ -72,15 +78,15 @@ header
     /* z-index: 5; */
     padding-top: 16px;
     padding-bottom: 16px;
-    border-radius: 3.5px;
-    width: 20%;
+    border-radius: 4px;
+    width: 150px;
     text-align: center;
-    color: #64FFDA;
+    color: var(--primary);
     text-decoration: none;
-    border: 1px solid #64FFDA;
+    border: 1px solid var(--primary);
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     font-size: 14px;
-    margin-top: 55px;
+    margin-top: 50px;
     animation-name: fadeInHeader;
     animation-duration: 0.5s;
     animation-fill-mode: both;
@@ -154,3 +160,247 @@ header
     }
 }
   
+/* font-size: clamp(20px, 6vw, 45px); */
+/* --------responsiveness-------------- */
+
+/* ------1320px------- */
+@media only screen and (max-width: 1320px)
+{
+    .name, .what_i_do
+    {
+        font-size: 58px;
+        line-height: 84px;
+    }
+    .header_description
+    {
+        width: 520px;
+    }
+}
+
+/* ------1200px------- */
+@media only screen and (max-width: 1200px)
+{
+    .name, .what_i_do
+    {
+        line-height: 81px;
+        font-size: 56px;
+    }
+    .header_description
+    {
+        width: 490px;
+    }
+}
+
+/* ------1080px------- */
+@media only screen and (max-width: 1080px)
+{
+    .name, .what_i_do
+    {
+        line-height: 78px;
+        font-size: 54px;
+    }
+    .header_description
+    {
+        width: 470px;
+        font-size: 15.5px;
+    }
+}
+
+@media only screen and (max-width: 973px)
+{
+    .name, .what_i_do
+    {
+        line-height: 75.5px;
+        font-size: 52px;
+    }
+    .header_description
+    {
+        /* width: 470px;
+        font-size: 15.5px; */
+    }
+}
+
+@media only screen and (max-width: 940px)
+{
+    .name, .what_i_do
+    {
+        line-height: 72.5px;
+        font-size: 50px;
+    }
+    .header_description
+    {
+        width: 450px;
+        font-size: 15.5px;
+    }
+    .greeting
+    {
+        font-size: 15.5px;
+    }
+}
+
+@media only screen and (max-width: 906px)
+{
+    .name, .what_i_do
+    {
+        line-height: 69.1px;
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 873px)
+{
+    .name, .what_i_do
+    {
+        line-height: 66.1px;
+        font-size: 46px;
+    }
+}
+
+@media only screen and (max-width: 839px)
+{
+    .name, .what_i_do
+    {
+        line-height: 63.1px;
+        font-size: 44px;
+    }
+    .greeting
+    {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 806px)
+{
+    .name, .what_i_do
+    {
+        line-height: 60.1px;
+        font-size: 42px;
+    }
+}
+
+@media only screen and (max-width: 772px)
+{
+    .name, .what_i_do
+    {
+        line-height: 57.6px;
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    header
+    {
+        width: 85%;
+    }
+    .name, .what_i_do
+    {
+        line-height: 7.5vw;
+        font-size: clamp(22px, 6vw, 40px);
+    }
+    .what_i_do
+    {
+        margin-top: 6px;
+    }
+    .header_description
+    {
+        width: 400px;
+    }
+    .greeting
+    {
+        font-size: 14.5px;
+    }
+}
+
+@media only screen and (max-width: 540px)
+{
+    header
+    {
+        box-sizing: border-box;
+        /* padding-bottom: 150px; */
+        width: 90%;
+    }
+    .name
+    {
+        margin-top: 15px;
+
+    }
+    .what_i_do
+    {
+        margin-top: 10px;
+    }
+    .header_description
+    {
+        line-height: 20px;
+        font-size: 14px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .greeting
+    {
+        font-size: 14px;
+    }
+}
+
+
+
+/* 
+@media only screen and (max-width: 940px)
+{
+    .name, .what_i_do
+    {
+        font-size: 52px;
+    }
+    .header_description
+    {
+        width: 450px;
+        font-size: 15.4px;
+    }
+}
+
+@media only screen and (max-width: 865px)
+{
+    .name, .what_i_do
+    {
+        font-size: 48px;
+    }
+}
+
+
+@media only screen and (max-width: 818px)
+{
+    .name, .what_i_do
+    {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .name, .what_i_do
+    {
+        font-size: clamp(20px, 6vw, 45px);
+    }
+    .header_description
+    {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    header
+    {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 540px)
+{
+    .header_description
+    {
+        width: 100%;
+        font-size: 14.5px;
+    }
+    header
+    {
+        width: 90%;
+    }
+} */

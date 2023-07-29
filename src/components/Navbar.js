@@ -63,6 +63,19 @@ function Navbar()
     setHamMenu(false);
   };
 
+  useEffect(() => {
+    const toggleBodyScroll = (scrollable) => {
+      document.body.style.overflow = scrollable ? "auto" : "hidden";
+    };
+
+    if (hamMenu) {
+      toggleBodyScroll(false);
+    } else {
+      toggleBodyScroll(true);
+    }
+
+  }, [hamMenu]);
+
 
   const handleScroll = () => 
   {
@@ -113,6 +126,12 @@ function Navbar()
     toggleHamMenu();
   }
 
+  const handleMenuClick = () => 
+  {
+    setHamMenu(false);
+  };
+
+
   return (
     <div>
       {shouldRender && 
@@ -136,12 +155,13 @@ function Navbar()
           <i class="fa-solid fa-bars"></i>
         </div>
 
+        {hamMenu && <div className='blur' onClick={handleMenuClick}></div>}
+
         <div className={hamMenu? 'ham_tabs ham_tabs_show':'ham_tabs ham_tabs_hide'}>
 
           <div className='cross_icon' onClick={handleCrossIconClick}>
             <i class="fa-solid fa-xmark"></i>
           </div>
-
           <ol>
               <li onClick={scrollToAbout}>About</li>
               <li>Experience</li>

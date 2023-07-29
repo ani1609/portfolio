@@ -12,15 +12,15 @@ import TopButton from './TopButton';
 function App() {
   return (
     <div className='App'>
-      {/* <Navbar/> */}
+      <Navbar/>
       <Header/>
-      {/* <TopButton/> */}
+      <TopButton/>
       <Sidebars/>
       <About/>
-      {/* <MajorProjects/> */}
-      {/* <MinorProjects/> */}
-      {/* <Contact/> */}
-      {/* <Footer/> */}
+      <MajorProjects/>
+      <MinorProjects/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }

@@ -6,27 +6,27 @@ import Alien from '../icons/alien2.png';
 
 function Header() 
 {
-    const [shouldRender, setShouldRender] = useState(false);
+    const [shouldRender, setShouldRender] = useState(true);
     
-    useEffect(() => 
-    {
-        const timer = setTimeout(() => {
-            setShouldRender(true);
-        }, 1250);
+    // useEffect(() => 
+    // {
+    //     const timer = setTimeout(() => {
+    //         setShouldRender(true);
+    //     }, 1250);
 
-        return () => clearTimeout(timer);
-    }, []);
+    //     return () => clearTimeout(timer);
+    // }, []);
 
   return (
 
       <header>
-        {shouldRender&&<h4 className='greeting'>Hi, my name is </h4>}
-        {shouldRender&&<h1 className='name'>Ankit Kr. Chowdhury.</h1>}
-        {shouldRender&&<h1 className='what_i_do'>I build things for the web.</h1>}
-        {shouldRender&&<p className='header_description'>
+        <h4>Hi, my name is </h4>
+        <h1>Ankit Kr. Chowdhury.</h1>
+        <h2>I build things for the web.</h2>
+        <p>
           Enthusiastic student web developer with a keen interest in learning and applying front-end and back-end technologies. Dedicated to honing skills creating web solutions that captivate users solve real-world challenges.
-        </p>}
-        {shouldRender&&<a href='google.com' className='sample_button'>Dummy Button</a>}
+        </p>
+        <a href='google.com'>Dummy Button</a>
         {/* {shouldRender && <div className='alien'>
           <img src={Alien} alt="upward arrow" />
         </div>} */}

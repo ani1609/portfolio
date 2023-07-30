@@ -13,7 +13,7 @@ header
     box-sizing: border-box;
 }
 
-.greeting
+header h4
 {
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
@@ -23,10 +23,10 @@ header
     animation-name: fadeInHeader;
     animation-duration: 0.5s;
     animation-fill-mode: both;
-    animation-delay: 200ms;
+    animation-delay: 1000ms;
 }
 
-.name
+header h1
 {
     line-height: 87px;
     margin: 10px 0px 0px 0px;
@@ -36,12 +36,12 @@ header
     animation-name: fadeInHeader;
     animation-duration: 0.5s;
     animation-fill-mode: both;
-    animation-delay: 400ms;
+    animation-delay: 1200ms;
     letter-spacing: 1px;
     word-spacing: 5px;
 }
 
-.what_i_do
+header h2
 {
     line-height: 87px;
     margin: 0px;
@@ -51,12 +51,12 @@ header
     animation-name: fadeInHeader;
     animation-duration: 0.5s;
     animation-fill-mode: both;
-    animation-delay: 600ms;
+    animation-delay: 1400ms;
     word-spacing: 5px;
     letter-spacing: 1px;
 }
 
-.header_description
+header p
 {
     margin-top: 20px;
     margin-bottom: 0px;
@@ -70,10 +70,10 @@ header
     animation-name: fadeInHeader;
     animation-duration: 0.5s;
     animation-fill-mode: both;
-    animation-delay: 800ms;
+    animation-delay: 1600ms;
 }
 
-.sample_button
+header a
 {
     /* z-index: 5; */
     padding-top: 16px;
@@ -90,11 +90,11 @@ header
     animation-name: fadeInHeader;
     animation-duration: 0.5s;
     animation-fill-mode: both;
-    animation-delay: 1000ms;
+    animation-delay: 1800ms;
     transition: 0.3s ease-in-out;
 }
 
-.sample_button:hover
+header a:hover
 {
     background-color: var(--hover);
 }
@@ -173,6 +173,23 @@ header
         width: 100%;
         padding: 0px 100px;
     }
+
+    header h1, header h2
+    {
+        line-height: normal;
+        font-size: clamp(19.5px, 5vw, 59px);
+    }
+
+    header h4
+    {
+        font-size: 15px;
+    }
+
+    header p
+    {
+        font-size: 15.5px;
+    }
+
 }
 
 @media only screen and (max-width: 768px)
@@ -181,7 +198,50 @@ header
     {
         padding: 0px 50px;
     }
+
+    header h4
+    {
+        font-size: 14px;
+        animation-delay: 500ms;
+    }
+
+    header h1
+    {
+        margin-top: 10px;
+        animation-delay: 700ms;
+    }
+
+    header h2
+    {
+        animation-delay: 900ms;
+
+    }
+
+    header p
+    {
+        animation-delay: 1100ms;
+        font-size: 15px;
+
+    }
+
+    header a
+    {
+        font-size: 13.5px;
+        animation-delay: 1300ms;
+
+    }
+
 }
+
+@media only screen and (max-width: 650px)
+{
+    header p
+    {
+        width: 100%;
+    }
+    
+}
+
 
 @media only screen and (max-width: 480px)
 {
@@ -189,4 +249,27 @@ header
     {
         padding: 0px 25px;
     }
+
+    header h4
+    {
+        font-size: 13px;
+    }
+
+    header h2
+    {
+        margin-top: 5px;
+    }
+
+    header p
+    {
+        margin-top: 13px;
+        width: 100%;
+        font-size: 14.5px;
+    }
+    header a
+    {
+        font-size: 13px;
+    }
 }
+
+

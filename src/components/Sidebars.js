@@ -16,15 +16,14 @@ function Sidebars()
     {
         const timer = setTimeout(() => {
             setShouldRender(true);
-        }, 2500);
+        }, 2350);
 
         return () => clearTimeout(timer);
     }, []);
     
   return (
     <div>
-      {shouldRender && <div className='sidebar_container'>
-        <ul className='left_bar'>
+        {shouldRender && <ul className='left_bar'>
             <li className='github hover_effect'>
               <a href='' target='_blank'><Github/></a>
             </li>
@@ -43,17 +42,16 @@ function Sidebars()
             <li className='left_line'>
 
             </li>
-        </ul>
+        </ul>}
 
-        <ul className='right_bar'>
+        {shouldRender && <ul className='right_bar'>
             <li className='email hover_effect'>
               <a href='mailto:rakesh856100@gmail.com'>rakesh856100@gmail.com</a>
             </li>
             <li className='right_line'>
               
             </li>
-        </ul>
-      </div>}
+        </ul>}
     </div>
   );
 }

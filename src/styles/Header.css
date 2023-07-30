@@ -177,7 +177,7 @@ header a:hover
     header h1, header h2
     {
         line-height: normal;
-        font-size: clamp(19.5px, 5vw, 59px);
+        font-size: clamp(22px, 5vw, 59px);
     }
 
     header h4
@@ -255,9 +255,17 @@ header a:hover
         font-size: 13px;
     }
 
+    header h1
+    {
+        font-size: fit-content;
+        white-space: nowrap;
+    }
+
     header h2
     {
         margin-top: 5px;
+        font-size: fit-content;
+        white-space: nowrap;
     }
 
     header p

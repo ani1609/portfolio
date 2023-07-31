@@ -16,7 +16,7 @@ function Sidebars()
     {
         const timer = setTimeout(() => {
             setShouldRender(true);
-        }, 2350);
+        }, 2450);
 
         return () => clearTimeout(timer);
     }, []);
@@ -28,16 +28,16 @@ function Sidebars()
               <a href='' target='_blank'><Github/></a>
             </li>
             <li className='linkedin hover_effect'>
-              <a href='' target='_blank'><Linkedin/></a>
-            </li>
-            <li className='twitter hover_effect'>
-              <a href='' target='_blank'><Twitter/></a>
-            </li>
-            <li className='codepen hover_effect'>
               <a href='' target='_blank'><Codepen/></a>
             </li>
-            <li className='instagram hover_effect'>
+            <li className='twitter hover_effect'>
+              <a href='' target='_blank'><Linkedin/></a>
+            </li>
+            <li className='codepen hover_effect'>
               <a href='' target='_blank'><Instagram/></a>
+            </li>
+            <li className='instagram hover_effect'>
+              <a href='' target='_blank'><Twitter/></a>
             </li>
             <li className='left_line'>
 

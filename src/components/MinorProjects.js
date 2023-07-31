@@ -45,30 +45,6 @@ function MinorProjects ()
             techStack: ['HTML', 'CSS', 'JavaScript', 'ReactJS'],
             link: "",
             github: 'https://google.com'
-        },
-        {
-            id: 6,
-            title: 'Calculator',
-            description: 'This is a calculator. We are going to use it to pass props to our SVG and also to share logic later point in time. We are going to use it to pass props.',
-            techStack: ['HTML', 'CSS', 'JavaScript', 'ReactJS'],
-            link: "",
-            github: 'https://google.com'
-        },
-        {
-            id: 7,
-            title: 'Calculator',
-            description: 'This is a calculator. We are going to use it to pass props to our SVG and also to share logic later point in time. We are going to use it to pass props.',
-            techStack: ['HTML', 'CSS', 'JavaScript', 'ReactJS'],
-            link: "",
-            github: 'https://google.com'
-        },
-        {
-            id: 8,
-            title: 'Calculator',
-            description: 'This is a calculator. We are going to use it to pass props to our SVG and also to share logic later point in time. We are going to use it to pass props.',
-            techStack: ['HTML', 'CSS', 'JavaScript', 'ReactJS'],
-            link: "",
-            github: 'https://google.com'
         }
     ]
     

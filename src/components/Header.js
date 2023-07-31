@@ -6,16 +6,11 @@ import Alien from '../icons/alien2.png';
 
 function Header() 
 {
-    const [shouldRender, setShouldRender] = useState(true);
     
-    // useEffect(() => 
-    // {
-    //     const timer = setTimeout(() => {
-    //         setShouldRender(true);
-    //     }, 1250);
-
-    //     return () => clearTimeout(timer);
-    // }, []);
+  useEffect(() =>
+  {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
 
@@ -27,7 +22,7 @@ function Header()
           Enthusiastic student web developer with a keen interest in learning and applying front-end and back-end technologies. Dedicated to honing skills creating web solutions that captivate users solve real-world challenges.
         </p>
         <a href='google.com'>Dummy Button</a>
-        {/* {shouldRender && <div className='alien'>
+        {/*<div className='alien'>
           <img src={Alien} alt="upward arrow" />
         </div>} */}
         

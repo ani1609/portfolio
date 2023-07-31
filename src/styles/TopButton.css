@@ -16,6 +16,8 @@
     animation-duration: 1s;
     animation-fill-mode: both;
     opacity: 0;
+    box-shadow: 0 0px 13px 2px rgba(2,12,27,0.7);
+
 }
 
 img
@@ -36,5 +38,24 @@ img
     {
          transform: translateY(0px);
          opacity: 1;
+    }
+}
+
+
+/* -----responsiveness----- */
+
+@media only screen and (max-width: 768px)
+{
+    .Top_Button_Container button
+    {
+        right: 50px;
+    }
+}
+
+@media only screen and (max-width: 480px)
+{
+    .Top_Button_Container button
+    {
+        right: 25px;
     }
 }

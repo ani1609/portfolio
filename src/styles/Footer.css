@@ -31,10 +31,26 @@
 
 /* -------responsiveness------- */
 
-@media screen and (max-width: 1080px)
+@media screen and (max-width: 768px)
 {
-    .footer_container
+    .footer_container a
     {
-        /* width: ; */
+        font-size: 11.5px;
+    }
+}
+
+@media screen and (max-width: 650px)
+{
+    .footer_container a
+    {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 48px)
+{
+    .footer_container a
+    {
+        font-size: 10px;
     }
 }

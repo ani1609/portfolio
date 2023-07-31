@@ -14,7 +14,7 @@ function Contact()
         {
             root: null,
             rootMargin: '0px',
-            threshold: 0.6
+            threshold: 0.4
         };
     
         const observer = new IntersectionObserver(([entry], observer) => 
@@ -36,8 +36,8 @@ function Contact()
         <section className='contact_container' ref={contactRef}>
 
             <h1>Get In Touch</h1>
-            <p>Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-            <a href='mailto:rakesh856100@gmail.com'>Say Hello</a>
+            <p>Feel free to reach out to me through the contact button below. I'm excited to connect and discuss any web development opportunities or projects you have in mind. Let's build something great together!</p>
+            <a href='mailto:rakesh856100@gmail.com'>Let's Connect</a>
 
         </section>
     );

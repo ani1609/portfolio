@@ -27,6 +27,16 @@
     animation-fill-mode: both;
 }
 
+.contact_container h4
+{
+    font-family: "SF Mono", monospace;
+    font-size: 22px;
+    color: var(--primary);
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
 .contact_container h1
 {
     font-family: 'Noto Sans SC', sans-serif;
@@ -93,6 +103,11 @@
 
 @media screen and (max-width: 1080px)
 {
+    .contact_container h4
+    {
+        font-size: 20px;
+    }
+
     .contact_container h1
     {
         font-size: clamp(30px, 5vw, 45px);
@@ -106,6 +121,11 @@
 
 @media screen and (max-width: 768px)
 {
+    .contact_container h4
+    {
+        font-size: 18px;
+    }
+
     .contact_container p
     {
         font-size: 15px;
@@ -134,6 +154,12 @@
 
 @media only screen and (max-width: 480px)
 {
+    .contact_container h4
+    {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
     .contact_container p
     {
         font-size: 14px;

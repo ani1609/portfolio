@@ -7,7 +7,7 @@
     position: fixed;
     z-index: 5;
     bottom: 20px;
-    right: 85px;
+    right: 90px;
     border-radius: 50%;
     cursor: pointer;
     padding: 6.5px 10px;
@@ -44,11 +44,19 @@ img
 
 /* -----responsiveness----- */
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 1080px)
 {
     .Top_Button_Container button
     {
         right: 50px;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .Top_Button_Container button
+    {
+        right: 30px;
     }
 }
 

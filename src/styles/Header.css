@@ -106,7 +106,7 @@ header a:hover
     animation-name: alienSlideIn;
     animation-duration: 4s;
     animation-fill-mode: both;
-    animation-delay: 1600ms;
+    /* animation-delay: 1600ms; */
 }
 
 

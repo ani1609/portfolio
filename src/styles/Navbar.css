@@ -58,21 +58,19 @@
     width: 30px;
     background-color: var(--primary);
     border-radius: 1px;
-    transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 .remove
 {
     opacity: 0;
-    /* display: none; */
-    /* transition: 0.5s ease-in-out; */
 }
 
 
 .rotateDown
 {
     animation-name: rotateDownAnimation;
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
     animation-fill-mode: forwards;
 
 }
@@ -94,7 +92,7 @@
 .rotateUp
 {
     animation-name: rotateUpAnimation;
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
     animation-fill-mode: forwards;
 }
 
@@ -114,7 +112,7 @@
 .removeRotateDown
 {
     animation-name: removeRotateDownAnimation;
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
     animation-fill-mode: forwards;
 
 }
@@ -135,7 +133,7 @@
 .removeRotateUp
 {
     animation-name: removeRotateUpAnimation;
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
     animation-fill-mode: forwards;
 }
 
@@ -169,13 +167,13 @@
 
 .ham_tabs
 {
+    display: none;
     z-index: 4;
     height: 100vh;
     width: min(75vw, 400px);
     position: fixed;
     top: 0;
     right: 0;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -267,7 +265,7 @@
     height: 100vh;
     width: 100vw;
     animation-name: blurFadeIn;
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
     animation-fill-mode: both;
     /* pointer-events: none; */
 }
@@ -282,7 +280,7 @@
     to 
     {
 
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(2px);
         opacity: 1;
     }
 }
@@ -399,13 +397,11 @@
 {
     from 
     {
-        /* transform: translateY(-10px); */
         opacity: 0;
     }
     to 
     {
 
-        /* transform: translateY(0px); */
         opacity: 1;
     }
 }
@@ -422,6 +418,16 @@
     {
         width: 100%;
         padding: 0px 30px;
+    }
+
+    .nav_tabs ol li
+    {
+        font-size: 13px;
+    }
+
+    .nav_tabs a
+    {
+        font-size: 13px;
     }
 }
 
@@ -446,6 +452,11 @@
     {
         display: flex;
         
+    }
+
+    .ham_tabs
+    {
+        display: flex;
     }
 
     

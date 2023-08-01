@@ -11,7 +11,10 @@ function Navbar()
   const [navbarShadow, setNavbarShadow]=useState(false);
   const [hambergerIcon, setHambergerIcon]=useState(false);
   const [hamMenu, setHamMenu]=useState(false);
-  const hamIconRef = useRef(null);
+  const [New, setNew]=useState(true);
+  const hamSpan1 = useRef(null);
+  const hamSpan2 = useRef(null);
+  const hamSpan3 = useRef(null);
   const crossIconRef = useRef(null);
 
   
@@ -115,20 +118,50 @@ function Navbar()
     setHamMenu(!hamMenu);
   }
 
+  useEffect(() => 
+  {
+    if (!New)
+    {
+      console.log(hamMenu);
+      if (hamMenu)
+      {
+        hamSpan1.current.classList.add('rotateDown');
+        hamSpan2.current.classList.add('remove');
+        hamSpan3.current.classList.add('rotateUp');
+      }
+      else 
+      {
+        hamSpan1.current.classList.add('removeRotateDown');
+        hamSpan2.current.classList.remove('remove');
+        hamSpan3.current.classList.add('removeRotateUp');
+      }
+    }
+
+  }, [hamMenu]);
+
   const handleHamIconClick = () =>
   {
     toggleHamMenu();
+    setNew(false);
   }
 
-  const handleCrossIconClick = () =>
-  {
-    toggleHamMenu();
-  }
-
-  const handleMenuClick = () => 
-  {
-    setHamMenu(false);
-  };
+  
+  // useEffect(() => 
+  // {
+  //   console.log("check")
+  //   if (hamMenu) 
+  //   {
+  //     // hamSpan1.current.classList.add('rotatedown');
+  //     // hamSpan2.current.classList.add('remove');
+  //     // hamSpan3.current.classList.add('rotateup');
+  //   }
+  //   else 
+  //   {
+  //     // hamSpan1.current.classList.add('rotateup');
+  //     // hamSpan2.current.classList.remove('remove');
+  //     // hamSpan3.current.classList.add('rotatedown');
+  //   }
+  // }, [hamMenu]);
 
 
   return (
@@ -151,16 +184,19 @@ function Navbar()
         </div>
 
         <div className='ham_icon' onClick={handleHamIconClick}>
-          <i class="fa-solid fa-bars"></i>
+          {/* <i class="fa-solid fa-bars"></i> */}
+          <span className={hamMenu ? 'rotateDown':''} ref={hamSpan1}></span>
+          <span className={hamMenu ? 'remove':''} ref={hamSpan2}></span>
+          <span className={hamMenu ? 'rotateUp':''} ref={hamSpan3}></span>
         </div>
 
-        {hamMenu && <div className='blur' onClick={handleMenuClick}></div>}
+        {hamMenu && <div className='blur' onClick={toggleHamMenu}></div>}
 
         <div className={hamMenu? 'ham_tabs ham_tabs_show':'ham_tabs ham_tabs_hide'}>
 
-          <div className='cross_icon' onClick={handleCrossIconClick}>
+          {/* <div className='cross_icon' onClick={handleCrossIconClick}>
             <i class="fa-solid fa-xmark"></i>
-          </div>
+          </div> */}
           <ol>
               <li onClick={scrollToAbout}>About</li>
               <li>Experience</li>

@@ -95,6 +95,7 @@ function Navbar()
     else
     {
       setHamMenu(false);
+      setNew(true);
     }
   }
 

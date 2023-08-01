@@ -57,6 +57,7 @@ img
     .Top_Button_Container button
     {
         right: 30px;
+        bottom: 30px;
     }
 }
 
@@ -64,7 +65,7 @@ img
 {
     .Top_Button_Container button
     {
-        bottom: 25px;
+        bottom: 15px;
         right: 10px;
     }
 }

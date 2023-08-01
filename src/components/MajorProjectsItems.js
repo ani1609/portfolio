@@ -48,7 +48,11 @@ function MajorProjectsItems(props)
                         <img src={MajorProject.image} />
                     </a>
                     <div className='project_details_odd'>
-                        <h2>{MajorProject.title}</h2>
+                        <h2>
+                            <a href={MajorProject.link} target='_blank'>
+                                {MajorProject.title}
+                            </a>
+                        </h2>
                         <p>{MajorProject.description}</p>
                         <ul>
                             {MajorProject.techStack.map((tech, index) => (
@@ -65,7 +69,11 @@ function MajorProjectsItems(props)
                         <img src={MajorProject.image} />
                     </a>
                     <div className='project_details_even'>
-                        <h2>{MajorProject.title}</h2>
+                        <h2>
+                            <a href={MajorProject.link} target='_blank'>
+                                {MajorProject.title}
+                            </a>
+                        </h2>
                         <p>{MajorProject.description}</p>
                         <ul>
                             {MajorProject.techStack.map((tech, index) => (

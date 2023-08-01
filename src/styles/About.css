@@ -226,6 +226,7 @@
     .about_container h1
     {
         font-size: 24px;
+        gap: 8px;
     }
 
     .about_container h1::before

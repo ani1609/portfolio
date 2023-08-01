@@ -29,11 +29,11 @@
 
 .major_project_odd>a, .major_project_even>a
 {
-    border-radius: 5px;
+    border-radius: 4px;
     overflow: hidden;
     position: absolute;
     z-index: inherit;
-    background-color: #4ab59a;
+    background-color: #317c6b;
     /* background-color: #64FFDA; */
     height: 100%;
     width: 60%;
@@ -88,20 +88,26 @@
 .major_project_odd h2, .major_project_even h2
 {
     margin: 0;
+    
+}
+
+.major_project_odd h2 a, .major_project_even h2 a
+{
+    text-decoration: none;
     font-family: 'Noto Sans SC', sans-serif;
-    font-size: 25px;
+    font-size: 24px;
     color: var(--heading);
     text-decoration: none;
     transition: 0.3s ease-in-out;
     letter-spacing: 1px;
 }
 
-.major_project_odd:hover .project_details_odd h2
+.major_project_odd:hover .project_details_odd h2 a
 {
     color: var(--primary);
 }
 
-.major_project_even:hover .project_details_even h2
+.major_project_even:hover .project_details_even h2 a
 {
     color: var(--primary);
 }
@@ -117,7 +123,8 @@
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
+    word-spacing: 0.8px;
 }
 
 .project_details_odd
@@ -138,19 +145,20 @@
     gap: 20px;
     padding: 0px;
     margin: 0px;
-    
+    flex-wrap: wrap;
 }
 
 .project_details_odd ul li, .project_details_even ul li
 {
     font-family: 'Open Sans', sans-serif;
     color: var(--para);
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 1.5px;
     font-weight: 600;
+    text-align: left;
 }
 
-.project_details_odd a, .project_details_even a
+.project_details_odd>a, .project_details_even>a
 {
     padding: 8px;
     color: var(--heading);
@@ -159,12 +167,12 @@
     transition: 0.3s ease-in-out;
 }
 
-.project_details_odd a:hover
+.project_details_odd>a:hover
 {
     color: var(--primary);
 }
 
-.project_details_even a:hover
+.project_details_even>a:hover
 {
     color: var(--primary);
 }
@@ -184,3 +192,110 @@
 }
 
 
+/* ----------rsponsiveness----- */
+
+@media screen and (max-width: 1080px)
+{
+    .major_project_odd h2 a, .major_project_even h2 a
+    {
+        font-size: 22px;
+    }
+
+    .project_details_odd p, .project_details_even p
+    {
+        font-size: 15px;
+    }
+
+    .project_details_odd ul li, .project_details_even ul li
+    {
+        /* font-size: 12px; */
+    }
+}
+
+
+@media screen and (max-width: 768px)
+{
+    .major_project_odd, .major_project_even
+    {
+        height: auto;
+    }
+    .major_project_odd h2 a, .major_project_even h2 a
+    {
+        font-size: 21px;
+    }
+
+    .project_details_odd, .project_details_even
+    {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 30px;
+        gap: 25px;
+    }
+
+    .major_project_odd>a, .major_project_even>a
+    {
+        width: 100%;
+        background-color: #051c17;
+        pointer-events: none;
+
+    }
+
+    .project_details_odd, .project_details_even
+    {
+        align-items: baseline;
+    }
+
+    .project_details_odd p, .project_details_even p
+    {
+        text-align: left;
+        font-size: 14.5px;
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none;
+        filter: drop-shadow(0px 3px 8px rgba(2,12,27,0.7));
+    }
+
+    .project_details_odd ul li, .project_details_even ul li
+    {
+        font-size: 11.5px;
+    }
+}
+
+
+@media screen and (max-width: 480px)
+{
+    .major_project_odd h2 a, .major_project_even h2 a
+    {
+        font-size: 19px;
+    }
+
+    .project_details_odd, .project_details_even
+    {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .major_project_odd>a, .major_project_even>a
+    {
+        width: 100%;
+        background-color: #051c17;
+        pointer-events: none;
+
+    }
+
+    .project_details_odd, .project_details_even
+    {
+        align-items: baseline;
+    }
+
+    .project_details_odd p, .project_details_even p
+    {
+        font-size: 14px;
+    }
+
+    .project_details_odd ul li, .project_details_even ul li
+    {
+        font-size: 11px;
+    }
+}

@@ -33,10 +33,12 @@
     overflow: hidden;
     position: absolute;
     z-index: inherit;
-    background-color: #317c6b;
+    background-color: #43ae95;
     /* background-color: #64FFDA; */
     height: 100%;
     width: 60%;
+    box-shadow: 0 0px 30px -15px rgba(2,12,27,0.7);
+
 }
 
 .major_project_odd>a img, .major_project_even>a img
@@ -206,10 +208,6 @@
         font-size: 15px;
     }
 
-    .project_details_odd ul li, .project_details_even ul li
-    {
-        /* font-size: 12px; */
-    }
 }
 
 
@@ -235,7 +233,7 @@
     .major_project_odd>a, .major_project_even>a
     {
         width: 100%;
-        background-color: #051c17;
+        background-color: #182B3C;
         pointer-events: none;
 
     }
@@ -274,14 +272,6 @@
         box-sizing: border-box;
         width: 100%;
         padding: 30px;
-    }
-
-    .major_project_odd>a, .major_project_even>a
-    {
-        width: 100%;
-        background-color: #051c17;
-        pointer-events: none;
-
     }
 
     .project_details_odd, .project_details_even

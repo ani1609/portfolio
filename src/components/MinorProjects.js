@@ -10,42 +10,10 @@ function MinorProjects ()
         {
             id: 1,
             title: 'Calculator',
-            description: 'This is a calculator. We are going to use it to pass props to our SVG and also to share logic later point in time. We are going to use it to pass props.',
-            techStack: ['HTML', 'CSS', 'JavaScript', 'ReactJS'],
-            link: "",
-            github: 'https://google.com'
-        },
-        {
-            id: 2,
-            title: 'Calculator',
-            description: 'This is a calculator. We are going to use it to pass props to our SVG and also to share logic later point in time. We are going to use it to pass props.',
-            techStack: ['HTML', 'CSS', 'JavaScript', 'ReactJS'],
-            link: "",
-            github: 'https://google.com'
-        },
-        {
-            id: 3,
-            title: 'Calculator',
-            description: 'This is a calculator. We are going to use it to pass props to our SVG and also to share logic later point in time. We are going to use it to pass props.',
-            techStack: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
-            link: "",
-            github: 'https://google.com'
-        },
-        {
-            id: 4,
-            title: 'Calculator',
-            description: 'This is a calculator. We are going to use it to pass props to our SVG and also to share logic later point in time. We are going to use it to pass props.',
-            techStack: ['HTML', 'CSS', 'JavaScript', ""],
-            link: "",
-            github: 'https://google.com'
-        },
-        {
-            id: 5,
-            title: 'Calculator',
-            description: 'This is a calculator. We are going to use it to pass props to our SVG and also to share logic later point in time. We are going to use it to pass props.',
-            techStack: ['HTML', 'CSS', 'JavaScript', 'ReactJS'],
-            link: "",
-            github: 'https://google.com'
+            description: 'Basic calculator web app for performing arithmetic calculations.',
+            techStack: ['HTML', 'CSS', 'JavaScript', ''],
+            link: "https://ani1609.github.io/Calculator/",
+            github: 'https://github.com/ani1609/Calculator'
         }
     ]
     

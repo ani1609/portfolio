@@ -9,10 +9,12 @@ import p3 from '../images/venline.png';
 
 function MajorProjects()
 {
+    
     const MajorProjects=[
         {
             id:1,
             title:"Prathamik",
+            status:"",
             description:"Unleash the power of education with our innovative website! Experience live video lessons, a versatile online IDE for coding, an AI chatbot for instant help, and Google OCR vision for text comprehension from images. Explore boundless learning opportunities today!",
             image: p2,
             link:"https://prathamik.xyz",
@@ -22,6 +24,7 @@ function MajorProjects()
         {
             id:2,
             title:"ExplorWay",
+            status:"Under development",
             description:"Your dream vacations come true at ExplorWay. Explore breathtaking destinations, send enquiries, and let our experienced team create personalized itineraries for an unforgettable journey.",
             image: p1,
             link:"",
@@ -31,6 +34,7 @@ function MajorProjects()
         {
             id:3,
             title:"Venline",
+            status:"",
             description:"Discover an innovative ecommerce marketplace, connecting vendors and customers. Explore farm-fresh fruits and vegetables, supporting local growers and promoting sustainability.",
             image: p3,
             link:"https://venline.co",

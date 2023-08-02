@@ -40,7 +40,6 @@ function Sidebars()
               <a href='' target='_blank'><Twitter/></a>
             </li>
             <li className='left_line'>
-
             </li>
         </ul>}
 
@@ -49,7 +48,6 @@ function Sidebars()
               <a href='mailto:rakesh856100@gmail.com'>rakesh856100@gmail.com</a>
             </li>
             <li className='right_line'>
-              
             </li>
         </ul>}
     </div>

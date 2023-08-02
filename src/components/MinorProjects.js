@@ -5,6 +5,7 @@ import MinorProjectItems from './MinorProjectItems';
 
 function MinorProjects ()
 {
+
     const minorProjects= [
         {
             id: 1,

@@ -52,6 +52,7 @@ function MajorProjectsItems(props)
                             <a href={MajorProject.link} target='_blank'>
                                 {MajorProject.title}
                             </a>
+                            {MajorProject.status && <h4>{MajorProject.status}</h4>}
                         </h2>
                         <p>{MajorProject.description}</p>
                         <ul>
@@ -73,6 +74,7 @@ function MajorProjectsItems(props)
                             <a href={MajorProject.link} target='_blank'>
                                 {MajorProject.title}
                             </a>
+                            {MajorProject.status && <h4>{MajorProject.status}</h4>}
                         </h2>
                         <p>{MajorProject.description}</p>
                         <ul>

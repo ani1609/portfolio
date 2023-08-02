@@ -20,6 +20,7 @@ header h4
     font-size: 16px;
     color: var(--primary);
     word-spacing: 5px;
+    letter-spacing: 1px;
     animation-name: fadeInHeader;
     animation-duration: 0.5s;
     animation-fill-mode: both;

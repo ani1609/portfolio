@@ -208,7 +208,7 @@
     cursor: pointer;
     font-family: "SF Mono", monospace;
     color: var(--heading);
-    font-size: 15px;
+    font-size: 14px;
     transition: 0.3s ease-in-out;
     text-align: center;
     padding: 5px 3px;
@@ -217,7 +217,7 @@
 .ham_tabs ol li::marker
 {
     font-family: "SF Mono", monospace;
-    font-size: 13px;
+    font-size: 12px;
     color: var(--primary);
 }
 
@@ -229,7 +229,7 @@
 .ham_tabs a
 {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     color: var(--primary);
     padding: 9px 17px 9px 17px;
     background-color: transparent;
@@ -238,22 +238,12 @@
     font-weight: 600;
     border-radius: 4px;
     transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
 }
 
 .ham_tabs a:hover
 {
     background-color: var(--hover);
-}
-
-.cross_icon
-{
-    padding: 0px 5px;
-    position: absolute;
-    top: 18px;
-    right: 21px;
-    color: var(--primary);
-    font-size: 31px;
-    cursor: pointer;
 }
 
 .blur
@@ -460,4 +450,23 @@
     }
 
     
+}
+
+
+@media only screen and (max-width: 480px)
+{
+    .ham_tabs ol li
+    {
+        font-size: 13px;
+    }
+
+    .ham_tabs ol li::marker
+    {
+        font-size: 12px;
+    }
+
+    .ham_tabs a
+    {
+        font-size: 13px;
+    }
 }

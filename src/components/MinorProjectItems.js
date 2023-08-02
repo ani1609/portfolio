@@ -34,7 +34,11 @@ function MinorProjectItems(props)
         };
     }, []);
 
-    const [mouse, setMouse]=useState(false);
+    const handleGithubClick = () =>
+    {
+        window.open(minorProject.github, '_blank');
+    }
+
 
     return (
         <a href={minorProject.link} className='minor_project' target='_blank' ref={minorProjectRef}>
@@ -42,7 +46,7 @@ function MinorProjectItems(props)
                 <div className='folder_icon'>
                     <FolderIcon/>
                 </div>
-                <a href={minorProject.githubLink} className='github_icon' target='_blank'>
+                <a href={minorProject.githubLink} className='github_icon' target='_blank' onClick={handleGithubClick}>
                     <GithubIcon/>
                 </a>
             </div>

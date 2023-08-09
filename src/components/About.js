@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import '../index.css';
 import '../styles/About.css';
-import MyPhoto from "../images/me1.png";
+import MyPhoto from "../images/me3.jpg";
 
 function About() 
 {
@@ -74,7 +74,7 @@ function About()
                     </div>
 
                     <div className='about_photo'>
-                        {/* <img src={MyPhoto}/> */}
+                        <img src={MyPhoto}/>
                     </div>
                 </div>
             </section>

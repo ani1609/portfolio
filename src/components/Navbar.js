@@ -2,7 +2,7 @@ import React, {useState, useEffect, useRef} from 'react';
 import '../index.css';
 import '../styles/Navbar.css';
 import HamLine from '../images/ham.png';
-import Logo from '../images/logo.jpg';
+import Logo from '../images/A.jpg';
 
 
 function Navbar() 
@@ -126,8 +126,8 @@ function Navbar()
       <nav 
         className={navbarShadow ? 'navbar_container navbar_shadow' : 'navbar_container'}
       >
-        <a href='http://localhost:3000/' className='logo-container'>
-
+        <a href='https://resume-opal-omega.vercel.app/' className='logo-container'>
+          <img src={Logo}/>
         </a>
         <div className='nav_tabs'>
             <ol>
@@ -136,7 +136,7 @@ function Navbar()
                 <li onClick={scrollToMajorProjects}>Work</li>
                 <li onClick={scrollToContact}>Contact</li>
             </ol>
-            <a href='' target='_blank'>Resume</a>
+            <a href='https://drive.google.com/file/d/17PJOBTLb0KWqx9oHoWEqc1IRT3uMIsYu/view?usp=sharing' target='_blank'>Resume</a>
         </div>
 
         <div className='ham_icon' onClick={handleHamIconClick}>
@@ -154,7 +154,7 @@ function Navbar()
               <li onClick={scrollToMajorProjects}>Work</li>
               <li onClick={scrollToContact}>Contact</li>
           </ol>
-          <a href='' target='_blank'>Resume</a>
+          <a href='https://drive.google.com/file/d/17PJOBTLb0KWqx9oHoWEqc1IRT3uMIsYu/view?usp=sharing' target='_blank'>Resume</a>
         </div>
 
       </nav>}

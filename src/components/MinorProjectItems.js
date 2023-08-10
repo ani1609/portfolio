@@ -51,7 +51,10 @@ function MinorProjectItems(props)
                 </a>
             </div>
 
-            <h2>{minorProject.title}</h2>
+            <div className='minor_title'>
+                <h2>{minorProject.title}</h2>
+                {minorProject.underdevelopment && <h4>Under Development</h4>}
+            </div>
 
             <p>{minorProject.description}</p>
 

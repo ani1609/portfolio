@@ -45,7 +45,7 @@ function Sidebars()
 
         {shouldRender && <ul className='right_bar'>
             <li className='email hover_effect'>
-              <a href='mailto:rakesh856100@gmail.com'>rakesh856100@gmail.com</a>
+              <a href='mailto:ankitparallax@gmail.com'>ankitparallax@gmail.com</a>
             </li>
             <li className='right_line'>
             </li>

@@ -21,7 +21,7 @@ function Header()
         <p>
           Enthusiastic student web developer with a keen interest in learning and applying front-end and back-end technologies. Dedicated to honing skills creating web solutions that captivate users solve real-world challenges.
         </p>
-        <a href='mailto:rakesh856100@gmail.com'>Hire me!</a>
+        <a href='mailto:ankitparallax@gmail.com'>Hire me!</a>
         {/*<div className='alien'>
           <img src={Alien} alt="upward arrow" />
         </div>} */}

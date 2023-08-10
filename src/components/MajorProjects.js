@@ -27,7 +27,7 @@ function MajorProjects()
             status:"Under development",
             description:"Your dream vacations come true at ExplorWay. Explore breathtaking destinations, send enquiries, and let our experienced team create personalized itineraries for an unforgettable journey.",
             image: p1,
-            link:"",
+            link:"https://github.com/ani1609/Traveloholic",
             techStack:["ReactJS","NodeJS","MongoDB","Express", "Firebase"],
             github:"https://github.com/ani1609/Traveloholic",
         },

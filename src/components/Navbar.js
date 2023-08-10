@@ -135,7 +135,7 @@ function Navbar()
                 <li onClick={scrollToMajorProjects}>Work</li>
                 <li onClick={scrollToContact}>Contact</li>
             </ol>
-            <a href='https://drive.google.com/file/d/1nVeaMMoGpGyPiDmuUwW7f6MXg-Zkr4W6/view?usp=sharing' target='_blank'>Resume</a>
+            <a href='https://drive.google.com/file/d/1HtkLrComDHyECX0iYk685KYxMNWpN6A1/view?usp=sharing' target='_blank'>Resume</a>
         </div>
 
         <div className='ham_icon' onClick={handleHamIconClick}>

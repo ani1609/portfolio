@@ -17,7 +17,7 @@ function MajorProjects()
             status:"",
             description:"Unleash the power of education with our innovative website! Experience live video lessons, a versatile online IDE for coding, an AI chatbot for instant help, and Google OCR vision for text comprehension from images. Explore boundless learning opportunities today!",
             image: p2,
-            link:"https://prathamik.xyz",
+            link:"https://github.com/ani1609/Prathamik",
             techStack:["ChatGPT API", "VideoSDK", "Google OCR Vision", "Firebse", "MongoDB"],
             github:"https://github.com/ani1609/Prathamik",  
         },
@@ -37,7 +37,7 @@ function MajorProjects()
             status:"",
             description:"Discover an innovative ecommerce marketplace, connecting vendors and customers. Explore farm-fresh fruits and vegetables, supporting local growers and promoting sustainability.",
             image: p3,
-            link:"https://venline.co",
+            link:"https://github.com/ani1609/Venline",
             techStack:["Ejs", "NodeJS", "MongoDB", "Express"],
             github:"https://github.com/ani1609/Venline", 
         }

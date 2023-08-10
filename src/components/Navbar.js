@@ -153,7 +153,7 @@ function Navbar()
               <li onClick={scrollToMajorProjects}>Work</li>
               <li onClick={scrollToContact}>Contact</li>
           </ol>
-          <a href='https://drive.google.com/file/d/17PJOBTLb0KWqx9oHoWEqc1IRT3uMIsYu/view?usp=sharing' target='_blank'>Resume</a>
+          <a href='https://drive.google.com/file/d/1zxDGaDI4nDpUmB4svjtVMrBAPnRfyjDe/view?usp=sharing' target='_blank'>Resume</a>
         </div>
 
       </nav>}

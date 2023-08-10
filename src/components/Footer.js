@@ -12,8 +12,8 @@ function Footer()
 {
 
     const githubLink = "https://github.com/ani1609";
-    const codepenLink = "https://codepen.io/yourusername";
-    const linkedinLink = "";
+    const codepenLink = "";
+    const linkedinLink = "https://www.linkedin.com/in/ankit-kumar-chowdhury-1b1690218";
     const instagramLink = "https://www.instagram.com/ankit.chdry/";
     const twitterLink = "https://twitter.com/AnkitCh03046966";
 

@@ -125,7 +125,7 @@ function Navbar()
       <nav 
         className={navbarShadow ? 'navbar_container navbar_shadow' : 'navbar_container'}
       >
-        <a href='https://resume-opal-omega.vercel.app/' className='logo-container'>
+        <a href='https://resume-ani1609.vercel.app' className='logo-container'>
           <img src={Logo}/>
         </a>
         <div className='nav_tabs'>
@@ -135,7 +135,7 @@ function Navbar()
                 <li onClick={scrollToMajorProjects}>Work</li>
                 <li onClick={scrollToContact}>Contact</li>
             </ol>
-            <a href='https://drive.google.com/file/d/17PJOBTLb0KWqx9oHoWEqc1IRT3uMIsYu/view?usp=sharing' target='_blank'>Resume</a>
+            <a href='https://drive.google.com/file/d/1nVeaMMoGpGyPiDmuUwW7f6MXg-Zkr4W6/view?usp=sharing' target='_blank'>Resume</a>
         </div>
 
         <div className='ham_icon' onClick={handleHamIconClick}>

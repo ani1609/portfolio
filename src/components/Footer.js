@@ -11,14 +11,25 @@ import { ReactComponent as Leetcode } from '../icons/leetcode.svg';
 function Footer() 
 {
 
+    const githubLink = "https://github.com/ani1609";
+    const codepenLink = "";
+    const linkedinLink = "https://www.linkedin.com/in/ankit-kumar-chowdhury-1b1690218";
+    const instagramLink = "https://www.instagram.com/ankit.chdry/";
+    const twitterLink = "https://twitter.com/AnkitCh03046966";
+
+    const handleLinkClick = (link) => 
+    {
+        window.open(link, '_blank');
+    };
+
     return (
         <section className='footer_container'>
             <ul>
-                <li><Github/></li>
-                <li><Codepen/></li>
-                <li><Linkedin/></li>
-                <li><Instagram/></li>
-                <li><Twitter/></li>
+                <li onClick={() => handleLinkClick(githubLink)}><Github/></li>
+                <li onClick={() => handleLinkClick(codepenLink)}><Codepen/></li>
+                <li onClick={() => handleLinkClick(linkedinLink)}><Linkedin/></li>
+                <li onClick={() => handleLinkClick(instagramLink)}><Instagram/></li>
+                <li onClick={() => handleLinkClick(twitterLink)}><Twitter/></li>
             </ul>
             <a href='https://github.com/ani1609/resume' target='_blank' >Designed & Built by Ankit Kr. Chowdhury</a>
         </section>

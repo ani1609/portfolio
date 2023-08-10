@@ -80,6 +80,13 @@
     color: var(--primary);
 }
 
+.minor_title
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .minor_project h2
 {
     font-family: 'Noto Sans SC', sans-serif;
@@ -87,6 +94,14 @@
     margin: 0px;
     font-size: 19px;
     transition: 0.3s ease-in-out;
+}
+
+.minor_project h4
+{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    color: var(--primary);
 }
 
 .minor_project p

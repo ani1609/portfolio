@@ -1,7 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import '../index.css';
 import '../styles/Navbar.css';
-import HamLine from '../images/ham.png';
 import Logo from '../images/A.jpg';
 
 

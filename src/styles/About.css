@@ -256,6 +256,16 @@
         height: 260px;
         width: 260px;
     }
+
+    .about_photo::before
+    {
+        background-color: #182B3C;
+    }
+
+    .about_photo::after 
+    {
+        border: 2px solid #30476e;
+    }
 }
 
 @media screen and (max-width: 480px)

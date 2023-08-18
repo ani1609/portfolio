@@ -10,8 +10,8 @@ function MinorProjects ()
         {
             id: 1,
             title: 'Weather App',
-            description: 'Created a dynamic real-time weather app leveraging the OpenWeatherMap API, offering users instant access to accurate weather updates and forecasts for seamless planning and informed decision-making.',
-            techStack: ['Nextjs', 'CSS', 'OpenWeatherMap API', ''],
+            description: 'This project seamlessly integrates OpenWeatherMap API to provide real-time weather data for a given location, further enhancing user experience by utilizing OpenCage API to convert longitude and latitude coordinates into meaningful locality names for intuitive location-based weather updates.',
+            techStack: ['Reactjs', 'OpenWeatherMap API', 'OpenCage API', ''],
             link: "https://weather-sable-sigma.vercel.app/",
             github: 'https://github.com/ani1609/weather',
             underdevelopment: true

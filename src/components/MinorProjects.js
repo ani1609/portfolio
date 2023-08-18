@@ -12,8 +12,8 @@ function MinorProjects ()
             title: 'Weather App',
             description: 'Created a dynamic real-time weather app leveraging the OpenWeatherMap API, offering users instant access to accurate weather updates and forecasts for seamless planning and informed decision-making.',
             techStack: ['Nextjs', 'CSS', 'OpenWeatherMap API', ''],
-            link: "https://ani1609.github.io/Calculator/",
-            github: 'https://github.com/ani1609/Calculator',
+            link: "https://weather-sable-sigma.vercel.app/",
+            github: 'https://github.com/ani1609/weather',
             underdevelopment: true
         },
         {

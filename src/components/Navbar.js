@@ -135,7 +135,7 @@ function Navbar()
                 <li onClick={scrollToMajorProjects}>Work</li>
                 <li onClick={scrollToContact}>Contact</li>
             </ol>
-            <a href='https://drive.google.com/file/d/1zxDGaDI4nDpUmB4svjtVMrBAPnRfyjDe/view?usp=sharing' target='_blank'>Resume</a>
+            <a href='https://drive.google.com/file/d/1RUb6eERUfaUZfyXVIqaxVHHSitDokRjT/view?usp=sharing' target='_blank'>Resume</a>
         </div>
 
         <div className='ham_icon' onClick={handleHamIconClick}>
@@ -153,7 +153,7 @@ function Navbar()
               <li onClick={scrollToMajorProjects}>Work</li>
               <li onClick={scrollToContact}>Contact</li>
           </ol>
-          <a href='https://drive.google.com/file/d/1zxDGaDI4nDpUmB4svjtVMrBAPnRfyjDe/view?usp=sharing' target='_blank'>Resume</a>
+          <a href='https://drive.google.com/file/d/1RUb6eERUfaUZfyXVIqaxVHHSitDokRjT/view?usp=sharing' target='_blank'>Resume</a>
         </div>
 
       </nav>}

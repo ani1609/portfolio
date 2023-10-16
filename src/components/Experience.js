@@ -38,7 +38,12 @@ function Experience()
         <div>
         <section className='experience_container'>
                 <h1 ref={experienceHeadingRef}>Where I've Worked</h1>
-                
+                <div className='experience_content'>
+                    <div className='tablist'>
+                        <button>Rablik</button>
+                        <button>ONDC</button>
+                    </div>
+                </div>
             </section>
         </div>
     );

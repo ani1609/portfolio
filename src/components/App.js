@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Header from './Header';
 import Sidebars from './Sidebars';
 import About from './About';
+import Experience from './Experience';
 import MajorProjects from './MajorProjects';
 import MinorProjects from './MinorProjects';
 import Contact from './Contact';
@@ -27,6 +28,7 @@ function App()
       <TopButton/>
       <Sidebars/>
       <About/>
+      <Experience/>
       <MajorProjects/>
       <MinorProjects/>
       <Contact/>

@@ -49,7 +49,7 @@
 
 .major_projects_parent h1::before
 {
-    content: '02.';
+    content: '03.';
     font-family: "SF Mono", monospace;
     font-size: 25px;
     color: var(--primary);

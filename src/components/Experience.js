@@ -81,37 +81,34 @@ function Experience()
 
 
     return (
-        <div>
         <section className='experience_container'>
-                <h1 ref={experienceHeadingRef}>Where I've Worked</h1>
-                <div className='experience_content' ref={experienceContentRef}>
-                    <div className='experience_tabs'>
-                        {experiences.map((experience, index) => (
-                            <button
-                                key={index}
-                                onClick={() => {setSelectedExperience(experience); setSelectedExperienceIndex(index); moveSlider(index);}}
-                                className={selectedExperienceIndex === index ? 'selected_experience' : ''}
-                            >
-                                {experience.company}
-                            </button>
-                        ))}
-                        <div className='slider' ref={sliderRef}></div>
-                    </div>
-                    <div className='experience_description' ref={experienceDescriptionRef}>
-                        <h2>{selectedExperience.jobTitle} <span>@ <a href={selectedExperience.companyLink} target="_blank">{selectedExperience.company}</a></span></h2>
-                        <p>{selectedExperience.date}</p>
-                        <ul>
-                            {selectedExperience.description.map((item, index) => (
-                                <li key={index}>
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
+            <h1 ref={experienceHeadingRef}>Where I've Worked</h1>
+            <div className='experience_content' ref={experienceContentRef}>
+                <div className='experience_tabs'>
+                    {experiences.map((experience, index) => (
+                        <button
+                            key={index}
+                            onClick={() => {setSelectedExperience(experience); setSelectedExperienceIndex(index); moveSlider(index);}}
+                            className={selectedExperienceIndex === index ? 'selected_experience' : ''}
+                        >
+                            {experience.company}
+                        </button>
+                    ))}
+                    <div className='slider' ref={sliderRef}></div>
                 </div>
-            </section>
-        </div>
+                <div className='experience_description' ref={experienceDescriptionRef}>
+                    <h2>{selectedExperience.jobTitle} <span>@ <a href={selectedExperience.companyLink} target="_blank">{selectedExperience.company}</a></span></h2>
+                    <p>{selectedExperience.date}</p>
+                    <ul>
+                        {selectedExperience.description.map((item, index) => (
+                            <li key={index}>
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+        </section>
     );
 }
 

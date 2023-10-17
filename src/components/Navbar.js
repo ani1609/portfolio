@@ -129,42 +129,39 @@ function Navbar()
 
     return (
         <div>
-        {shouldRender && 
-        <nav 
-            className={navbarShadow ? 'navbar_container navbar_shadow' : 'navbar_container'}
-        >
-            <a href='https://portfolio-ani1609.vercel.app' className='logo-container'>
-            <img src={Logo}/>
-            </a>
-            <div className='nav_tabs'>
+            {shouldRender && <nav className={navbarShadow ? 'navbar_container navbar_shadow' : 'navbar_container'}>
+                <a href='https://portfolio-ani1609.vercel.app' className='logo-container'>
+                <img src={Logo}/>
+                </a>
+                <div className='nav_tabs'>
+                    <ol>
+                        <li onClick={scrollToAbout}>About</li>
+                        <li onClick={scrollToExperience}>Experience</li>
+                        <li onClick={scrollToMajorProjects}>Work</li>
+                        <li onClick={scrollToContact}>Contact</li>
+                    </ol>
+                    <a href='https://drive.google.com/file/d/1IQgeACnoOi1-xGz6tQwS41qnIjF1-Cg1/view?usp=sharing' target='_blank'>Resume</a>
+                </div>
+
+                <div className='ham_icon' onClick={handleHamIconClick}>
+                <span className={hamMenu ? 'rotateDown' : New ? '' : 'removeRotateDown'}></span>
+                <span className={hamMenu ? New ? '' : 'remove' : ''}></span>
+                <span className={hamMenu ? 'rotateUp' : New ? '' : 'removeRotateUp'}></span>
+                </div>
+
+                {hamMenu && <div className='blur' onClick={toggleHamMenu}></div>}
+
+                <div className={hamMenu? 'ham_tabs ham_tabs_show':'ham_tabs ham_tabs_hide'}>
                 <ol>
                     <li onClick={scrollToAbout}>About</li>
-                    <li onClick={scrollToExperience}>Experience</li>
+                    <li>Experience</li>
                     <li onClick={scrollToMajorProjects}>Work</li>
                     <li onClick={scrollToContact}>Contact</li>
                 </ol>
                 <a href='https://drive.google.com/file/d/1IQgeACnoOi1-xGz6tQwS41qnIjF1-Cg1/view?usp=sharing' target='_blank'>Resume</a>
-            </div>
+                </div>
 
-            <div className='ham_icon' onClick={handleHamIconClick}>
-            <span className={hamMenu ? 'rotateDown' : New ? '' : 'removeRotateDown'}></span>
-            <span className={hamMenu ? New ? '' : 'remove' : ''}></span>
-            <span className={hamMenu ? 'rotateUp' : New ? '' : 'removeRotateUp'}></span>
-            </div>
-
-            {hamMenu && <div className='blur' onClick={toggleHamMenu}></div>}
-
-            <div className={hamMenu? 'ham_tabs ham_tabs_show':'ham_tabs ham_tabs_hide'}>
-            <ol>
-                <li onClick={scrollToAbout}>About</li>
-                <li>Experience</li>
-                <li onClick={scrollToMajorProjects}>Work</li>
-                <li onClick={scrollToContact}>Contact</li>
-            </ol>
-            <a href='https://drive.google.com/file/d/1IQgeACnoOi1-xGz6tQwS41qnIjF1-Cg1/view?usp=sharing' target='_blank'>Resume</a>
-            </div>
-
-        </nav>}
+            </nav>}
         </div>
     );
 }

@@ -38,7 +38,6 @@ function Contact()
             <h1>Get In Touch</h1>
             <p>Feel free to reach out to me through the contact button below. I'm excited to connect and discuss any web development opportunities or projects you have in mind. Let's build something great together!</p>
             <a href='mailto:ankitparallax@gmail.com'>Let's Connect</a>
-
         </section>
     );
 }

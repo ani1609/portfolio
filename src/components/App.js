@@ -21,20 +21,20 @@ function App()
   }, []);
 
 
-  return (
-    <div className='App'>
-      <Navbar/>
-      <Header/>
-      <TopButton/>
-      <Sidebars/>
-      <About/>
-      <Experience/>
-      <MajorProjects/>
-      <MinorProjects/>
-      <Contact/>
-      <Footer/>
-    </div>
-  );
+    return (
+        <div className='App'>
+        <Navbar/>
+        <Header/>
+        <TopButton/>
+        <Sidebars/>
+        <About/>
+        <Experience/>
+        <MajorProjects/>
+        <MinorProjects/>
+        <Contact/>
+        <Footer/>
+        </div>
+    );
 }
 
 export default App;

@@ -69,7 +69,7 @@ function MinorProjects ()
     }, []);
 
     return (
-        <div className='minor_projects_parent'>
+        <section className='minor_projects_parent'>
             <h1 ref={minorProjectHeadingRef}>Other Noteworthy Projects</h1>
             <div className='minor_projects_container'>
                 {minorProjects.map((minorProject) => {
@@ -81,7 +81,7 @@ function MinorProjects ()
                     )
                 })}
             </div>
-        </div>
+        </section>
     );
 }
 

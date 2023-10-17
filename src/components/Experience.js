@@ -8,7 +8,7 @@ function Experience()
     const experienceHeadingRef = useRef(null);
     const experienceContentRef = useRef(null);
     const experienceDescriptionRef = useRef(null);
-    const [fadeInDescription, setFadeInDescription] = useState(false);
+    const sliderRef = useRef(null);
     const experiences = 
     [
         {
@@ -93,7 +93,7 @@ function Experience()
 
     useEffect(() =>
     {
-        console.log(selectedExperienceIndex);
+        // console.log(selectedExperienceIndex);
     },[selectedExperience]);
 
     useEffect(() => 
@@ -102,12 +102,17 @@ function Experience()
             experienceDescriptionRef.current.classList.remove('fade_in_description');
             experienceDescriptionRef.current.style.opacity = '0';
         
-            // Add a small delay to reapply the class, which triggers the animation
             setTimeout(() => {
               experienceDescriptionRef.current.classList.add('fade_in_description');
             }, 1);
         }
     },[selectedExperience]);
+
+    const moveSlider = (index) =>
+    {
+        sliderRef.current.style.transform = `translateY(${40 * index}px)`;
+    };
+      
 
 
     return (
@@ -119,12 +124,13 @@ function Experience()
                         {experiences.map((experience, index) => (
                             <button
                                 key={index}
-                                onClick={() => {setSelectedExperience(experience); setSelectedExperienceIndex(index);}}
+                                onClick={() => {setSelectedExperience(experience); setSelectedExperienceIndex(index); moveSlider(index);}}
                                 className={selectedExperienceIndex === index ? 'selected_experience' : ''}
                             >
                                 {experience.company}
                             </button>
                         ))}
+                        <div className='slider' ref={sliderRef}></div>
                     </div>
                     <div className='experience_description' ref={experienceDescriptionRef}>
                         <h2>{selectedExperience.jobTitle} <span>@ <a href={selectedExperience.companyLink} target="_blank">{selectedExperience.company}</a></span></h2>

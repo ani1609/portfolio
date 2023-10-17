@@ -28,7 +28,7 @@ function App()
       <TopButton/>
       <Sidebars/>
       <About/>
-      {/* <Experience/> */}
+      <Experience/>
       <MajorProjects/>
       <MinorProjects/>
       <Contact/>

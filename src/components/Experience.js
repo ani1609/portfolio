@@ -6,6 +6,9 @@ import '../styles/Experience.css';
 function Experience() 
 {
     const experienceHeadingRef = useRef(null);
+    const experienceContentRef = useRef(null);
+    const experienceDescriptionRef = useRef(null);
+    const [fadeInDescription, setFadeInDescription] = useState(false);
     const experiences = 
     [
         {
@@ -64,7 +67,7 @@ function Experience()
         {
             root: null,
             rootMargin: '0px',
-            threshold: 0.3
+            threshold: 0.4
         };
 
         const observer = new IntersectionObserver((entries, observer) => 
@@ -79,25 +82,39 @@ function Experience()
         }, options);
 
         if (experienceHeadingRef.current) observer.observe(experienceHeadingRef.current);
+        if (experienceContentRef.current) observer.observe(experienceContentRef.current);
 
         return () => 
         {
             if (experienceHeadingRef.current) observer.unobserve(experienceHeadingRef.current);
+            if (experienceContentRef.current) observer.unobserve(experienceContentRef.current);
         };
     }, []);
 
     useEffect(() =>
     {
         console.log(selectedExperienceIndex);
-    
-    }, [selectedExperience]);
+    },[selectedExperience]);
+
+    useEffect(() => 
+    {
+        if (experienceDescriptionRef.current) {
+            experienceDescriptionRef.current.classList.remove('fade_in_description');
+            experienceDescriptionRef.current.style.opacity = '0';
+        
+            // Add a small delay to reapply the class, which triggers the animation
+            setTimeout(() => {
+              experienceDescriptionRef.current.classList.add('fade_in_description');
+            }, 1);
+        }
+    },[selectedExperience]);
 
 
     return (
         <div>
         <section className='experience_container'>
                 <h1 ref={experienceHeadingRef}>Where I've Worked</h1>
-                <div className='experience_content'>
+                <div className='experience_content' ref={experienceContentRef}>
                     <div className='experience_tabs'>
                         {experiences.map((experience, index) => (
                             <button
@@ -109,7 +126,7 @@ function Experience()
                             </button>
                         ))}
                     </div>
-                    <div className='experience_description'>
+                    <div className='experience_description' ref={experienceDescriptionRef}>
                         <h2>{selectedExperience.jobTitle} <span>@ <a href={selectedExperience.companyLink} target="_blank">{selectedExperience.company}</a></span></h2>
                         <p>{selectedExperience.date}</p>
                         <ul>

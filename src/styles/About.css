@@ -103,9 +103,9 @@
 
 .skills_list ul li::before
 {
-    font-family: 'Font Awesome 5 Free';
-    content: '\f0da';
+    content: "▹";
     color: var(--primary);
+    font-size: 13px;
     padding-right: 8px;
 }
 

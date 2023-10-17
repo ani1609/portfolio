@@ -5,21 +5,27 @@
 
 body 
 {
-  background-color: #0E192D;
-  --primary: #64FFDA;
-  --light-navy: #233554;
-  --navy: #112240;
-  --dark-navy: #15223E;
-  --heading: #CCD6F6;
-  --para: #8892B0;
-  --hover: #1C303F;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: #0E192D;
+    --primary: #64FFDA;
+    --light-navy: #233554;
+    --navy: #112240;
+    --dark-navy: #15223E;
+    --heading: #CCD6F6;
+    --para: #8892B0;
+    --hover: #1C303F;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection
+{
+    color: #C2CBE8;
+    background-color: #273552;
 }
 
 code 
 {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
 }

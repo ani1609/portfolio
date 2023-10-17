@@ -18,43 +18,8 @@ function Experience()
             date: "Oct 2023 - Present",
             description: 
             [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices, ipsum eget condimentum viverra, ipsum ipsum congue tellus, vel bibendum metus nunc ac quam. ",
-                "This is a common placeholder text used in the printing and typesetting industry. Feel free to use it for various purposes, such as designing, layout, or content placeholders.",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices, ipsum eget condimentum viverra, ipsum ipsum congue tellus, vel bibendum metus nunc ac quam. ",
-            ],
-        },
-        {
-            company: "ONDC",
-            jobTitle: "Freelancer",
-            companyLink: "",
-            date: "Nov 2023 - Present",
-            description: [
-                "Contribution A in ONDC",
-                "Contribution B in ONDC",
-                "Contribution C in ONDC",
-            ],
-        },
-        {
-            company: "Apple",
-            jobTitle: "Full Stack Developer Intern",
-            companyLink: "https://www.apple.com/",
-            date: "Dec 2023 - Present",
-            description: 
-            [
-                "Contribution 1 in Apple",
-                "Contribution 2 in Apple",
-                "Contribution 3 in Apple",
-            ],
-        },
-        {
-            company: "SAMSUNG",
-            jobTitle: "Freelancer",
-            companyLink: "https://www.samsung.com/",
-            date: "Jan 2023 - Present",
-            description: [
-                "Contribution A in Samsung",
-                "Contribution B in Samsung",
-                "Contribution C in Samsung",
+                "I am currently enhancing my web development skills through practical experience in designing and implementing web applications.",
+                "Additionally, Iamactively cultivating my soft skills, including effective communication, collaboration and adaptability, fostering professionalism.",
             ],
         },
     ];

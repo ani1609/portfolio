@@ -8,7 +8,23 @@ function Experience()
     const experienceHeadingRef = useRef(null);
     const experienceContentRef = useRef(null);
     const experienceDescriptionRef = useRef(null);
-    const sliderRef = useRef(null);
+    const veticalSliderRef = useRef(null);
+    const horizontalSliderRef = useRef(null);
+    const [screenLessThan650, setScreenLessThan650] = useState(window.innerWidth < 650);
+
+    const handleResize = () => 
+    {
+        setScreenLessThan650(window.innerWidth < 650);
+    };
+
+    useEffect(() => 
+    {
+        window.addEventListener('resize', handleResize);
+        return () => 
+        {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     const experiences = 
     [
         {
@@ -20,6 +36,16 @@ function Experience()
             [
                 "I am currently enhancing my web development skills through practical experience in designing and implementing web applications.",
                 "Additionally, Iamactively cultivating my soft skills, including effective communication, collaboration and adaptability, fostering professionalism.",
+            ],
+        },
+        {
+            company: "Freelancing",
+            jobTitle: "Freelance Web Developer",
+            companyLink: "",
+            date: "Jul 2023 - Present",
+            description: 
+            [
+                "I have experience in creating personal portfolios, blog websites, and custom e-learning platforms for tutors, providing tailored online solutions.",
             ],
         },
     ];
@@ -75,8 +101,27 @@ function Experience()
 
     const moveSlider = (index) =>
     {
-        sliderRef.current.style.transform = `translateY(${40 * index}px)`;
+        if (screenLessThan650)
+        {
+            horizontalSliderRef.current.style.transform = `translateX(${140 * index}px)`;
+        }
+        else
+        {
+            veticalSliderRef.current.style.transform = `translateY(${40 * index}px)`;
+        }
     };
+
+    useEffect(() =>
+    {
+        if (window.innerWidth < 650)
+        {
+            setScreenLessThan650(true);
+        }
+        else
+        {
+            setScreenLessThan650(false);
+        }
+    },[]);
       
 
 
@@ -94,7 +139,15 @@ function Experience()
                             {experience.company}
                         </button>
                     ))}
-                    <div className='slider' ref={sliderRef}></div>
+                    {
+                        screenLessThan650 ? 
+                        (
+                            <div className='horizontal_slider' ref={horizontalSliderRef}></div>
+                        ) : 
+                        (
+                            <div className='vertical_slider' ref={veticalSliderRef}></div>
+                        )
+                    }
                 </div>
                 <div className='experience_description' ref={experienceDescriptionRef}>
                     <h2>{selectedExperience.jobTitle} <span>@ <a href={selectedExperience.companyLink} target="_blank">{selectedExperience.company}</a></span></h2>

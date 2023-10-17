@@ -71,7 +71,7 @@ function MajorProjects()
 
 
     return(
-        <div className='major_projects_parent'>
+        <section className='major_projects_parent'>
             <h1 ref={MajorProjectHeadingRef}>Some Things I've Built</h1>
             {MajorProjects.map((MajorProject)=>{
                 return(
@@ -81,8 +81,7 @@ function MajorProjects()
                     />
                 );
             })}
-
-        </div>
+        </section>
     );
 }
 

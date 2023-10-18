@@ -77,6 +77,7 @@
     font-size: 16px;
     color: var(--para);
     font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify;
 }
 
 .skills_list

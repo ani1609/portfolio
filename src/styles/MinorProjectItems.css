@@ -158,6 +158,7 @@
     .minor_project p
     {
         font-size: 14.5px;
+        text-align: justify;
     }
 
     .minor_project ul li

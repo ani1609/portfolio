@@ -153,7 +153,9 @@
     gap: 20px;
     padding: 0px;
     margin: 0px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    max-width: 100%;
 }
 
 .project_details_odd ul li, .project_details_even ul li
@@ -164,6 +166,7 @@
     letter-spacing: 1.5px;
     font-weight: 600;
     text-align: left;
+    white-space: nowrap;
 }
 
 .project_details_odd>a, .project_details_even>a
@@ -221,7 +224,7 @@
 {
     .major_project_odd, .major_project_even
     {
-        height: auto;
+        height: 350px;
     }
     .project_details_odd h2 a, .project_details_even h2 a
     {
@@ -238,7 +241,8 @@
         box-sizing: border-box;
         width: 100%;
         padding: 30px;
-        gap: 25px;
+        justify-content: space-between;
+        height: 100%;
     }
 
     .major_project_odd>a, .major_project_even>a

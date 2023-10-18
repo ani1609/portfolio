@@ -312,6 +312,11 @@
         font-size: 16px;
     }
 
+    .experience_container h1::after
+    {
+        width: 22%;
+    }
+
     .experience_description h2
     {
         font-size: 15px;

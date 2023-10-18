@@ -260,7 +260,8 @@
 
     .project_details_odd p, .project_details_even p
     {
-        text-align: left;
+        /* text-align: left; */
+        text-align: justify;
         font-size: 14.5px;
         padding: 0;
         background-color: transparent;

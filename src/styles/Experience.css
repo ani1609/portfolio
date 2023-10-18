@@ -205,6 +205,7 @@
     font-size: 16px;
     color: var(--para);
     font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify;
     /* display: flex;
     align-items: baseline;
     gap: 10px; */

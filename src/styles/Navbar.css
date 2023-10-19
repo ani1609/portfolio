@@ -221,7 +221,7 @@
     font-size: 14px;
     transition: 0.3s ease-in-out;
     text-align: center;
-    padding: 5px 3px;
+    padding: 8px 8px 8px 0px;
 }
 
 .ham_tabs ol li::marker

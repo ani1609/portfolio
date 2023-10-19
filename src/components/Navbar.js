@@ -154,7 +154,7 @@ function Navbar()
                 <div className={hamMenu? 'ham_tabs ham_tabs_show':'ham_tabs ham_tabs_hide'}>
                 <ol>
                     <li onClick={scrollToAbout}>About</li>
-                    <li>Experience</li>
+                    <li onClick={scrollToExperience}>Experience</li>
                     <li onClick={scrollToMajorProjects}>Work</li>
                     <li onClick={scrollToContact}>Contact</li>
                 </ol>

@@ -20,8 +20,14 @@ body
 
 ::selection
 {
-    color: #C2CBE8;
-    background-color: #273552;
+    color: #C2CBE8 !important;
+    background-color: #273552 !important;
+}
+
+::-webkit-selection 
+{
+    color: #C2CBE8 !important;
+    background-color: #273552 !important;
 }
 
 code 

@@ -14,8 +14,10 @@ body
     --para: #8892B0;
     --hover: #1C303F;
     margin: 0;
+    padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scrollbar-color: var(--primary) var(--sb-track-color);
 }
 
 ::selection
@@ -28,6 +30,23 @@ body
 {
     color: #C2CBE8 !important;
     background-color: #273552 !important;
+}
+
+body::-webkit-scrollbar
+{
+    width: 5px;
+}
+  
+body::-webkit-scrollbar-track 
+{
+    background: var(--navy);
+    border-radius: 4px;
+}
+  
+body::-webkit-scrollbar-thumb 
+{
+    background: var(--primary);
+    border-radius: 4px;
 }
 
 code 

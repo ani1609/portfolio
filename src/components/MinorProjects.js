@@ -10,35 +10,44 @@ function MinorProjects ()
         {
             id: 1,
             title: 'Conversify',
-            description: 'End-to-End Encrypted Chat App: Seamlessly integrating the OpenPGP library, this MERN-based application ensures secure and private messaging with real-time chat capabilities, prioritizing communication privacy and offering a seamless user experience.',
-            techStack: ['OpenPGP', 'Web Sockets', 'Reactjs', ''],
+            description: "End-to-End Encrypted Chat App: Seamlessly integrating the OpenPGP library, this MERN-based application ensures secure and private messaging with real-time chat capabilities, prioritizing communication privacy and offering a seamless user experience.",
+            techStack: ["React", "Web Sockets", "OpenPGP", ""],
             link: "https://github.com/ani1609/Conversify",
-            github: 'https://github.com/ani1609/Conversify',
+            github: "https://github.com/ani1609/Conversify",
             underdevelopment: true
         },
         {
             id: 2,
-            title: 'Weather App',
-            description: 'This project seamlessly integrates OpenWeatherMap API to provide real-time weather data for a given locationand OpenCage APIs to deliver dynamic weather information based on user location, enhancing accuracy and user-friendliness.',
-            techStack: ['OpenWeatherMap API', 'OpenCage API', '', ''],
-            link: "https://weather-sable-sigma.vercel.app/",
-            github: 'https://github.com/ani1609/weather',
+            title: 'Spendwise',
+            description: "Designed and developed a user-friendly expense tracker app empowering individuals to effortlessly manage and analyze their financial transactions, fostering effective budgeting and financial awareness.",
+            techStack: ["React", "Expressjs", "MongoDB", "Apexcharts.js"],
+            link: "https://spendwise-fawn.vercel.app",
+            github: "https://github.com/ani1609/Spendwise",
+            underdevelopment: true
         },
         {
             id: 3,
-            title: 'E-commerce Cart',
-            description: 'Created a basic dynamic ecommerce cart page in React, efficiently rendering each cart item using modular subcomponents for enhanced user experience.',
-            techStack: ['Reactjs', 'CSS', '', ''],
-            link: "https://github.com/ani1609/cart",
-            github: 'https://github.com/ani1609/cart'
+            title: 'Weather App',
+            description: "This project seamlessly integrates OpenWeatherMap API to provide real-time weather data for a given locationand OpenCage APIs to deliver dynamic weather information based on user location, enhancing accuracy and user-friendliness.",
+            techStack: ["OpenWeatherMap API", "OpenCage API", "", ""],
+            link: "https://weather-sable-sigma.vercel.app/",
+            github: "https://github.com/ani1609/weather",
         },
         {
             id: 4,
+            title: 'E-commerce Cart',
+            description: "Created a basic dynamic ecommerce cart page in React, efficiently rendering each cart item using modular subcomponents for enhanced user experience.",
+            techStack: ["React", "CSS", "", ""],
+            link: "https://github.com/ani1609/cart",
+            github: "https://github.com/ani1609/cart"
+        },
+        {
+            id: 5,
             title: 'Calculator',
-            description: 'Basic calculator web app for performing arithmetic calculations.',
-            techStack: ['HTML', 'CSS', 'JavaScript', ''],
+            description: "Basic calculator web app for performing arithmetic calculations.",
+            techStack: ["HTML", "CSS", "JavaScript", ""],
             link: "https://ani1609.github.io/Calculator/",
-            github: 'https://github.com/ani1609/Calculator'
+            github: "https://github.com/ani1609/Calculator"
         }
     ]
     

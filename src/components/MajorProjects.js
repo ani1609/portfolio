@@ -27,7 +27,7 @@ function MajorProjects()
             status:"Under development",
             description:"Explore breathtaking destinations, send enquiries, and let our experienced team create personalized itineraries for an unforgettable journey.",
             image: p1,
-            link:"https://github.com/ani1609/Traveloholic",
+            link:"https://explorway.vercel.app",
             techStack:["ReactJS","NodeJS","MongoDB","Express", "Firebase"],
             github:"https://github.com/ani1609/Traveloholic",
         },

@@ -35,20 +35,20 @@ function MinorProjects ()
         },
         {
             id: 4,
+            title: 'Calculator',
+            description: "Basic calculator web app for performing arithmetic calculations.",
+            techStack: ["HTML", "CSS", "JavaScript", ""],
+            link: "https://ani1609.github.io/Calculator/",
+            github: "https://github.com/ani1609/Calculator"
+        },
+        {
+            id: 5,
             title: 'E-commerce Cart',
             description: "Created a basic dynamic ecommerce cart page in React, efficiently rendering each cart item using modular subcomponents for enhanced user experience.",
             techStack: ["React", "CSS", "", ""],
             link: "https://github.com/ani1609/cart",
             github: "https://github.com/ani1609/cart"
         },
-        {
-            id: 5,
-            title: 'Calculator',
-            description: "Basic calculator web app for performing arithmetic calculations.",
-            techStack: ["HTML", "CSS", "JavaScript", ""],
-            link: "https://ani1609.github.io/Calculator/",
-            github: "https://github.com/ani1609/Calculator"
-        }
     ]
     
     const minorProjectHeadingRef = useRef(null);

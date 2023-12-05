@@ -21,7 +21,7 @@ function MinorProjects ()
             title: 'Spendwise',
             description: "Designed and developed a user-friendly expense tracker app empowering individuals to effortlessly manage and analyze their financial transactions, fostering effective budgeting and financial awareness.",
             techStack: ["React", "Expressjs", "MongoDB", "Apexcharts.js"],
-            link: "https://spendwise-fawn.vercel.app",
+            link: "https://spendwise-seven.vercel.app/",
             github: "https://github.com/ani1609/Spendwise",
             underdevelopment: true
         },

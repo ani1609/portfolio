@@ -28,14 +28,14 @@ function Experience()
     const experiences = 
     [
         {
-            company: "Rablik",
-            jobTitle: "Full Stack Developer Intern",
+            company: "Trafinova",
+            jobTitle: "Freelance Full-Stack Developer",
             companyLink: "https://rablik.com/",
-            date: "Oct 2023 - Present",
+            date: "Dec 2023 - Present",
             description: 
             [
-                "I am currently enhancing my web development skills through practical experience in designing and implementing web applications.",
-                "Additionally, Iamactively cultivating my soft skills, including effective communication, collaboration and adaptability, fostering professionalism.",
+                "Spearheading frontend development for app 'Altrade,' ensuring a cohesive and user-friendly experience to complement the robust backend functionality.",
+                "Implementing and managing ONDC API calls for app 'Altrade', ensuring seamless integration and optimal functionality in the backend.",
             ],
         },
         {

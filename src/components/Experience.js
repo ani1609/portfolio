@@ -14,7 +14,7 @@ function Experience()
             id: 1,
             company: "Trafinova",
             jobTitle: "Freelance Full-Stack Developer",
-            companyLink: "https://rablik.com/",
+            companyLink: "",
             date: "Dec 2023 - Present",
             description: 
             [

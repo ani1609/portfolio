@@ -59,9 +59,9 @@ function About()
                             <li>Tailwind CSS</li>
                         </ul>
                         <ul>
-                            <li>NodeJS</li>
                             <li>Firebase</li>
                             <li>MongoDB</li>
+                            <li>Expressjs</li>
                         </ul>
                     </div>
                     <p>

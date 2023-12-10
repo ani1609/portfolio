@@ -24,6 +24,19 @@ function Experience()
         },
         {
             id: 2,
+            company: "KWoC 2023",
+            jobTitle: "Open Source Project Mentor",
+            companyLink: "https://kwoc.kossiitkgp.org/", // You can replace this with the actual link
+            date: "Nov 2023 - Jan 2024",
+            description: [
+                "Currently serving as a mentor for the ongoing 'Kharagpur Winter of Code (KWoC) 2023' event organized by IIT Kharagpur.",
+                `Initiated and led the open source project 'Spendwise', which gained approval and is currently receiving active participation from a community of contributors.`,
+                "Guiding and collaborating with contributors on a daily basis, fostering a collaborative environment for code development and improvement within Spendwise.",
+                "Overseeing the growth and development of Spendwise from its initial stages, ensuring its ongoing success as a valuable open source contribution.",
+            ],
+        },
+        {
+            id: 3,
             company: "Freelancing",
             jobTitle: "Freelance Web Developer",
             companyLink: "",

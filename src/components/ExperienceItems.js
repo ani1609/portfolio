@@ -122,7 +122,7 @@ function ExperienceItems(props)
                 }
             </div>
             <div className='experience_description' ref={experienceDescriptionRef}>
-                <h2>{selectedExperience.jobTitle} <span>@ <a href={selectedExperience.companyLink} target="_blank" onClick={(e)=>e.preventDefault()}>{selectedExperience.company}</a></span></h2>
+                <h2>{selectedExperience.jobTitle} <span>@ <a href={selectedExperience.companyLink} target="_blank" onClick={(e) => {if (selectedExperience.id !== 2) {e.preventDefault();}}}>{selectedExperience.company}</a></span></h2>
                 <p>{selectedExperience.date}</p>
                 <ul>
                     {selectedExperience.description.map((item, index) => (

@@ -18,8 +18,9 @@ function Experience()
             date: "Dec 2023 - Present",
             description: 
             [
-                "Spearheading frontend development for app 'Altrade', ensuring a cohesive and user-friendly experience to complement the robust backend functionality.",
-                "Implementing and managing ONDC API calls for app 'Altrade', ensuring seamless integration and optimal functionality in the backend.",
+                "Engineered a robust user authentication system employing JWT, JOI, and bcrypt for enhanced security.",
+                "Utilized Multerfor document uploads, followed by text extraction using tesseract OCR and pdf-parse to store content in the database.",
+                "Currently engaged in working with the ONDC API for seamless integration and functionality enhancements."
             ],
         },
         {

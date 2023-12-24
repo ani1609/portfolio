@@ -28,16 +28,16 @@ function Sidebars()
             <li className='github hover_effect'>
               <a href='https://github.com/ani1609' target='_blank'><Github/></a>
             </li>
-            <li className='linkedin hover_effect'>
+            <li className='codepen hover_effect'>
               <a href='' target='_blank'><Codepen/></a>
             </li>
-            <li className='twitter hover_effect'>
-              <a href='https://www.linkedin.com/in/ankit-kumar-chowdhury-1b1690218' target='_blank'><Linkedin/></a>
-            </li>
-            <li className='codepen hover_effect'>
-              <a href='https://www.instagram.com/ankit.chdry/' target='_blank'><Instagram/></a>
+            <li className='linkedin hover_effect'>
+              <a href='https://www.linkedin.com/in/ankit-kr-chowdhury-1b1690218/' target='_blank'><Linkedin/></a>
             </li>
             <li className='instagram hover_effect'>
+              <a href='https://www.instagram.com/ankit.chdry/' target='_blank'><Instagram/></a>
+            </li>
+            <li className='twitter hover_effect'>
               <a href='https://twitter.com/AnkitCh03046966' target='_blank'><Twitter/></a>
             </li>
             <li className='left_line'>

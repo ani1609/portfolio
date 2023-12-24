@@ -13,7 +13,7 @@ function Experience()
         {
             id: 1,
             company: "Trafinova",
-            jobTitle: "Freelance Full-Stack Developer",
+            jobTitle: "Backend Developer Intern",
             companyLink: "",
             date: "Dec 2023 - Present",
             description: 

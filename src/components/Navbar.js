@@ -1,7 +1,7 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect} from 'react';
 import '../index.css';
 import '../styles/Navbar.css';
-import Logo from '../images/A.jpg';
+import Logo from '../images/A.webp';
 
 
 function Navbar() 

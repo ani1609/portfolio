@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import {ReactComponent as FolderIcon} from "../icons/folder.svg";
 import {ReactComponent as GithubIcon} from "../icons/github.svg";
 import '../index.css';

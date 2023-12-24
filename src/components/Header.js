@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import '../index.css';
 import '../styles/Header.css';
 import Alien from '../icons/alien2.png';

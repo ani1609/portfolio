@@ -67,5 +67,6 @@ function MinorProjectItems(props)
     );
 }
 
+
 export default MinorProjectItems;
 

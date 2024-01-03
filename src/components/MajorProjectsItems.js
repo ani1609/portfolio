@@ -90,4 +90,5 @@ function MajorProjectsItems(props)
     );
 }
 
+
 export default MajorProjectsItems;

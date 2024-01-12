@@ -71,7 +71,6 @@ function About()
                         Innovation, curiosity, and a relentless pursuit of excellence define my journey as a web developer. I can't wait to see where this exciting path leads me next.
                     </p>
                 </div>
-
                 <div className='about_photo'>
                     <img src={MyPhoto}/>
                 </div>

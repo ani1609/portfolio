@@ -142,15 +142,12 @@ function Navbar()
                     </ol>
                     <a href='https://drive.google.com/file/d/1B_2lKMBlXx5Izy57pc_NU7HI7_F3i9mk/view?usp=sharing' target='_blank'>Resume</a>
                 </div>
-
                 <div className='ham_icon' onClick={handleHamIconClick}>
                 <span className={hamMenu ? 'rotateDown' : New ? '' : 'removeRotateDown'}></span>
                 <span className={hamMenu ? New ? '' : 'remove' : ''}></span>
                 <span className={hamMenu ? 'rotateUp' : New ? '' : 'removeRotateUp'}></span>
                 </div>
-
                 {hamMenu && <div className='blur' onClick={toggleHamMenu}></div>}
-
                 <div className={hamMenu? 'ham_tabs ham_tabs_show':'ham_tabs ham_tabs_hide'}>
                 <ol>
                     <li onClick={scrollToAbout}>About</li>
@@ -160,7 +157,6 @@ function Navbar()
                 </ol>
                 <a href='https://drive.google.com/file/d/1B_2lKMBlXx5Izy57pc_NU7HI7_F3i9mk/view?usp=sharing' target='_blank'>Resume</a>
                 </div>
-
             </nav>}
         </div>
     );

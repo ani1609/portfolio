@@ -5,7 +5,6 @@ import '../styles/Header.css';
 
 function Header() 
 {
-    
   useEffect(() =>
   {
     window.scrollTo(0, 0);

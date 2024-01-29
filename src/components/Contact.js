@@ -30,7 +30,7 @@ function Contact()
         {
             if (contactRef.current) observer.unobserve(contactRef.current);
         };
-    }, []);   
+    },[]);   
 
     return (
         <section className='contact_container' ref={contactRef}>

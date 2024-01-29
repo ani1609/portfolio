@@ -24,7 +24,7 @@ function ExperienceItems(props)
         {
             window.removeEventListener('resize', handleResize);
         };
-    }, []);
+    },[]);
     const [selectedExperience, setSelectedExperience] = useState(experiences[0]);
     const [selectedExperienceIndex, setSelectedExperienceIndex] = useState(0);
 
@@ -54,7 +54,7 @@ function ExperienceItems(props)
         {
             if (experienceContentRef.current) observer.unobserve(experienceContentRef.current);
         };
-    }, []);
+    },[]);
 
     useEffect(() =>
     {

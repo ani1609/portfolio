@@ -36,7 +36,7 @@ function About()
             if (aboutHeadingRef.current) observer.unobserve(aboutHeadingRef.current);
             if (aboutContentsRef.current) observer.unobserve(aboutContentsRef.current);
         };
-    }, []);
+    },[]);
 
     return (
         <section className='about_container'>

@@ -67,7 +67,7 @@ function MajorProjects()
         {
             if (MajorProjectHeadingRef.current) observer.unobserve(MajorProjectHeadingRef.current);
         };
-    }, []);    
+    },[]);    
 
 
     return(

@@ -74,7 +74,7 @@ function Experience()
         {
             if (experienceHeadingRef.current) observer.unobserve(experienceHeadingRef.current);
         };
-    }, []);
+    },[]);
 
     return (
         <section className='experience_container'>

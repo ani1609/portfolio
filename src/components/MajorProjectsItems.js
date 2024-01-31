@@ -38,7 +38,7 @@ function MajorProjectsItems(props)
             if (majorProjectOddRef.current) observer.unobserve(majorProjectOddRef.current);
             if (majorProjectEvenRef.current) observer.unobserve(majorProjectEvenRef.current);
         };
-    }, []);
+    },[]);
 
     return (
         <div>

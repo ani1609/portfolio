@@ -32,7 +32,7 @@ function MinorProjectItems(props)
         {
             if (minorProjectRef.current) observer.unobserve(minorProjectRef.current);
         };
-    }, []);
+    },[]);
 
     const handleGithubClick = () =>
     {

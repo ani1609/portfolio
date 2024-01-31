@@ -75,7 +75,7 @@ function MinorProjects ()
         {
             if (minorProjectHeadingRef.current) observer.unobserve(minorProjectHeadingRef.current);
         };
-    }, []);
+    },[]);
 
     return (
         <section className='minor_projects_parent'>

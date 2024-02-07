@@ -9,7 +9,6 @@ import p3 from '../images/venline.png';
 
 function MajorProjects()
 {
-    
     const MajorProjects=[
         {
             id:1,

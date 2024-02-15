@@ -93,6 +93,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 5px;
+    text-align: left;
 }
 
 .project_details_odd h2 h4, .project_details_even h2 h4
@@ -155,6 +156,7 @@
     flex-wrap: nowrap;
     overflow-x: auto;
     max-width: 100%;
+    height: 15px !important;
 }
 
 .project_details_odd ul li, .project_details_even ul li

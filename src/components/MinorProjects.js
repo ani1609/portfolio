@@ -5,13 +5,12 @@ import MinorProjectItems from './MinorProjectItems';
 
 function MinorProjects ()
 {
-
     const minorProjects= [
         {
             id: 1,
             title: 'Explorway',
             description: "Explore breathtaking destinations, send enquiries, and let our experienced team create personalized itineraries for an unforgettable journey.",
-            techStack: ["React", "Web Sockets", "OpenPGP", ""],
+            techStack: ["ReactJS","NodeJS","MongoDB","Express", "Firebase"],
             link: "https://explorway.vercel.app/",
             github: "https://github.com/ani1609/Explorway",
             underdevelopment: true
@@ -20,7 +19,7 @@ function MinorProjects ()
             id: 2,
             title: 'Venline',
             description: "Discover an innovative ecommerce marketplace, connecting vendors and customers. Explore farm-fresh fruits and vegetables, supporting local growers and promoting sustainability.",
-            techStack: ["React", "Expressjs", "MongoDB", "Apexcharts.js"],
+            techStack: ["Ejs", "NodeJS", "MongoDB", "Express"],
             link: "https://github.com/ani1609/Venline",
             github: "https://github.com/ani1609/Venline",
         },

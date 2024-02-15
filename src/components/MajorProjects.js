@@ -33,7 +33,7 @@ function MajorProjects()
         },
         {
             id: 3,
-            title: 'Spendwise',
+            title: "Spendwise",
             status:"KWoC '23, IIT KGP Triumph",
             description: "Designed and developed a user-friendly expense tracker app empowering individuals to effortlessly manage and analyze their financial transactions, fostering effective budgeting and financial awareness.",
             image: spednwiseSs,
@@ -43,7 +43,7 @@ function MajorProjects()
         },
         {
             id: 4,
-            title: 'Conversify',
+            title: "Conversify",
             status:"Under Development",
             description: "End-to-End Encrypted Chat App: Seamlessly integrating the OpenPGP library, this MERN-based application ensures secure and private messaging with real-time chat capabilities, prioritizing communication privacy and offering a seamless user experience.",
             image: conversifySs,

@@ -9,21 +9,20 @@ function MinorProjects ()
     const minorProjects= [
         {
             id: 1,
-            title: 'Conversify',
-            description: "End-to-End Encrypted Chat App: Seamlessly integrating the OpenPGP library, this MERN-based application ensures secure and private messaging with real-time chat capabilities, prioritizing communication privacy and offering a seamless user experience.",
+            title: 'Explorway',
+            description: "Explore breathtaking destinations, send enquiries, and let our experienced team create personalized itineraries for an unforgettable journey.",
             techStack: ["React", "Web Sockets", "OpenPGP", ""],
-            link: "https://github.com/ani1609/Conversify",
-            github: "https://github.com/ani1609/Conversify",
+            link: "https://explorway.vercel.app/",
+            github: "https://github.com/ani1609/Explorway",
             underdevelopment: true
         },
         {
             id: 2,
-            title: 'Spendwise',
-            description: "Designed and developed a user-friendly expense tracker app empowering individuals to effortlessly manage and analyze their financial transactions, fostering effective budgeting and financial awareness.",
+            title: 'Venline',
+            description: "Discover an innovative ecommerce marketplace, connecting vendors and customers. Explore farm-fresh fruits and vegetables, supporting local growers and promoting sustainability.",
             techStack: ["React", "Expressjs", "MongoDB", "Apexcharts.js"],
-            link: "https://spendwise-seven.vercel.app/",
-            github: "https://github.com/ani1609/Spendwise",
-            underdevelopment: true
+            link: "https://github.com/ani1609/Venline",
+            github: "https://github.com/ani1609/Venline",
         },
         {
             id: 3,

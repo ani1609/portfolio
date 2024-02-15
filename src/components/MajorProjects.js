@@ -2,9 +2,10 @@ import React, { useRef, useEffect } from 'react';
 import '../index.css';
 import '../styles/MajorProjects.css';
 import MajorProjectsItems from './MajorProjectsItems';
-import p1 from '../images/explorWay.png';
-import p2 from '../images/prathamik.png';
-import p3 from '../images/venline.png';
+import prathamikSs from '../images/prathamik.png';
+import neochatSs from '../images/neochat.png';
+import spednwiseSs from '../images/spendwise.png';
+import conversifySs from '../images/conversify.png';
 
 
 function MajorProjects()
@@ -13,32 +14,42 @@ function MajorProjects()
         {
             id:1,
             title:"Prathamik",
-            status:"",
-            description:"Explore the future of online learning with an all-in-one platform featuring video calls, Google OCR vision, an online IDE, AI chatbot, and more for a seamless educational experience.",
-            image: p2,
-            link:"https://github.com/ani1609/Prathamik",
+            status:"Hack4Bengal 2.0 Top 10",
+            description:"Step into the future of online education with an all-inclusive platform that seamlessly combines video calls, Google OCR vision, an online IDE, an AI chatbot, and other cutting-edge features for a dynamic and immersive learning journey.",
+            image: prathamikSs,
             techStack:["ChatGPT API", "VideoSDK", "Google OCR Vision", "Firebse", "MongoDB"],
             github:"https://github.com/ani1609/Prathamik",  
+            link:"https://github.com/ani1609/Prathamik",
         },
         {
             id:2,
-            title:"ExplorWay",
-            status:"Under development",
-            description:"Explore breathtaking destinations, send enquiries, and let our experienced team create personalized itineraries for an unforgettable journey.",
-            image: p1,
-            link:"https://explorway.vercel.app",
-            techStack:["ReactJS","NodeJS","MongoDB","Express", "Firebase"],
-            github:"https://github.com/ani1609/Traveloholic",
+            title:"NeoChat",
+            status:"Won Synchronicity - S1, JU",
+            description:"This versatile chat web app offers customizable settings designed for individuals with diverse abilities, facilitating inclusive communication for individuals with varying disabilities like deafness, blindness, and colorblindness.",
+            image: neochatSs,
+            techStack:["React", "Firebase", "", ""],
+            github:"https://github.com/ani1609/NeoChat", 
+            link:"https://neo-chat-blush.vercel.app/",
         },
         {
-            id:3,
-            title:"Venline",
-            status:"",
-            description:"Discover an innovative ecommerce marketplace, connecting vendors and customers. Explore farm-fresh fruits and vegetables, supporting local growers and promoting sustainability.",
-            image: p3,
-            link:"https://github.com/ani1609/Venline",
-            techStack:["Ejs", "NodeJS", "MongoDB", "Express"],
-            github:"https://github.com/ani1609/Venline", 
+            id: 3,
+            title: 'Spendwise',
+            status:"KWoC '23, IIT KGP Triumph",
+            description: "Designed and developed a user-friendly expense tracker app empowering individuals to effortlessly manage and analyze their financial transactions, fostering effective budgeting and financial awareness.",
+            image: spednwiseSs,
+            techStack: ["React", "Expressjs", "MongoDB", "Apexcharts.js"],
+            github: "https://github.com/ani1609/Spendwise",
+            link: "https://spendwise-seven.vercel.app/",
+        },
+        {
+            id: 4,
+            title: 'Conversify',
+            status:"Under Development",
+            description: "End-to-End Encrypted Chat App: Seamlessly integrating the OpenPGP library, this MERN-based application ensures secure and private messaging with real-time chat capabilities, prioritizing communication privacy and offering a seamless user experience.",
+            image: conversifySs,
+            techStack: ["React", "Web Sockets", "OpenPGP", "Expressjs", "MongoDB"],
+            github: "https://github.com/ani1609/Conversify",
+            link: "https://github.com/ani1609/Conversify",
         }
     ]
 

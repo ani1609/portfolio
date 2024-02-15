@@ -48,6 +48,7 @@
     filter: grayscale(100%) contrast(100%) brightness(90%);
     /* transition: 0.1s ease-in-out; */
     mix-blend-mode: multiply;
+    object-fit: cover;
 }
 
 .major_project_odd>a:hover img, .major_project_even>a:hover img
@@ -93,6 +94,15 @@
     flex-direction: column;
     justify-content: center;
     gap: 5px;
+}
+
+.project_details_odd h2
+{
+    text-align: right;
+}
+
+.project_details_even h2
+{
     text-align: left;
 }
 
@@ -227,6 +237,10 @@
     {
         height: 350px;
     }
+    .project_details_odd h2, .project_details_even h2
+    {
+        text-align: left;
+    }
     .project_details_odd h2 a, .project_details_even h2 a
     {
         font-size: 21px;
@@ -279,6 +293,10 @@
 
 @media screen and (max-width: 480px)
 {
+    .major_project_odd, .major_project_even
+    {
+        height: 380px;
+    }
     .project_details_odd h2 a, .project_details_even h2 a
     {
         font-size: 19px;

@@ -54,14 +54,14 @@ function About()
                     </p>
                     <div className='skills_list'>
                         <ul>
-                            <li>React</li>
                             <li>Nextjs</li>
+                            <li>TypeScript</li>
                             <li>Tailwind CSS</li>
                         </ul>
                         <ul>
                             <li>Firebase</li>
-                            <li>MongoDB</li>
                             <li>Expressjs</li>
+                            <li>PostgreSQL</li>
                         </ul>
                     </div>
                     <p>

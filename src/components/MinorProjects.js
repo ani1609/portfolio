@@ -35,7 +35,7 @@ function MinorProjects ()
             id: 3,
             title: 'Social Media Clone',
             description: "A prototype social media clone offering real-time post creation, likes, comments, and sharing features, complete with instantaneous notifications for a dynamic user experience.",
-            techStack: ["Socket.io", "React", "Express.js", "MongoDB"],
+            techStack: ["React", "Socket.IO", "Express.js", "MongoDB"],
             link: "https://github.com/ani1609/HealTetherAssessment",
             github: "https://github.com/ani1609/HealTetherAssessment",
         },

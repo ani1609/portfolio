@@ -10,7 +10,7 @@ function MinorProjects ()
             id: 1,
             title: 'Explorway',
             description: "Explore breathtaking destinations, send enquiries, and let our experienced team create personalized itineraries for an unforgettable journey.",
-            techStack: ["ReactJS","NodeJS","MongoDB","Express", "Firebase"],
+            techStack: ["React", "Firebase", "Express.js", "MongoDB"],
             link: "https://explorway.vercel.app/",
             github: "https://github.com/ani1609/Explorway",
             underdevelopment: true
@@ -19,12 +19,12 @@ function MinorProjects ()
             id: 2,
             title: 'Venline',
             description: "Discover an innovative ecommerce marketplace, connecting vendors and customers. Explore farm-fresh fruits and vegetables, supporting local growers and promoting sustainability.",
-            techStack: ["Ejs", "NodeJS", "MongoDB", "Express"],
+            techStack: ["Ejs", "CSS", "Express.js", "MongoDB"],
             link: "https://github.com/ani1609/Venline",
             github: "https://github.com/ani1609/Venline",
         },
         {
-            id: 3,
+            id: 4,
             title: 'Weather App',
             description: "This project seamlessly integrates OpenWeatherMap API to provide real-time weather data for a given locationand OpenCage APIs to deliver dynamic weather information based on user location, enhancing accuracy and user-friendliness.",
             techStack: ["OpenWeatherMap API", "OpenCage API", "", ""],
@@ -32,7 +32,15 @@ function MinorProjects ()
             github: "https://github.com/ani1609/weather",
         },
         {
-            id: 4,
+            id: 3,
+            title: 'Social Media Clone',
+            description: "A prototype social media clone offering real-time post creation, likes, comments, and sharing features, complete with instantaneous notifications for a dynamic user experience.",
+            techStack: ["Socket.io", "React", "Express.js", "MongoDB"],
+            link: "https://github.com/ani1609/HealTetherAssessment",
+            github: "https://github.com/ani1609/HealTetherAssessment",
+        },
+        {
+            id: 5,
             title: 'Calculator',
             description: "Basic calculator web app for performing arithmetic calculations.",
             techStack: ["HTML", "CSS", "JavaScript", ""],
@@ -40,10 +48,10 @@ function MinorProjects ()
             github: "https://github.com/ani1609/Calculator"
         },
         {
-            id: 5,
+            id: 6,
             title: 'E-commerce Cart',
             description: "Created a basic dynamic ecommerce cart page in React, efficiently rendering each cart item using modular subcomponents for enhanced user experience.",
-            techStack: ["React", "CSS", "", ""],
+            techStack: ["React", "", "", ""],
             link: "https://github.com/ani1609/cart",
             github: "https://github.com/ani1609/cart"
         },

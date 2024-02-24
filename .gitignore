@@ -2,3 +2,4 @@ node_modules
 .vercel
 create-react-app/
 .DS_Store
+.env

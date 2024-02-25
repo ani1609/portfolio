@@ -31,7 +31,12 @@ function Footer()
                 <li onClick={() => handleLinkClick(instagramLink)}><Instagram/></li>
                 <li onClick={() => handleLinkClick(twitterLink)}><Twitter/></li>
             </ul>
-            <a href='https://github.com/ani1609/resume' target='_blank' >Designed & Built by Ankit Kr. Chowdhury</a>
+            <p>
+                Designed by 
+                <a href='https://github.com/ani1609/resume' target='_blank' > Brittany Chiang </a>
+                & Built by 
+                <a href='https://github.com/ani1609/resume' target='_blank' > Ankit Kr. Chowdhury</a>
+            </p>
         </section>
     );
 }

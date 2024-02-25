@@ -33,7 +33,7 @@ function Footer()
             </ul>
             <p>
                 Designed by 
-                <a href='https://github.com/ani1609/resume' target='_blank' > Brittany Chiang </a>
+                <a href='https://github.com/bchiang7' target='_blank' > Brittany Chiang </a>
                 & Built by 
                 <a href='https://github.com/ani1609/resume' target='_blank' > Ankit Kr. Chowdhury</a>
             </p>

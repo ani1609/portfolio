@@ -7,7 +7,6 @@ import '../styles/MinorProjectItems.css';
 function MinorProjectItems(props)
 {
     const {minorProject} = props;
-
     const minorProjectRef = useRef(null);
 
     useEffect(() => 

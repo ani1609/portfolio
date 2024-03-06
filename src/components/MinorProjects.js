@@ -1,10 +1,12 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import '../index.css';
 import '../styles/MinorProjects.css';
 import MinorProjectItems from './MinorProjectItems';
 
 function MinorProjects ()
 {
+    const [showAllProjects, setShowAllProjects] = useState(false);
+    const minorProjectHeadingRef = useRef(null);
     const minorProjects= [
         {
             id: 1,
@@ -65,8 +67,6 @@ function MinorProjects ()
             github: "https://github.com/ani1609/cart"
         },
     ]
-    
-    const minorProjectHeadingRef = useRef(null);
 
     useEffect(() => 
     {
@@ -92,19 +92,23 @@ function MinorProjects ()
         };
     },[]);
 
+   
     return (
         <section className='minor_projects_parent'>
             <h1 ref={minorProjectHeadingRef}>Other Noteworthy Projects</h1>
             <div className='minor_projects_container'>
-                {minorProjects.map((minorProject) => {
-                    return (
-                            <MinorProjectItems
-                                minorProject={minorProject}
-                                key={minorProject.id}
-                            />
-                    )
-                })}
+                {minorProjects.slice(0, showAllProjects ? minorProjects.length : 6).map((minorProject) => (
+                    <MinorProjectItems
+                        minorProject={minorProject}
+                        key={minorProject.id}
+                    />
+                ))}
             </div>
+            {minorProjects.length > 6 && (
+                <button onClick={() => setShowAllProjects((prev) => !prev)}>
+                    {showAllProjects ? 'Show Less' : 'Show More'}
+                </button>
+            )}
         </section>
     );
 }

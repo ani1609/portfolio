@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import '../index.css';
 import '../styles/MinorProjects.css';
 import MinorProjectItems from './MinorProjectItems';

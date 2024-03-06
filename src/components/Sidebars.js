@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import '../index.css';
 import '../styles/Sidebars.css';
 import { ReactComponent as Github } from '../icons/github.svg';

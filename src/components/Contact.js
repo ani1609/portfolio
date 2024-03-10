@@ -5,7 +5,6 @@ import '../styles/Contact.css';
 
 function Contact() 
 {
-
     const contactRef = useRef(null);
 
     useEffect(() => 

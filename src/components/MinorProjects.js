@@ -12,7 +12,7 @@ function MinorProjects ()
             id: 1,
             title: 'Edinix',
             description: "A React library which can be integrated to open-source websites for non-technicals to contribute.",
-            techStack: ["React", "Tailwind", "Express.js", "MongoDB"],
+            techStack: ["React", "Tailwind CSS", "Express.js", "MongoDB"],
             link: "https://github.com/niladrix719/HackNITR",
             github: "https://github.com/niladrix719/HackNITR",
             underdevelopment: true
@@ -28,22 +28,15 @@ function MinorProjects ()
         },
         {
             id: 3,
-            title: 'Venline',
-            description: "Discover an innovative ecommerce marketplace, connecting vendors and customers. Explore farm-fresh fruits and vegetables, supporting local growers and promoting sustainability.",
-            techStack: ["Ejs", "CSS", "Express.js", "MongoDB"],
-            link: "https://github.com/ani1609/Venline",
-            github: "https://github.com/ani1609/Venline",
+            title: 'UI Astra',
+            description: "Exploring Framer Motion to bring dynamic and polished animations.",
+            techStack: ["Nextjs", "Tailwind CSS", "Framer Motion", ""],
+            link: "https://uiastra.vercel.app/",
+            github: "https://github.com/ani1609/uiastra",
+            underdevelopment: true
         },
         {
             id: 4,
-            title: 'Weather App',
-            description: "This project seamlessly integrates OpenWeatherMap API to provide real-time weather data for a given locationand OpenCage APIs to deliver dynamic weather information based on user location, enhancing accuracy and user-friendliness.",
-            techStack: ["OpenWeatherMap API", "OpenCage API", "", ""],
-            link: "https://weather-sable-sigma.vercel.app/",
-            github: "https://github.com/ani1609/weather",
-        },
-        {
-            id: 5,
             title: 'Social Media Clone',
             description: "A prototype social media clone offering real-time post creation, likes, comments, and sharing features, complete with instantaneous notifications for a dynamic user experience.",
             techStack: ["React", "Socket.IO", "Express.js", "MongoDB"],
@@ -51,7 +44,23 @@ function MinorProjects ()
             github: "https://github.com/ani1609/HealTetherAssessment",
         },
         {
+            id: 5,
+            title: 'Venline',
+            description: "Discover an innovative ecommerce marketplace, connecting vendors and customers. Explore farm-fresh fruits and vegetables, supporting local growers and promoting sustainability.",
+            techStack: ["Ejs", "CSS", "Express.js", "MongoDB"],
+            link: "https://github.com/ani1609/Venline",
+            github: "https://github.com/ani1609/Venline",
+        },
+        {
             id: 6,
+            title: 'Weather App',
+            description: "This project seamlessly integrates OpenWeatherMap API to provide real-time weather data for a given locationand OpenCage APIs to deliver dynamic weather information based on user location, enhancing accuracy and user-friendliness.",
+            techStack: ["OpenWeatherMap API", "OpenCage API", "", ""],
+            link: "https://weather-sable-sigma.vercel.app/",
+            github: "https://github.com/ani1609/weather",
+        },
+        {
+            id: 7,
             title: 'Calculator',
             description: "Basic calculator web app for performing arithmetic calculations.",
             techStack: ["HTML", "CSS", "JavaScript", ""],
@@ -59,7 +68,7 @@ function MinorProjects ()
             github: "https://github.com/ani1609/Calculator"
         },
         {
-            id: 7,
+            id: 8,
             title: 'E-commerce Cart',
             description: "Created a basic dynamic ecommerce cart page in React, efficiently rendering each cart item using modular subcomponents for enhanced user experience.",
             techStack: ["React", "", "", ""],

@@ -13,8 +13,8 @@ function MinorProjects ()
             title: 'Edinix',
             description: "A React library which can be integrated to open-source websites for non-technicals to contribute.",
             techStack: ["React", "Tailwind CSS", "Express.js", "MongoDB"],
-            link: "https://github.com/niladrix719/HackNITR",
-            github: "https://github.com/niladrix719/HackNITR",
+            link: "https://github.com/itsme-Subid/EdiNix",
+            github: "https://github.com/itsme-Subid/EdiNix",
             underdevelopment: true
         },
         {

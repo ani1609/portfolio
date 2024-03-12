@@ -26,7 +26,7 @@ function Experience()
         {
             id: 2,
             company: "KWoC 2023",
-            jobTitle: "Open Source Project Mentor",
+            jobTitle: "Mentor",
             companyLink: "https://kwoc.kossiitkgp.org/", // You can replace this with the actual link
             date: "Nov 2023 - Jan 2024",
             description: [

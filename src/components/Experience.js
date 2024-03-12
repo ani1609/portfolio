@@ -13,7 +13,7 @@ function Experience()
         {
             id: 1,
             company: "Trafinova",
-            jobTitle: "Backend Developer Intern",
+            jobTitle: "SDE Intern",
             companyLink: "",
             date: "Dec 2023 - Present",
             description: 

@@ -56,11 +56,6 @@ function ExperienceItems(props)
         };
     },[]);
 
-    useEffect(() =>
-    {
-        // console.log(selectedExperienceIndex);
-    },[selectedExperience]);
-
     useEffect(() => 
     {
         if (experienceDescriptionRef.current) {

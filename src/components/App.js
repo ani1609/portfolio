@@ -22,16 +22,16 @@ function App()
 
     return (
         <div className='App'>
-        <Navbar/>
-        <Header/>
-        <TopButton/>
-        <Sidebars/>
-        <About/>
-        <Experience/>
-        <MajorProjects/>
-        <MinorProjects/>
-        <Contact/>
-        <Footer/>
+            <Navbar/>
+            <Header/>
+            <TopButton/>
+            <Sidebars/>
+            <About/>
+            <Experience/>
+            <MajorProjects/>
+            <MinorProjects/>
+            <Contact/>
+            <Footer/>
         </div>
     );
 }

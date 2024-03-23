@@ -10,6 +10,7 @@ function Navbar()
     const [navbarShadow, setNavbarShadow]=useState(false);
     const [hamMenu, setHamMenu]=useState(false);
     const [New, setNew]=useState(true);
+    const resumeLink="https://drive.google.com/file/d/1fzXmk5RvmLzPxshRPil31FGjxumsQM_q/view?usp=sharing";
 
     
     useEffect(() => 
@@ -131,7 +132,7 @@ function Navbar()
         <div>
             {shouldRender && <nav className={navbarShadow ? 'navbar_container navbar_shadow' : 'navbar_container'}>
                 <a href='https://portfolio-ani1609.vercel.app' className='logo-container'>
-                <img src={Logo}/>
+                    <img src={Logo}/>
                 </a>
                 <div className='nav_tabs'>
                     <ol>
@@ -140,22 +141,22 @@ function Navbar()
                         <li onClick={scrollToMajorProjects}>Work</li>
                         <li onClick={scrollToContact}>Contact</li>
                     </ol>
-                    <a href={process.env.REACT_APP_RESUME_LINK} target='_blank'>Resume</a>
+                    <a href={resumeLink} target='_blank'>Resume</a>
                 </div>
                 <div className='ham_icon' onClick={handleHamIconClick}>
-                <span className={hamMenu ? 'rotateDown' : New ? '' : 'removeRotateDown'}></span>
-                <span className={hamMenu ? New ? '' : 'remove' : ''}></span>
-                <span className={hamMenu ? 'rotateUp' : New ? '' : 'removeRotateUp'}></span>
+                    <span className={hamMenu ? 'rotateDown' : New ? '' : 'removeRotateDown'}></span>
+                    <span className={hamMenu ? New ? '' : 'remove' : ''}></span>
+                    <span className={hamMenu ? 'rotateUp' : New ? '' : 'removeRotateUp'}></span>
                 </div>
                 {hamMenu && <div className='blur' onClick={toggleHamMenu}></div>}
                 <div className={hamMenu? 'ham_tabs ham_tabs_show':'ham_tabs ham_tabs_hide'}>
-                <ol>
-                    <li onClick={scrollToAbout}>About</li>
-                    <li onClick={scrollToExperience}>Experience</li>
-                    <li onClick={scrollToMajorProjects}>Work</li>
-                    <li onClick={scrollToContact}>Contact</li>
-                </ol>
-                <a href={process.env.REACT_APP_RESUME_LINK} target='_blank'>Resume</a>
+                    <ol>
+                        <li onClick={scrollToAbout}>About</li>
+                        <li onClick={scrollToExperience}>Experience</li>
+                        <li onClick={scrollToMajorProjects}>Work</li>
+                        <li onClick={scrollToContact}>Contact</li>
+                    </ol>
+                    <a href={resumeLink} target='_blank'>Resume</a>
                 </div>
             </nav>}
         </div>

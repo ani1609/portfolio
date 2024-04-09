@@ -28,10 +28,7 @@ function Navbar()
         const aboutSection = document.querySelector('.about_container');
         const offsetTop = aboutSection.offsetTop;
         const scrollToPosition = offsetTop - 80;
-        window.scrollTo({
-        top: scrollToPosition,
-        behavior: 'smooth'
-        });
+        window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
         setHamMenu(false);
     }
 
@@ -40,10 +37,7 @@ function Navbar()
         const aboutSection = document.querySelector('.experience_container');
         const offsetTop = aboutSection.offsetTop;
         const scrollToPosition = offsetTop - 80;
-        window.scrollTo({
-        top: scrollToPosition,
-        behavior: 'smooth'
-        });
+        window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
         setHamMenu(false);
     };
 
@@ -52,10 +46,7 @@ function Navbar()
         const majorProjectsSection = document.querySelector('.major_projects_parent');
         const offsetTop = majorProjectsSection.offsetTop;
         const scrollToPosition = offsetTop - 80;
-        window.scrollTo({
-        top: scrollToPosition,
-        behavior: 'smooth'
-        });
+        window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
         setHamMenu(false);
     }
 
@@ -74,9 +65,10 @@ function Navbar()
         };
 
         if (hamMenu) {
-        toggleBodyScroll(false);    
-        } else {
-        toggleBodyScroll(true);
+            toggleBodyScroll(false);    
+        } 
+        else {
+            toggleBodyScroll(true);
         }
 
     }, [hamMenu]);
@@ -86,11 +78,11 @@ function Navbar()
     {
         if (window.scrollY>5)
         {
-        setNavbarShadow(true);
+            setNavbarShadow(true);
         }
         else
         {
-        setNavbarShadow(false);
+            setNavbarShadow(false);
         }
     };
 
@@ -102,8 +94,8 @@ function Navbar()
         }
         else
         {
-        setHamMenu(false);
-        setNew(true);
+            setHamMenu(false);
+            setNew(true);
         }
     }
 

@@ -1,55 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
-
-body 
-{
-    background-color: #0E192D;
-    --primary: #64FFDA;
-    --light-navy: #233554;
-    --navy: #112240;
-    --dark-navy: #15223E;
-    --heading: #CCD6F6;
-    --para: #8892B0;
-    --hover: #1C303F;
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    scrollbar-color: var(--primary) var(--sb-track-color);
+body {
+  background-color: #0e192d;
+  --primary: #64ffda;
+  --light-navy: #233554;
+  --navy: #112240;
+  --dark-navy: #15223e;
+  --heading: #ccd6f6;
+  --para: #8892b0;
+  --hover: #1c303f;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-color: var(--primary) var(--sb-track-color);
 }
 
-::selection
-{
-    color: #C2CBE8 !important;
-    background-color: #273552 !important;
+::selection {
+  color: #c2cbe8 !important;
+  background-color: #273552 !important;
 }
 
-::-webkit-selection 
-{
-    color: #C2CBE8 !important;
-    background-color: #273552 !important;
+::-webkit-selection {
+  color: #c2cbe8 !important;
+  background-color: #273552 !important;
 }
 
-body::-webkit-scrollbar
-{
-    width: 5px;
-}
-  
-body::-webkit-scrollbar-track 
-{
-    background: var(--navy);
-    border-radius: 4px;
-}
-  
-body::-webkit-scrollbar-thumb 
-{
-    background: var(--primary);
-    border-radius: 4px;
+body::-webkit-scrollbar {
+  width: 5px;
 }
 
-code 
-{
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+body::-webkit-scrollbar-track {
+  background: var(--navy);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.maintenance-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.maintenance-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
 }

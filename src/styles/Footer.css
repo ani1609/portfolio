@@ -41,6 +41,8 @@
   font-weight: 600;
   letter-spacing: 1.5px;
   word-spacing: 2.5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .footer_container p a {
@@ -53,6 +55,8 @@
   word-spacing: 2.5px;
   text-decoration: none;
   transition: 0.3s ease-in-out;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .footer_container p a:hover {

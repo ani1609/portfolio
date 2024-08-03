@@ -9,26 +9,28 @@ function Experience() {
   const experiences = [
     {
       id: 1,
-      company: "Trafinova",
+      company: "Einetic",
       jobTitle: "SDE Intern",
-      companyLink: "",
-      date: "Dec 2023 - Present",
+      companyLink: "https://www.einetic.com/",
+      date: "Apr 2024 - Present",
       description: [
-        "Designed and implemented a secure user authentication system using JSON Web Tokens (JWT), JOI validation for input integrity, and bcrypt for password hashing, ensuring a robust and protected environment for user accounts.",
-        "Developed a feature for uploading documents using Multer, a file-handling middleware. Integrated text extraction capabilities using Tesseract OCR and pdf-parse, enabling the extraction and storage of document content in the database.",
-        "Currently involved in integrating and enhancing functionality with the Open Network for Digital Commerce (ONDC) API, aiming to seamlessly incorporate ONDC services and elevate overall system capabilities.",
+        'Developed <a href="https://uiastra.com/" target="_blank" rel="noopener noreferrer">UI Astra</a>, an in-house component library with reusable components and an icon library, reducing development speed by 40%',
+        'Improved UI/UX of <a href="https://galadriel.com/" target="_blank" rel="noopener noreferrer">Galadriel</a>, leading to a 25% increase in user engagement, and integrated user authentication and dashboard APIs, boosting security and user data accessibility.',
+        "Attended daily stand-up meetings to provide progress updates, discuss ongoing tasks, and collaborate with team members on project coordination and strategy.",
+        'Currently enhancing UI/UX and optimizing logic for <a href="https://warped.games/" target="_blank" rel="noopener noreferrer">Warped Games</a>, targeting a 30% increase in user interaction.',
       ],
     },
     {
       id: 2,
       company: "KWoC 2023",
       jobTitle: "Mentor",
-      companyLink: "https://kwoc.kossiitkgp.org/", // You can replace this with the actual link
+      companyLink: "https://kwoc.kossiitkgp.org/",
       date: "Nov 2023 - Jan 2024",
       description: [
-        "Currently serving as a mentor for the ongoing 'Kharagpur Winter of Code (KWoC) 2023' event organized by IIT Kharagpur, providing guidance and support to participating students as they work on exciting coding projects.",
-        "Initiated and led the open source project 'Spendwise,' gaining approval and fostering active participation from a dedicated community of contributors. Actively guiding and collaborating with contributors on a daily basis, I cultivate a collaborative environment for code development and improvement within the Spendwise project.",
-        "Overseeing the growth and development of Spendwise from its initial stages, ensuring its ongoing success as a valuable open source contribution. Leading efforts to expand features, enhance code quality, and encourage a vibrant community of contributors.",
+        'Initiated and crafted the project <a href="https://spendwise-two.vercel.app/" target="_blank" rel="noopener noreferrer">Spendwise</a> with initial basic features.',
+        "Mentored the project through Kharagpur Winter of Code, 2023, guiding over 30 contributors.",
+        "Carefully reviewed and integrated contributions, ensuring project quality and coherence, which led to a 20% reduction in bugs and inconsistencies.",
+        "Maintained project standards and managed updates, throughout the mentorship period, resulting in a 25% improvement in project stability and performance.",
       ],
     },
     {

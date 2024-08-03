@@ -40,10 +40,10 @@ function About() {
       <div className="about_contents" ref={aboutContentsRef}>
         <div className="about_description">
           <p>
-            Hey there, I'm Ankit, a 3rd-year B.Tech student in Computer Science
-            and Engineering (CSE). Web development is my ultimate passion, and I
-            thrive in creating captivating websites with seamless user
-            experiences.
+            Hey there, I'm Ankit, a final-year B.Tech student in Computer
+            Science and Engineering (CSE). Web development is my ultimate
+            passion, and I thrive in creating captivating websites with seamless
+            user experiences.
           </p>
           <p>
             Throughout my academic journey, coding has opened up endless

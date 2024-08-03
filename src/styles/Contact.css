@@ -9,8 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 100px);
-  /* margin-top: 50px; */
+  height: calc(100vh - 106px);
   opacity: 0;
 }
 
@@ -98,7 +97,7 @@
 
 @media screen and (max-width: 768px) {
   .contact_container {
-    height: calc(100vh - 145px);
+    height: calc(100vh - 138.2px);
   }
 
   .contact_container h4 {
@@ -135,5 +134,11 @@
   .contact_container p {
     font-size: 14px;
     text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 402.4px) {
+  .contact_container {
+    height: calc(100vh - 153.4px);
   }
 }

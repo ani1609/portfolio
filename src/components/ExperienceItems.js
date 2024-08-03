@@ -114,7 +114,7 @@ function ExperienceItems(props) {
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => {
-                if (selectedExperience.id !== 2) {
+                if (selectedExperience.id === 3) {
                   e.preventDefault();
                 }
               }}
@@ -126,7 +126,7 @@ function ExperienceItems(props) {
         <p>{selectedExperience.date}</p>
         <ul>
           {selectedExperience.description.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={index} dangerouslySetInnerHTML={{ __html: item }}></li>
           ))}
         </ul>
       </div>

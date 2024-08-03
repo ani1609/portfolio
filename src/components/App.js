@@ -16,28 +16,20 @@ function App() {
     window.scrollTo(0, 0);
   }, []);
 
-  if (process.env.REACT_APP_ISMAINTENANCE === "true") {
-    return (
-      <div className="maintenance-container">
-        <h1>Site Under Maintenance</h1>
-      </div>
-    );
-  } else {
-    return (
-      <div className="App">
-        <Navbar />
-        <Header />
-        <TopButton />
-        <Sidebars />
-        <About />
-        <Experience />
-        <MajorProjects />
-        <MinorProjects />
-        <Contact />
-        <Footer />
-      </div>
-    );
-  }
+  return (
+    <div className="App">
+      <Navbar />
+      <Header />
+      <TopButton />
+      <Sidebars />
+      <About />
+      <Experience />
+      <MajorProjects />
+      <MinorProjects />
+      <Contact />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

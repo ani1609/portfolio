@@ -137,9 +137,6 @@
   color: var(--para);
   font-family: "Source Sans Pro", sans-serif;
   text-align: justify;
-  /* display: flex;
-    align-items: baseline;
-    gap: 10px; */
 }
 
 .experience_description ul li::before {
@@ -147,6 +144,33 @@
   color: var(--primary);
   font-size: 16px;
   padding-right: 8px;
+}
+
+.experience_description ul li a {
+  color: green;
+}
+
+.experience_description ul li a {
+  color: var(--primary);
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+
+.experience_description ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.5px;
+  width: 0%;
+  background-color: var(--primary);
+  display: block;
+  transition: 0.2s ease-in-out;
+}
+
+.experience_description ul li a:hover::after {
+  width: 100%;
 }
 
 .right_arrow {

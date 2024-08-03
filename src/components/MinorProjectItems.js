@@ -59,7 +59,7 @@ function MinorProjectItems(props) {
 
       <div className="minor_title">
         <h2>{minorProject.title}</h2>
-        {minorProject.underdevelopment && <h4>Under Development</h4>}
+        {minorProject.tagLine && <h4>{minorProject.tagLine}</h4>}
       </div>
 
       <p>{minorProject.description}</p>

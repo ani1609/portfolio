@@ -9,42 +9,50 @@ function MinorProjects() {
   const minorProjects = [
     {
       id: 1,
+      title: "NeoChat",
+      description:
+        "Created a basic dynamic ecommerce cart page in React, efficiently rendering each cart item using modular subcomponents for enhanced user experience.",
+      techStack: ["React", "Assembly AI API", "", ""],
+      link: "https://neo-chat-blush.vercel.app/",
+      github: "https://github.com/ani1609/NeoChat",
+      tagLine: "Won Synchronicity - S1, JU",
+    },
+    {
+      id: 2,
       title: "Edinix",
       description:
         "A React library which can be integrated to open-source websites for non-technicals to contribute.",
       techStack: ["React", "Tailwind CSS", "Express.js", "MongoDB"],
       link: "https://github.com/itsme-Subid/EdiNix",
       github: "https://github.com/itsme-Subid/EdiNix",
-      underdevelopment: true,
+      tagLine: "HackNITR 5.0 Triumph",
     },
     {
-      id: 2,
+      id: 3,
       title: "Explorway",
       description:
         "Explore breathtaking destinations, send enquiries, and let our experienced team create personalized itineraries for an unforgettable journey.",
       techStack: ["React", "Firebase", "Express.js", "MongoDB"],
       link: "https://explorway.vercel.app/",
       github: "https://github.com/ani1609/Explorway",
-      underdevelopment: true,
-    },
-    {
-      id: 3,
-      title: "UI Astra",
-      description:
-        "Exploring Framer Motion to bring dynamic and polished animations.",
-      techStack: ["Nextjs", "Tailwind CSS", "Framer Motion", ""],
-      link: "https://uiastra.vercel.app/",
-      github: "https://github.com/ani1609/uiastra",
-      underdevelopment: true,
     },
     {
       id: 4,
-      title: "Social Media Clone",
+      title: "Prathamik",
       description:
-        "A prototype social media clone offering real-time post creation, likes, comments, and sharing features, complete with instantaneous notifications for a dynamic user experience.",
-      techStack: ["React", "Socket.IO", "Express.js", "MongoDB"],
-      link: "https://github.com/ani1609/HealTetherAssessment",
-      github: "https://github.com/ani1609/HealTetherAssessment",
+        "Step into the future of online education with an all-inclusive platform that seamlessly combines video calls, Google OCR vision, an online IDE, an AI chatbot, and other cutting-edge features for a dynamic and immersive learning journey.",
+      techStack: [
+        "React",
+        "ChatGPT API",
+        "VideoSDK",
+        "Google OCR Vision",
+        "Firebse",
+        "Express.js",
+        "MongoDB",
+      ],
+      link: "https://github.com/ani1609/Prathamik",
+      github: "https://github.com/ani1609/Prathamik",
+      tagLine: "Hack4Bengal 2.0 Sensation",
     },
     {
       id: 5,
@@ -54,33 +62,25 @@ function MinorProjects() {
       techStack: ["Ejs", "CSS", "Express.js", "MongoDB"],
       link: "https://github.com/ani1609/Venline",
       github: "https://github.com/ani1609/Venline",
+      tagLine: "Diversion 2k23 Success",
     },
     {
       id: 6,
+      title: "Social Media Clone",
+      description:
+        "A prototype social media clone offering real-time post creation, likes, comments, and sharing features, complete with instantaneous notifications for a dynamic user experience.",
+      techStack: ["React", "Socket.io", "Express.js", "MongoDB"],
+      link: "https://github.com/ani1609/HealTetherAssessment",
+      github: "https://github.com/ani1609/HealTetherAssessment",
+    },
+    {
+      id: 7,
       title: "Weather App",
       description:
         "This project seamlessly integrates OpenWeatherMap API to provide real-time weather data for a given locationand OpenCage APIs to deliver dynamic weather information based on user location, enhancing accuracy and user-friendliness.",
       techStack: ["OpenWeatherMap API", "OpenCage API", "", ""],
       link: "https://weather-sable-sigma.vercel.app/",
       github: "https://github.com/ani1609/weather",
-    },
-    {
-      id: 7,
-      title: "Calculator",
-      description:
-        "Basic calculator web app for performing arithmetic calculations.",
-      techStack: ["HTML", "CSS", "JavaScript", ""],
-      link: "https://ani1609.github.io/Calculator/",
-      github: "https://github.com/ani1609/Calculator",
-    },
-    {
-      id: 8,
-      title: "E-commerce Cart",
-      description:
-        "Created a basic dynamic ecommerce cart page in React, efficiently rendering each cart item using modular subcomponents for enhanced user experience.",
-      techStack: ["React", "", "", ""],
-      link: "https://github.com/ani1609/cart",
-      github: "https://github.com/ani1609/cart",
     },
   ];
 

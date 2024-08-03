@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "../styles/App.css";
+import Maintenance from "./Maintenance";
 import Navbar from "./Navbar";
 import Header from "./Header";
 import Sidebars from "./Sidebars";
@@ -16,20 +17,28 @@ function App() {
     window.scrollTo(0, 0);
   }, []);
 
-  return (
-    <div className="App">
-      <Navbar />
-      <Header />
-      <TopButton />
-      <Sidebars />
-      <About />
-      <Experience />
-      <MajorProjects />
-      <MinorProjects />
-      <Contact />
-      <Footer />
-    </div>
-  );
+  if (process.env.REACT_APP_MAINTENANCE_MODE === "true") {
+    return (
+      <div className="App">
+        <Maintenance />
+      </div>
+    );
+  } else {
+    return (
+      <div className="App">
+        <Navbar />
+        <Header />
+        <TopButton />
+        <Sidebars />
+        <About />
+        <Experience />
+        <MajorProjects />
+        <MinorProjects />
+        <Contact />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -10,8 +10,8 @@ function MajorProjects() {
   const MajorProjects = [
     {
       id: 1,
-      title: "Prathamik",
-      status: "Hack4Bengal 2.0 Top 10",
+      title: "UI Astra",
+      status: "Industry Level Project",
       description:
         "A versatile UI library featuring reusable, customizable components built on top of Radix Primitives, and an integrated icon library, AstraIcons, for streamlined and efficient web development.",
       image: UiAstraImage,

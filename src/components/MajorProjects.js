@@ -33,8 +33,6 @@ function MajorProjects() {
         "OpenPGP",
         "React",
         "Socket.io",
-        "React",
-        "Socket.io",
       ],
       github: "https://github.com/ani1609/Conversify",
       link: "https://github.com/ani1609/Conversify",

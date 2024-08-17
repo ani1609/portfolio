@@ -108,6 +108,8 @@
   gap: 20px;
   flex-wrap: nowrap;
   overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 5px;
 }
 
 .minor_project ul li {
@@ -173,4 +175,18 @@
   .minor_project ul li {
     font-size: 11px;
   }
+}
+
+.minor_project ul::-webkit-scrollbar {
+  height: 4px;
+}
+
+.minor_project ul::-webkit-scrollbar-track {
+  background: var(--navy);
+  border-radius: 4px;
+}
+
+.minor_project ul::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
 }

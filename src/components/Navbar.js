@@ -9,7 +9,7 @@ function Navbar() {
   const [hamMenu, setHamMenu] = useState(false);
   const [New, setNew] = useState(true);
   const resumeLink =
-    "https://drive.google.com/file/d/1fzXmk5RvmLzPxshRPil31FGjxumsQM_q/view?usp=sharing";
+    "https://drive.google.com/file/d/1wF7-y_bC_rymmTKyVz2ZAosZuhBwao4_/view?usp=sharing";
 
   useEffect(() => {
     const timer = setTimeout(() => {

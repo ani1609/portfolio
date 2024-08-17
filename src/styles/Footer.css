@@ -22,8 +22,8 @@
 }
 
 .footer_container ul li {
-  height: 18px;
-  width: 18px;
+  height: 20px;
+  width: 20px;
   transition: 0.2s ease-in-out;
   color: var(--para);
   cursor: pointer;

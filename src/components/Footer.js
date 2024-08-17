@@ -4,12 +4,12 @@ import { ReactComponent as Github } from "../icons/github.svg";
 import { ReactComponent as Linkedin } from "../icons/linkedin.svg";
 import { ReactComponent as Instagram } from "../icons/instagram.svg";
 import { ReactComponent as Twitter } from "../icons/twitter.svg";
-import { ReactComponent as Codepen } from "../icons/codepen.svg";
+import { ReactComponent as Discord } from "../icons/discord.svg";
 // import { ReactComponent as Leetcode } from "../icons/leetcode.svg";
 
 function Footer() {
   const githubLink = "https://github.com/ani1609";
-  const codepenLink = "";
+  const discordLink = "https://discordapp.com/users/754188469764358264";
   const linkedinLink =
     "https://www.linkedin.com/in/ankit-kumar-chowdhury-1b1690218";
   const instagramLink = "https://www.instagram.com/ankit.chdry/";
@@ -25,8 +25,8 @@ function Footer() {
         <li onClick={() => handleLinkClick(githubLink)}>
           <Github />
         </li>
-        <li onClick={() => handleLinkClick(codepenLink)}>
-          <Codepen />
+        <li onClick={() => handleLinkClick(discordLink)}>
+          <Discord />
         </li>
         <li onClick={() => handleLinkClick(linkedinLink)}>
           <Linkedin />

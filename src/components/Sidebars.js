@@ -5,8 +5,7 @@ import { ReactComponent as Github } from "../icons/github.svg";
 import { ReactComponent as Linkedin } from "../icons/linkedin.svg";
 import { ReactComponent as Instagram } from "../icons/instagram.svg";
 import { ReactComponent as Twitter } from "../icons/twitter.svg";
-import { ReactComponent as Codepen } from "../icons/codepen.svg";
-// import { ReactComponent as Leetcode } from "../icons/leetcode.svg";
+import { ReactComponent as Discord } from "../icons/discord.svg";
 
 function Sidebars() {
   const [shouldRender, setShouldRender] = useState(false);
@@ -32,13 +31,13 @@ function Sidebars() {
               <Github />
             </a>
           </li>
-          <li className="codepen hover_effect">
+          <li className="discord hover_effect">
             <a
-              href="https://www.google.com"
+              href="https://discordapp.com/users/754188469764358264"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Codepen />
+              <Discord />
             </a>
           </li>
           <li className="linkedin hover_effect">

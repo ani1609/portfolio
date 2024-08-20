@@ -35,7 +35,7 @@ function Experience() {
     },
     {
       id: 3,
-      company: "Freelancing",
+      company: "",
       jobTitle: "Freelance Web Developer",
       companyLink: "",
       date: "Jul 2023 - Present",

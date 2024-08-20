@@ -11,7 +11,7 @@ function MinorProjects() {
       id: 1,
       title: "NeoChat",
       description:
-        "Created a basic dynamic ecommerce cart page in React, efficiently rendering each cart item using modular subcomponents for enhanced user experience.",
+        "Initially known as 'BridgeTogether', this versatile chat web app offers customizable settings designed for individuals with diverse abilities, facilitating inclusive communication for individuals with varying disabilities like deafness, blindness, and colorblindness.",
       techStack: ["React", "Assembly AI API", "", ""],
       link: "https://neo-chat-blush.vercel.app/",
       github: "https://github.com/ani1609/NeoChat",

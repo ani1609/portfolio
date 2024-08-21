@@ -4,11 +4,11 @@ import "../styles/TopButton.css";
 import Upward from "../icons/upwardArrow.png";
 
 const TopButton = () => {
+  const [showButton, setShowButton] = useState(false);
+
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
-  const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {

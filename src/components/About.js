@@ -59,7 +59,7 @@ function About() {
               <li>Tailwind CSS</li>
             </ul>
             <ul>
-              <li>Rust</li>
+              <li>Prisma</li>
               <li>Expressjs</li>
               <li>PostgreSQL</li>
             </ul>

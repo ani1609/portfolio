@@ -116,7 +116,7 @@
   border-radius: 4px;
   background-color: #182b3c;
   mix-blend-mode: color;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .about_photo:hover::before {

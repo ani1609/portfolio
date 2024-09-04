@@ -5,7 +5,6 @@ import { ReactComponent as Linkedin } from "../icons/linkedin.svg";
 import { ReactComponent as Instagram } from "../icons/instagram.svg";
 import { ReactComponent as Twitter } from "../icons/twitter.svg";
 import { ReactComponent as Discord } from "../icons/discord.svg";
-// import { ReactComponent as Leetcode } from "../icons/leetcode.svg";
 
 function Footer() {
   const githubLink = "https://github.com/ani1609";

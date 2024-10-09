@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
+import MyPhoto from "../images/me.jpeg";
 import "../index.css";
 import "../styles/About.css";
-import MyPhoto from "../images/me.jpeg";
 
 function About() {
   const aboutHeadingRef = useRef(null);

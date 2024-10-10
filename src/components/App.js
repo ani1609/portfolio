@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import "../styles/App.css";
 import Maintenance from "./Maintenance";
 import Navbar from "./Navbar";
 import Header from "./Header";
@@ -11,6 +10,7 @@ import MinorProjects from "./MinorProjects";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import TopButton from "./TopButton";
+import "../styles/App.css";
 
 function App() {
   useEffect(() => {

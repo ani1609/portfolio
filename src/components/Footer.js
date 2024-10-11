@@ -1,10 +1,10 @@
-import "../index.css";
-import "../styles/Footer.css";
 import { ReactComponent as Github } from "../icons/github.svg";
 import { ReactComponent as Linkedin } from "../icons/linkedin.svg";
 import { ReactComponent as Instagram } from "../icons/instagram.svg";
 import { ReactComponent as Twitter } from "../icons/twitter.svg";
 import { ReactComponent as Discord } from "../icons/discord.svg";
+import "../index.css";
+import "../styles/Footer.css";
 
 function Footer() {
   const githubLink = "https://github.com/ani1609";

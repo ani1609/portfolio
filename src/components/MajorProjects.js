@@ -1,10 +1,10 @@
 import { useRef, useEffect } from "react";
-import "../index.css";
-import "../styles/MajorProjects.css";
 import MajorProjectsItems from "./MajorProjectsItems";
 import UiAstraImage from "../images/ui-astra.webp";
 import SpendwiseImage from "../images/spendwise.webp";
 import ConversifyImage from "../images/conversify.webp";
+import "../index.css";
+import "../styles/MajorProjects.css";
 
 function MajorProjects() {
   const MajorProjects = [

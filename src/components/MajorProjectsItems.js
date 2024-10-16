@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
+import { ReactComponent as Github } from "../icons/github.svg";
 import "../index.css";
 import "../styles/MajorProjectsItems.css";
-import { ReactComponent as Github } from "../icons/github.svg";
 
 function MajorProjectsItems(props) {
   const { MajorProject } = props;

@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
+import MinorProjectItems from "./MinorProjectItems";
 import "../index.css";
 import "../styles/MinorProjects.css";
-import MinorProjectItems from "./MinorProjectItems";
 
 function MinorProjects() {
   const [showAllProjects, setShowAllProjects] = useState(false);

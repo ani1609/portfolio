@@ -17,7 +17,7 @@ function App() {
     window.scrollTo(0, 0);
   }, []);
 
-  const maintenanceMode = "false";
+  const maintenanceMode = "true";
 
   if (maintenanceMode === "true") {
     return (

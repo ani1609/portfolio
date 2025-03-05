@@ -17,9 +17,7 @@ function App() {
     window.scrollTo(0, 0);
   }, []);
 
-  const maintenanceMode = "true";
-
-  if (maintenanceMode === "true") {
+  if (process.env.REACT_APP_MAINTENANCE_MODE === "true") {
     return (
       <div className="App">
         <Maintenance />
